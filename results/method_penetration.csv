@@ -1,0 +1,1513 @@
+year,domain,method,k,n,pct,lift
+2021,Image classification / recognition,Diffusion models / score-based,1,744,0.13440860215053763,0.206145899219903
+2021,Image classification / recognition,Flow matching / normalizing flows,1,744,0.13440860215053763,0.206145899219903
+2021,Image classification / recognition,Transformers / attention,118,744,15.86021505376344,1.764702733293565
+2021,Image classification / recognition,State-space models / Mamba / linear attention,2,744,0.26881720430107525,2.6283602150537635
+2021,Image classification / recognition,LLMs / language models,13,744,1.7473118279569892,0.92976007607344
+2021,Image classification / recognition,Vision-language / multimodal LLMs,7,744,0.9408602150537635,1.5658316174788378
+2021,Image classification / recognition,Foundation models,1,744,0.13440860215053763,2.6283602150537635
+2021,Image classification / recognition,Reasoning / chain-of-thought,3,744,0.4032258064516129,0.27666949632144877
+2021,Image classification / recognition,Fine-tuning / PEFT / prompting,40,744,5.376344086021505,1.7522401433691757
+2021,Image classification / recognition,Reinforcement learning,10,744,1.3440860215053763,0.15325715539672088
+2021,Image classification / recognition,Self-supervised / contrastive learning,128,744,17.204301075268816,1.6411224757408867
+2021,Image classification / recognition,Knowledge distillation,36,744,4.838709677419355,1.9610563262577303
+2021,Image classification / recognition,3D Gaussian splatting,0,744,0.0,
+2021,Image classification / recognition,Neural fields / NeRF,1,744,0.13440860215053763,0.10951500896057349
+2021,Object detection,Diffusion models / score-based,0,380,0.0,0.0
+2021,Object detection,Flow matching / normalizing flows,0,380,0.0,0.0
+2021,Object detection,Transformers / attention,70,380,18.42105263157895,2.0496368945122407
+2021,Object detection,State-space models / Mamba / linear attention,1,380,0.2631578947368421,2.5730263157894733
+2021,Object detection,LLMs / language models,3,380,0.7894736842105263,0.42008592910848547
+2021,Object detection,Vision-language / multimodal LLMs,4,380,1.0526315789473684,1.7518477043673013
+2021,Object detection,Foundation models,1,380,0.2631578947368421,5.1460526315789465
+2021,Object detection,Reasoning / chain-of-thought,4,380,1.0526315789473684,0.722253000923361
+2021,Object detection,Fine-tuning / PEFT / prompting,17,380,4.473684210526316,1.4580482456140351
+2021,Object detection,Reinforcement learning,0,380,0.0,0.0
+2021,Object detection,Self-supervised / contrastive learning,55,380,14.473684210526315,1.380648267008986
+2021,Object detection,Knowledge distillation,32,380,8.421052631578947,3.4129260976274884
+2021,Object detection,3D Gaussian splatting,0,380,0.0,
+2021,Object detection,Neural fields / NeRF,0,380,0.0,0.0
+2021,Segmentation,Diffusion models / score-based,2,616,0.3246753246753247,0.49796282149223325
+2021,Segmentation,Flow matching / normalizing flows,1,616,0.16233766233766234,0.24898141074611663
+2021,Segmentation,Transformers / attention,85,616,13.7987012987013,1.535326337957917
+2021,Segmentation,State-space models / Mamba / linear attention,1,616,0.16233766233766234,1.5872564935064934
+2021,Segmentation,LLMs / language models,3,616,0.487012987012987,0.2591439173071826
+2021,Segmentation,Vision-language / multimodal LLMs,2,616,0.3246753246753247,0.540342636087317
+2021,Segmentation,Foundation models,1,616,0.16233766233766234,3.174512987012987
+2021,Segmentation,Reasoning / chain-of-thought,5,616,0.8116883116883117,0.5569321029847345
+2021,Segmentation,Fine-tuning / PEFT / prompting,22,616,3.5714285714285716,1.1639880952380952
+2021,Segmentation,Reinforcement learning,5,616,0.8116883116883117,0.0925513990382795
+2021,Segmentation,Self-supervised / contrastive learning,99,616,16.071428571428573,1.5330574912891988
+2021,Segmentation,Knowledge distillation,24,616,3.896103896103896,1.5790323665971335
+2021,Segmentation,3D Gaussian splatting,0,616,0.0,
+2021,Segmentation,Neural fields / NeRF,0,616,0.0,0.0
+2021,Tracking / re-identification,Diffusion models / score-based,0,180,0.0,0.0
+2021,Tracking / re-identification,Flow matching / normalizing flows,0,180,0.0,0.0
+2021,Tracking / re-identification,Transformers / attention,34,180,18.88888888888889,2.1016911648490595
+2021,Tracking / re-identification,State-space models / Mamba / linear attention,0,180,0.0,0.0
+2021,Tracking / re-identification,LLMs / language models,0,180,0.0,0.0
+2021,Tracking / re-identification,Vision-language / multimodal LLMs,0,180,0.0,0.0
+2021,Tracking / re-identification,Foundation models,0,180,0.0,0.0
+2021,Tracking / re-identification,Reasoning / chain-of-thought,0,180,0.0,0.0
+2021,Tracking / re-identification,Fine-tuning / PEFT / prompting,3,180,1.6666666666666667,0.5431944444444444
+2021,Tracking / re-identification,Reinforcement learning,3,180,1.6666666666666667,0.1900388726919339
+2021,Tracking / re-identification,Self-supervised / contrastive learning,26,180,14.444444444444445,1.3778590785907858
+2021,Tracking / re-identification,Knowledge distillation,6,180,3.3333333333333335,1.3509499136442142
+2021,Tracking / re-identification,3D Gaussian splatting,0,180,0.0,
+2021,Tracking / re-identification,Neural fields / NeRF,0,180,0.0,0.0
+2021,Human pose / body / hands,Diffusion models / score-based,0,169,0.0,0.0
+2021,Human pose / body / hands,Flow matching / normalizing flows,2,169,1.183431952662722,1.8150597517113354
+2021,Human pose / body / hands,Transformers / attention,24,169,14.201183431952662,1.5801089161413047
+2021,Human pose / body / hands,State-space models / Mamba / linear attention,0,169,0.0,0.0
+2021,Human pose / body / hands,LLMs / language models,0,169,0.0,0.0
+2021,Human pose / body / hands,Vision-language / multimodal LLMs,0,169,0.0,0.0
+2021,Human pose / body / hands,Foundation models,0,169,0.0,0.0
+2021,Human pose / body / hands,Reasoning / chain-of-thought,1,169,0.591715976331361,0.4060002076196408
+2021,Human pose / body / hands,Fine-tuning / PEFT / prompting,9,169,5.325443786982248,1.7356508875739645
+2021,Human pose / body / hands,Reinforcement learning,1,169,0.591715976331361,0.06746942225749132
+2021,Human pose / body / hands,Self-supervised / contrastive learning,19,169,11.242603550295858,1.072434694761149
+2021,Human pose / body / hands,Knowledge distillation,5,169,2.9585798816568047,1.1990679706901308
+2021,Human pose / body / hands,3D Gaussian splatting,0,169,0.0,
+2021,Human pose / body / hands,Neural fields / NeRF,9,169,5.325443786982248,4.3391272189349115
+2021,Object 6D pose estimation,Diffusion models / score-based,0,34,0.0,0.0
+2021,Object 6D pose estimation,Flow matching / normalizing flows,0,34,0.0,0.0
+2021,Object 6D pose estimation,Transformers / attention,1,34,2.9411764705882355,0.32725294954397116
+2021,Object 6D pose estimation,State-space models / Mamba / linear attention,0,34,0.0,0.0
+2021,Object 6D pose estimation,LLMs / language models,0,34,0.0,0.0
+2021,Object 6D pose estimation,Vision-language / multimodal LLMs,0,34,0.0,0.0
+2021,Object 6D pose estimation,Foundation models,0,34,0.0,0.0
+2021,Object 6D pose estimation,Reasoning / chain-of-thought,0,34,0.0,0.0
+2021,Object 6D pose estimation,Fine-tuning / PEFT / prompting,0,34,0.0,0.0
+2021,Object 6D pose estimation,Reinforcement learning,1,34,2.9411764705882355,0.33536271651517746
+2021,Object 6D pose estimation,Self-supervised / contrastive learning,5,34,14.705882352941176,1.4027977044476327
+2021,Object 6D pose estimation,Knowledge distillation,0,34,0.0,0.0
+2021,Object 6D pose estimation,3D Gaussian splatting,0,34,0.0,
+2021,Object 6D pose estimation,Neural fields / NeRF,1,34,2.9411764705882355,2.3964460784313726
+2021,Face analysis,Diffusion models / score-based,1,186,0.5376344086021505,0.824583596879612
+2021,Face analysis,Flow matching / normalizing flows,1,186,0.5376344086021505,0.824583596879612
+2021,Face analysis,Transformers / attention,19,186,10.21505376344086,1.1365882011043302
+2021,Face analysis,State-space models / Mamba / linear attention,0,186,0.0,0.0
+2021,Face analysis,LLMs / language models,0,186,0.0,0.0
+2021,Face analysis,Vision-language / multimodal LLMs,2,186,1.075268817204301,1.7895218485472433
+2021,Face analysis,Foundation models,0,186,0.0,0.0
+2021,Face analysis,Reasoning / chain-of-thought,0,186,0.0,0.0
+2021,Face analysis,Fine-tuning / PEFT / prompting,5,186,2.6881720430107525,0.8761200716845878
+2021,Face analysis,Reinforcement learning,1,186,0.5376344086021505,0.06130286215868836
+2021,Face analysis,Self-supervised / contrastive learning,17,186,9.13978494623656,0.871846315237346
+2021,Face analysis,Knowledge distillation,2,186,1.075268817204301,0.4357902947239401
+2021,Face analysis,3D Gaussian splatting,0,186,0.0,
+2021,Face analysis,Neural fields / NeRF,4,186,2.150537634408602,1.7522401433691759
+2021,Image restoration / low-level vision,Diffusion models / score-based,2,292,0.684931506849315,1.0504969110932043
+2021,Image restoration / low-level vision,Flow matching / normalizing flows,3,292,1.0273972602739727,1.5757453666398065
+2021,Image restoration / low-level vision,Transformers / attention,31,292,10.616438356164384,1.1812486603402248
+2021,Image restoration / low-level vision,State-space models / Mamba / linear attention,0,292,0.0,0.0
+2021,Image restoration / low-level vision,LLMs / language models,1,292,0.3424657534246575,0.182229056005964
+2021,Image restoration / low-level vision,Vision-language / multimodal LLMs,0,292,0.0,0.0
+2021,Image restoration / low-level vision,Foundation models,0,292,0.0,0.0
+2021,Image restoration / low-level vision,Reasoning / chain-of-thought,0,292,0.0,0.0
+2021,Image restoration / low-level vision,Fine-tuning / PEFT / prompting,11,292,3.767123287671233,1.2277682648401826
+2021,Image restoration / low-level vision,Reinforcement learning,3,292,1.0273972602739727,0.1171472502895483
+2021,Image restoration / low-level vision,Self-supervised / contrastive learning,25,292,8.561643835616438,0.8166972936852657
+2021,Image restoration / low-level vision,Knowledge distillation,8,292,2.73972602739726,1.1103697920363405
+2021,Image restoration / low-level vision,3D Gaussian splatting,0,292,0.0,
+2021,Image restoration / low-level vision,Neural fields / NeRF,2,292,0.684931506849315,0.5580764840182648
+2021,Video understanding / action recognition,Diffusion models / score-based,0,261,0.0,0.0
+2021,Video understanding / action recognition,Flow matching / normalizing flows,0,261,0.0,0.0
+2021,Video understanding / action recognition,Transformers / attention,58,261,22.22222222222222,2.4725778409988934
+2021,Video understanding / action recognition,State-space models / Mamba / linear attention,0,261,0.0,0.0
+2021,Video understanding / action recognition,LLMs / language models,4,261,1.5325670498084292,0.815492480517111
+2021,Video understanding / action recognition,Vision-language / multimodal LLMs,3,261,1.1494252873563218,1.912937148447053
+2021,Video understanding / action recognition,Foundation models,0,261,0.0,0.0
+2021,Video understanding / action recognition,Reasoning / chain-of-thought,14,261,5.363984674329502,3.68044632654433
+2021,Video understanding / action recognition,Fine-tuning / PEFT / prompting,8,261,3.0651340996168583,0.9989782886334609
+2021,Video understanding / action recognition,Reinforcement learning,9,261,3.4482758620689653,0.39318387453503567
+2021,Video understanding / action recognition,Self-supervised / contrastive learning,70,261,26.81992337164751,2.5583590318661806
+2021,Video understanding / action recognition,Knowledge distillation,7,261,2.681992337164751,1.0869711948861494
+2021,Video understanding / action recognition,3D Gaussian splatting,0,261,0.0,
+2021,Video understanding / action recognition,Neural fields / NeRF,0,261,0.0,0.0
+2021,Visual QA / captioning / grounding,Diffusion models / score-based,0,183,0.0,0.0
+2021,Visual QA / captioning / grounding,Flow matching / normalizing flows,0,183,0.0,0.0
+2021,Visual QA / captioning / grounding,Transformers / attention,51,183,27.868852459016395,3.1008558169904155
+2021,Visual QA / captioning / grounding,State-space models / Mamba / linear attention,0,183,0.0,0.0
+2021,Visual QA / captioning / grounding,LLMs / language models,9,183,4.918032786885246,2.616928738708598
+2021,Visual QA / captioning / grounding,Vision-language / multimodal LLMs,18,183,9.836065573770492,16.369724450645275
+2021,Visual QA / captioning / grounding,Foundation models,1,183,0.546448087431694,10.685792349726775
+2021,Visual QA / captioning / grounding,Reasoning / chain-of-thought,33,183,18.0327868852459,12.373022720736268
+2021,Visual QA / captioning / grounding,Fine-tuning / PEFT / prompting,9,183,4.918032786885246,1.6028688524590162
+2021,Visual QA / captioning / grounding,Reinforcement learning,7,183,3.8251366120218577,0.43615478978476635
+2021,Visual QA / captioning / grounding,Self-supervised / contrastive learning,33,183,18.0327868852459,1.7201519392243105
+2021,Visual QA / captioning / grounding,Knowledge distillation,8,183,4.371584699453552,1.7717375916645433
+2021,Visual QA / captioning / grounding,3D Gaussian splatting,0,183,0.0,
+2021,Visual QA / captioning / grounding,Neural fields / NeRF,0,183,0.0,0.0
+2021,OCR / documents / charts,Diffusion models / score-based,0,47,0.0,0.0
+2021,OCR / documents / charts,Flow matching / normalizing flows,0,47,0.0,0.0
+2021,OCR / documents / charts,Transformers / attention,11,47,23.404255319148938,2.6040979389243666
+2021,OCR / documents / charts,State-space models / Mamba / linear attention,0,47,0.0,0.0
+2021,OCR / documents / charts,LLMs / language models,4,47,8.51063829787234,4.528585902446085
+2021,OCR / documents / charts,Vision-language / multimodal LLMs,3,47,6.382978723404255,10.622906292440017
+2021,OCR / documents / charts,Foundation models,0,47,0.0,0.0
+2021,OCR / documents / charts,Reasoning / chain-of-thought,2,47,4.25531914893617,2.919746173945502
+2021,OCR / documents / charts,Fine-tuning / PEFT / prompting,3,47,6.382978723404255,2.08031914893617
+2021,OCR / documents / charts,Reinforcement learning,0,47,0.0,0.0
+2021,OCR / documents / charts,Self-supervised / contrastive learning,8,47,17.02127659574468,1.6236637259989621
+2021,OCR / documents / charts,Knowledge distillation,2,47,4.25531914893617,1.724616911035167
+2021,OCR / documents / charts,3D Gaussian splatting,0,47,0.0,
+2021,OCR / documents / charts,Neural fields / NeRF,0,47,0.0,0.0
+2021,Image retrieval / metric learning,Diffusion models / score-based,0,92,0.0,0.0
+2021,Image retrieval / metric learning,Flow matching / normalizing flows,0,92,0.0,0.0
+2021,Image retrieval / metric learning,Transformers / attention,16,92,17.391304347826086,1.9350609190426122
+2021,Image retrieval / metric learning,State-space models / Mamba / linear attention,0,92,0.0,0.0
+2021,Image retrieval / metric learning,LLMs / language models,1,92,1.0869565217391304,0.5783791777580597
+2021,Image retrieval / metric learning,Vision-language / multimodal LLMs,3,92,3.260869565217391,5.426919518963922
+2021,Image retrieval / metric learning,Foundation models,0,92,0.0,0.0
+2021,Image retrieval / metric learning,Reasoning / chain-of-thought,2,92,2.1739130434782608,1.4916094584286803
+2021,Image retrieval / metric learning,Fine-tuning / PEFT / prompting,2,92,2.1739130434782608,0.7085144927536231
+2021,Image retrieval / metric learning,Reinforcement learning,3,92,3.260869565217391,0.3718151857016098
+2021,Image retrieval / metric learning,Self-supervised / contrastive learning,23,92,25.0,2.3847560975609756
+2021,Image retrieval / metric learning,Knowledge distillation,5,92,5.434782608695652,2.2026357287677407
+2021,Image retrieval / metric learning,3D Gaussian splatting,0,92,0.0,
+2021,Image retrieval / metric learning,Neural fields / NeRF,0,92,0.0,0.0
+2021,Medical imaging,Diffusion models / score-based,0,105,0.0,0.0
+2021,Medical imaging,Flow matching / normalizing flows,1,105,0.9523809523809523,1.4606909430438844
+2021,Medical imaging,Transformers / attention,6,105,5.714285714285714,0.6358057305425726
+2021,Medical imaging,State-space models / Mamba / linear attention,0,105,0.0,0.0
+2021,Medical imaging,LLMs / language models,2,105,1.9047619047619047,1.013540654356981
+2021,Medical imaging,Vision-language / multimodal LLMs,0,105,0.0,0.0
+2021,Medical imaging,Foundation models,0,105,0.0,0.0
+2021,Medical imaging,Reasoning / chain-of-thought,0,105,0.0,0.0
+2021,Medical imaging,Fine-tuning / PEFT / prompting,9,105,8.571428571428571,2.7935714285714286
+2021,Medical imaging,Reinforcement learning,0,105,0.0,0.0
+2021,Medical imaging,Self-supervised / contrastive learning,20,105,19.047619047619047,1.8169570267131243
+2021,Medical imaging,Knowledge distillation,3,105,2.857142857142857,1.157957068837898
+2021,Medical imaging,3D Gaussian splatting,0,105,0.0,
+2021,Medical imaging,Neural fields / NeRF,1,105,0.9523809523809523,0.7759920634920636
+2021,Remote sensing / earth observation,Diffusion models / score-based,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Flow matching / normalizing flows,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Transformers / attention,3,45,6.666666666666667,0.741773352299668
+2021,Remote sensing / earth observation,State-space models / Mamba / linear attention,0,45,0.0,0.0
+2021,Remote sensing / earth observation,LLMs / language models,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Vision-language / multimodal LLMs,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Foundation models,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Reasoning / chain-of-thought,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Fine-tuning / PEFT / prompting,1,45,2.2222222222222223,0.7242592592592593
+2021,Remote sensing / earth observation,Reinforcement learning,0,45,0.0,0.0
+2021,Remote sensing / earth observation,Self-supervised / contrastive learning,3,45,6.666666666666667,0.6359349593495935
+2021,Remote sensing / earth observation,Knowledge distillation,0,45,0.0,0.0
+2021,Remote sensing / earth observation,3D Gaussian splatting,0,45,0.0,
+2021,Remote sensing / earth observation,Neural fields / NeRF,0,45,0.0,0.0
+2021,Autonomous driving,Diffusion models / score-based,0,198,0.0,0.0
+2021,Autonomous driving,Flow matching / normalizing flows,1,198,0.5050505050505051,0.7746088334323629
+2021,Autonomous driving,Transformers / attention,19,198,9.595959595959595,1.0677040677040674
+2021,Autonomous driving,State-space models / Mamba / linear attention,0,198,0.0,0.0
+2021,Autonomous driving,LLMs / language models,0,198,0.0,0.0
+2021,Autonomous driving,Vision-language / multimodal LLMs,0,198,0.0,0.0
+2021,Autonomous driving,Foundation models,1,198,0.5050505050505051,9.876262626262626
+2021,Autonomous driving,Reasoning / chain-of-thought,3,198,1.5151515151515151,1.0396065922381712
+2021,Autonomous driving,Fine-tuning / PEFT / prompting,2,198,1.0101010101010102,0.32920875420875423
+2021,Autonomous driving,Reinforcement learning,16,198,8.080808080808081,0.9214005948699827
+2021,Autonomous driving,Self-supervised / contrastive learning,25,198,12.626262626262626,1.2044222714954425
+2021,Autonomous driving,Knowledge distillation,6,198,3.0303030303030303,1.228136285131104
+2021,Autonomous driving,3D Gaussian splatting,0,198,0.0,
+2021,Autonomous driving,Neural fields / NeRF,1,198,0.5050505050505051,0.4115109427609428
+2021,Event cameras / computational imaging,Diffusion models / score-based,1,59,1.694915254237288,2.5995347291458955
+2021,Event cameras / computational imaging,Flow matching / normalizing flows,0,59,0.0,0.0
+2021,Event cameras / computational imaging,Transformers / attention,3,59,5.084745762711864,0.5657593364997469
+2021,Event cameras / computational imaging,State-space models / Mamba / linear attention,0,59,0.0,0.0
+2021,Event cameras / computational imaging,LLMs / language models,0,59,0.0,0.0
+2021,Event cameras / computational imaging,Vision-language / multimodal LLMs,0,59,0.0,0.0
+2021,Event cameras / computational imaging,Foundation models,0,59,0.0,0.0
+2021,Event cameras / computational imaging,Reasoning / chain-of-thought,0,59,0.0,0.0
+2021,Event cameras / computational imaging,Fine-tuning / PEFT / prompting,2,59,3.389830508474576,1.1048022598870055
+2021,Event cameras / computational imaging,Reinforcement learning,1,59,1.694915254237288,0.19325987053417007
+2021,Event cameras / computational imaging,Self-supervised / contrastive learning,7,59,11.864406779661017,1.1317486564696155
+2021,Event cameras / computational imaging,Knowledge distillation,1,59,1.694915254237288,0.6869236849038377
+2021,Event cameras / computational imaging,3D Gaussian splatting,0,59,0.0,
+2021,Event cameras / computational imaging,Neural fields / NeRF,2,59,3.389830508474576,2.7620056497175143
+2021,3D reconstruction / SfM / SLAM,Diffusion models / score-based,1,223,0.4484304932735426,0.6877692781148333
+2021,3D reconstruction / SfM / SLAM,Flow matching / normalizing flows,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,Transformers / attention,19,223,8.52017937219731,0.9480063022663918
+2021,3D reconstruction / SfM / SLAM,State-space models / Mamba / linear attention,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,LLMs / language models,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,Vision-language / multimodal LLMs,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,Foundation models,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,Reasoning / chain-of-thought,2,223,0.8968609865470852,0.6153725119974824
+2021,3D reconstruction / SfM / SLAM,Fine-tuning / PEFT / prompting,7,223,3.1390134529147984,1.0230568011958145
+2021,3D reconstruction / SfM / SLAM,Reinforcement learning,1,223,0.4484304932735426,0.05113153525343513
+2021,3D reconstruction / SfM / SLAM,Self-supervised / contrastive learning,21,223,9.417040358744394,0.8982937766597396
+2021,3D reconstruction / SfM / SLAM,Knowledge distillation,0,223,0.0,0.0
+2021,3D reconstruction / SfM / SLAM,3D Gaussian splatting,0,223,0.0,
+2021,3D reconstruction / SfM / SLAM,Neural fields / NeRF,24,223,10.762331838565023,8.769058295964127
+2021,Depth / stereo / optical flow / matching,Diffusion models / score-based,2,276,0.7246376811594203,1.1113952827507814
+2021,Depth / stereo / optical flow / matching,Flow matching / normalizing flows,1,276,0.36231884057971014,0.5556976413753907
+2021,Depth / stereo / optical flow / matching,Transformers / attention,29,276,10.507246376811594,1.1690993052549115
+2021,Depth / stereo / optical flow / matching,State-space models / Mamba / linear attention,0,276,0.0,0.0
+2021,Depth / stereo / optical flow / matching,LLMs / language models,0,276,0.0,0.0
+2021,Depth / stereo / optical flow / matching,Vision-language / multimodal LLMs,0,276,0.0,0.0
+2021,Depth / stereo / optical flow / matching,Foundation models,0,276,0.0,0.0
+2021,Depth / stereo / optical flow / matching,Reasoning / chain-of-thought,0,276,0.0,0.0
+2021,Depth / stereo / optical flow / matching,Fine-tuning / PEFT / prompting,7,276,2.536231884057971,0.8266002415458937
+2021,Depth / stereo / optical flow / matching,Reinforcement learning,3,276,1.0869565217391304,0.12393839523386993
+2021,Depth / stereo / optical flow / matching,Self-supervised / contrastive learning,60,276,21.73913043478261,2.0737009544008482
+2021,Depth / stereo / optical flow / matching,Knowledge distillation,8,276,2.898550724637681,1.174739055342795
+2021,Depth / stereo / optical flow / matching,3D Gaussian splatting,0,276,0.0,
+2021,Depth / stereo / optical flow / matching,Neural fields / NeRF,12,276,4.3478260869565215,3.542572463768116
+2021,Novel view synthesis / neural rendering,Diffusion models / score-based,1,100,1.0,1.5337254901960784
+2021,Novel view synthesis / neural rendering,Flow matching / normalizing flows,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,Transformers / attention,5,100,5.0,0.556330014224751
+2021,Novel view synthesis / neural rendering,State-space models / Mamba / linear attention,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,LLMs / language models,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,Vision-language / multimodal LLMs,1,100,1.0,1.6642553191489362
+2021,Novel view synthesis / neural rendering,Foundation models,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,Reasoning / chain-of-thought,1,100,1.0,0.6861403508771929
+2021,Novel view synthesis / neural rendering,Fine-tuning / PEFT / prompting,4,100,4.0,1.3036666666666668
+2021,Novel view synthesis / neural rendering,Reinforcement learning,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,Self-supervised / contrastive learning,10,100,10.0,0.9539024390243903
+2021,Novel view synthesis / neural rendering,Knowledge distillation,0,100,0.0,0.0
+2021,Novel view synthesis / neural rendering,3D Gaussian splatting,0,100,0.0,
+2021,Novel view synthesis / neural rendering,Neural fields / NeRF,34,100,34.0,27.70291666666667
+2021,Point clouds / 3D understanding,Diffusion models / score-based,2,362,0.5524861878453039,0.8473621492796013
+2021,Point clouds / 3D understanding,Flow matching / normalizing flows,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,Transformers / attention,37,362,10.220994475138122,1.1372492003489385
+2021,Point clouds / 3D understanding,State-space models / Mamba / linear attention,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,LLMs / language models,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,Vision-language / multimodal LLMs,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,Foundation models,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,Reasoning / chain-of-thought,0,362,0.0,0.0
+2021,Point clouds / 3D understanding,Fine-tuning / PEFT / prompting,4,362,1.1049723756906078,0.3601289134438305
+2021,Point clouds / 3D understanding,Reinforcement learning,2,362,0.5524861878453039,0.06299631138959134
+2021,Point clouds / 3D understanding,Self-supervised / contrastive learning,42,362,11.602209944751381,1.106737636437138
+2021,Point clouds / 3D understanding,Knowledge distillation,6,362,1.6574585635359116,0.6717430509833109
+2021,Point clouds / 3D understanding,3D Gaussian splatting,0,362,0.0,
+2021,Point clouds / 3D understanding,Neural fields / NeRF,13,362,3.591160220994475,2.9260474217311234
+2021,Image generation / editing,Diffusion models / score-based,11,263,4.182509505703422,6.414821441884738
+2021,Image generation / editing,Flow matching / normalizing flows,1,263,0.38022813688212925,0.5831655856258853
+2021,Image generation / editing,Transformers / attention,22,263,8.365019011406844,0.9307422291212564
+2021,Image generation / editing,State-space models / Mamba / linear attention,0,263,0.0,0.0
+2021,Image generation / editing,LLMs / language models,2,263,0.7604562737642585,0.4046455083934714
+2021,Image generation / editing,Vision-language / multimodal LLMs,4,263,1.520912547528517,2.5311867971846937
+2021,Image generation / editing,Foundation models,0,263,0.0,0.0
+2021,Image generation / editing,Reasoning / chain-of-thought,1,263,0.38022813688212925,0.2608898672536855
+2021,Image generation / editing,Fine-tuning / PEFT / prompting,5,263,1.9011406844106464,0.6196134347275032
+2021,Image generation / editing,Reinforcement learning,0,263,0.0,0.0
+2021,Image generation / editing,Self-supervised / contrastive learning,32,263,12.167300380228136,1.160641750904201
+2021,Image generation / editing,Knowledge distillation,5,263,1.9011406844106464,0.7705037530290195
+2021,Image generation / editing,3D Gaussian splatting,0,263,0.0,
+2021,Image generation / editing,Neural fields / NeRF,7,263,2.661596958174905,2.168647021546261
+2021,Video generation / editing,Diffusion models / score-based,0,36,0.0,0.0
+2021,Video generation / editing,Flow matching / normalizing flows,0,36,0.0,0.0
+2021,Video generation / editing,Transformers / attention,3,36,8.333333333333334,0.927216690374585
+2021,Video generation / editing,State-space models / Mamba / linear attention,0,36,0.0,0.0
+2021,Video generation / editing,LLMs / language models,0,36,0.0,0.0
+2021,Video generation / editing,Vision-language / multimodal LLMs,0,36,0.0,0.0
+2021,Video generation / editing,Foundation models,0,36,0.0,0.0
+2021,Video generation / editing,Reasoning / chain-of-thought,1,36,2.7777777777777777,1.9059454191033136
+2021,Video generation / editing,Fine-tuning / PEFT / prompting,0,36,0.0,0.0
+2021,Video generation / editing,Reinforcement learning,0,36,0.0,0.0
+2021,Video generation / editing,Self-supervised / contrastive learning,8,36,22.22222222222222,2.1197831978319783
+2021,Video generation / editing,Knowledge distillation,0,36,0.0,0.0
+2021,Video generation / editing,3D Gaussian splatting,0,36,0.0,
+2021,Video generation / editing,Neural fields / NeRF,1,36,2.7777777777777777,2.263310185185185
+2021,3D / 4D generation,Diffusion models / score-based,1,18,5.555555555555555,8.52069716775599
+2021,3D / 4D generation,Flow matching / normalizing flows,0,18,0.0,0.0
+2021,3D / 4D generation,Transformers / attention,1,18,5.555555555555555,0.6181444602497234
+2021,3D / 4D generation,State-space models / Mamba / linear attention,0,18,0.0,0.0
+2021,3D / 4D generation,LLMs / language models,0,18,0.0,0.0
+2021,3D / 4D generation,Vision-language / multimodal LLMs,0,18,0.0,0.0
+2021,3D / 4D generation,Foundation models,0,18,0.0,0.0
+2021,3D / 4D generation,Reasoning / chain-of-thought,0,18,0.0,0.0
+2021,3D / 4D generation,Fine-tuning / PEFT / prompting,0,18,0.0,0.0
+2021,3D / 4D generation,Reinforcement learning,0,18,0.0,0.0
+2021,3D / 4D generation,Self-supervised / contrastive learning,2,18,11.11111111111111,1.0598915989159892
+2021,3D / 4D generation,Knowledge distillation,0,18,0.0,0.0
+2021,3D / 4D generation,3D Gaussian splatting,0,18,0.0,
+2021,3D / 4D generation,Neural fields / NeRF,2,18,11.11111111111111,9.05324074074074
+2021,3D humans / avatars / motion,Diffusion models / score-based,0,124,0.0,0.0
+2021,3D humans / avatars / motion,Flow matching / normalizing flows,3,124,2.4193548387096775,3.710626185958254
+2021,3D humans / avatars / motion,Transformers / attention,21,124,16.93548387096774,1.884343596567705
+2021,3D humans / avatars / motion,State-space models / Mamba / linear attention,1,124,0.8064516129032258,7.885080645161289
+2021,3D humans / avatars / motion,LLMs / language models,0,124,0.0,0.0
+2021,3D humans / avatars / motion,Vision-language / multimodal LLMs,0,124,0.0,0.0
+2021,3D humans / avatars / motion,Foundation models,0,124,0.0,0.0
+2021,3D humans / avatars / motion,Reasoning / chain-of-thought,0,124,0.0,0.0
+2021,3D humans / avatars / motion,Fine-tuning / PEFT / prompting,3,124,2.4193548387096775,0.788508064516129
+2021,3D humans / avatars / motion,Reinforcement learning,1,124,0.8064516129032258,0.09195429323803253
+2021,3D humans / avatars / motion,Self-supervised / contrastive learning,11,124,8.870967741935484,0.8462037765538947
+2021,3D humans / avatars / motion,Knowledge distillation,1,124,0.8064516129032258,0.32684272104295503
+2021,3D humans / avatars / motion,3D Gaussian splatting,0,124,0.0,
+2021,3D humans / avatars / motion,Neural fields / NeRF,9,124,7.258064516129032,5.913810483870969
+2021,AI for science: molecules / proteins / materials,Diffusion models / score-based,2,128,1.5625,2.3964460784313726
+2021,AI for science: molecules / proteins / materials,Flow matching / normalizing flows,4,128,3.125,4.792892156862745
+2021,AI for science: molecules / proteins / materials,Transformers / attention,13,128,10.15625,1.1300453413940255
+2021,AI for science: molecules / proteins / materials,State-space models / Mamba / linear attention,0,128,0.0,0.0
+2021,AI for science: molecules / proteins / materials,LLMs / language models,5,128,3.90625,2.078550170068027
+2021,AI for science: molecules / proteins / materials,Vision-language / multimodal LLMs,1,128,0.78125,1.3001994680851063
+2021,AI for science: molecules / proteins / materials,Foundation models,0,128,0.0,0.0
+2021,AI for science: molecules / proteins / materials,Reasoning / chain-of-thought,2,128,1.5625,1.072094298245614
+2021,AI for science: molecules / proteins / materials,Fine-tuning / PEFT / prompting,4,128,3.125,1.0184895833333334
+2021,AI for science: molecules / proteins / materials,Reinforcement learning,6,128,4.6875,0.5344843294460642
+2021,AI for science: molecules / proteins / materials,Self-supervised / contrastive learning,16,128,12.5,1.1923780487804878
+2021,AI for science: molecules / proteins / materials,Knowledge distillation,2,128,1.5625,0.6332577720207254
+2021,AI for science: molecules / proteins / materials,3D Gaussian splatting,0,128,0.0,
+2021,AI for science: molecules / proteins / materials,Neural fields / NeRF,0,128,0.0,0.0
+2021,Scientific ML / PDEs / physics,Diffusion models / score-based,2,66,3.0303030303030303,4.647653000594177
+2021,Scientific ML / PDEs / physics,Flow matching / normalizing flows,2,66,3.0303030303030303,4.647653000594177
+2021,Scientific ML / PDEs / physics,Transformers / attention,2,66,3.0303030303030303,0.3371697055907582
+2021,Scientific ML / PDEs / physics,State-space models / Mamba / linear attention,0,66,0.0,0.0
+2021,Scientific ML / PDEs / physics,LLMs / language models,1,66,1.5151515151515151,0.8062255205112348
+2021,Scientific ML / PDEs / physics,Vision-language / multimodal LLMs,0,66,0.0,0.0
+2021,Scientific ML / PDEs / physics,Foundation models,0,66,0.0,0.0
+2021,Scientific ML / PDEs / physics,Reasoning / chain-of-thought,4,66,6.0606060606060606,4.158426368952685
+2021,Scientific ML / PDEs / physics,Fine-tuning / PEFT / prompting,0,66,0.0,0.0
+2021,Scientific ML / PDEs / physics,Reinforcement learning,4,66,6.0606060606060606,0.691050446152487
+2021,Scientific ML / PDEs / physics,Self-supervised / contrastive learning,2,66,3.0303030303030303,0.28906134515890614
+2021,Scientific ML / PDEs / physics,Knowledge distillation,0,66,0.0,0.0
+2021,Scientific ML / PDEs / physics,3D Gaussian splatting,0,66,0.0,
+2021,Scientific ML / PDEs / physics,Neural fields / NeRF,2,66,3.0303030303030303,2.4690656565656566
+2021,Time series / forecasting,Diffusion models / score-based,4,100,4.0,6.134901960784314
+2021,Time series / forecasting,Flow matching / normalizing flows,4,100,4.0,6.134901960784314
+2021,Time series / forecasting,Transformers / attention,8,100,8.0,0.8901280227596017
+2021,Time series / forecasting,State-space models / Mamba / linear attention,2,100,2.0,19.555
+2021,Time series / forecasting,LLMs / language models,0,100,0.0,0.0
+2021,Time series / forecasting,Vision-language / multimodal LLMs,0,100,0.0,0.0
+2021,Time series / forecasting,Foundation models,0,100,0.0,0.0
+2021,Time series / forecasting,Reasoning / chain-of-thought,0,100,0.0,0.0
+2021,Time series / forecasting,Fine-tuning / PEFT / prompting,2,100,2.0,0.6518333333333334
+2021,Time series / forecasting,Reinforcement learning,1,100,1.0,0.11402332361516035
+2021,Time series / forecasting,Self-supervised / contrastive learning,6,100,6.0,0.5723414634146342
+2021,Time series / forecasting,Knowledge distillation,0,100,0.0,0.0
+2021,Time series / forecasting,3D Gaussian splatting,0,100,0.0,
+2021,Time series / forecasting,Neural fields / NeRF,0,100,0.0,0.0
+2021,Speech / audio / music,Diffusion models / score-based,5,181,2.7624309392265194,4.236810746398007
+2021,Speech / audio / music,Flow matching / normalizing flows,2,181,1.1049723756906078,1.6947242985592026
+2021,Speech / audio / music,Transformers / attention,28,181,15.469613259668508,1.7212420329605556
+2021,Speech / audio / music,State-space models / Mamba / linear attention,1,181,0.5524861878453039,5.401933701657458
+2021,Speech / audio / music,LLMs / language models,7,181,3.867403314917127,2.057879505393317
+2021,Speech / audio / music,Vision-language / multimodal LLMs,0,181,0.0,0.0
+2021,Speech / audio / music,Foundation models,0,181,0.0,0.0
+2021,Speech / audio / music,Reasoning / chain-of-thought,1,181,0.5524861878453039,0.37908306678297954
+2021,Speech / audio / music,Fine-tuning / PEFT / prompting,10,181,5.524861878453039,1.8006445672191527
+2021,Speech / audio / music,Reinforcement learning,3,181,1.6574585635359116,0.18898893416877405
+2021,Speech / audio / music,Self-supervised / contrastive learning,41,181,22.65193370165746,2.1607734806629835
+2021,Speech / audio / music,Knowledge distillation,7,181,3.867403314917127,1.567400452294392
+2021,Speech / audio / music,3D Gaussian splatting,0,181,0.0,
+2021,Speech / audio / music,Neural fields / NeRF,2,181,1.1049723756906078,0.9003222836095764
+2021,NLP tasks,Diffusion models / score-based,0,279,0.0,0.0
+2021,NLP tasks,Flow matching / normalizing flows,0,279,0.0,0.0
+2021,NLP tasks,Transformers / attention,83,279,29.74910394265233,3.310063883917873
+2021,NLP tasks,State-space models / Mamba / linear attention,1,279,0.35842293906810035,3.504480286738351
+2021,NLP tasks,LLMs / language models,65,279,23.29749103942652,12.396801014312535
+2021,NLP tasks,Vision-language / multimodal LLMs,4,279,1.4336917562724014,2.386029131396324
+2021,NLP tasks,Foundation models,1,279,0.35842293906810035,7.008960573476702
+2021,NLP tasks,Reasoning / chain-of-thought,14,279,5.017921146953405,3.442998176444696
+2021,NLP tasks,Fine-tuning / PEFT / prompting,35,279,12.544802867383513,4.088560334528076
+2021,NLP tasks,Reinforcement learning,15,279,5.376344086021505,0.6130286215868835
+2021,NLP tasks,Self-supervised / contrastive learning,34,279,12.186379928315413,1.1624617536497945
+2021,NLP tasks,Knowledge distillation,7,279,2.5089605734767026,1.016844021022527
+2021,NLP tasks,3D Gaussian splatting,0,279,0.0,
+2021,NLP tasks,Neural fields / NeRF,0,279,0.0,0.0
+2021,Robotics / embodied AI,Diffusion models / score-based,0,237,0.0,0.0
+2021,Robotics / embodied AI,Flow matching / normalizing flows,1,237,0.4219409282700422,0.6471415570447587
+2021,Robotics / embodied AI,Transformers / attention,14,237,5.9071729957805905,0.6572675273541362
+2021,Robotics / embodied AI,State-space models / Mamba / linear attention,0,237,0.0,0.0
+2021,Robotics / embodied AI,LLMs / language models,1,237,0.4219409282700422,0.2245184993828755
+2021,Robotics / embodied AI,Vision-language / multimodal LLMs,5,237,2.109704641350211,3.511087171200287
+2021,Robotics / embodied AI,Foundation models,0,237,0.0,0.0
+2021,Robotics / embodied AI,Reasoning / chain-of-thought,3,237,1.2658227848101267,0.8685320897179658
+2021,Robotics / embodied AI,Fine-tuning / PEFT / prompting,1,237,0.4219409282700422,0.13751758087201124
+2021,Robotics / embodied AI,Reinforcement learning,88,237,37.130801687763714,4.233777416934224
+2021,Robotics / embodied AI,Self-supervised / contrastive learning,26,237,10.970464135021096,1.0464752495626224
+2021,Robotics / embodied AI,Knowledge distillation,4,237,1.6877637130801688,0.6840252727312477
+2021,Robotics / embodied AI,3D Gaussian splatting,0,237,0.0,
+2021,Robotics / embodied AI,Neural fields / NeRF,4,237,1.6877637130801688,1.3751758087201125
+2021,Healthcare / clinical,Diffusion models / score-based,4,156,2.5641025641025643,3.9326294620412265
+2021,Healthcare / clinical,Flow matching / normalizing flows,2,156,1.2820512820512822,1.9663147310206133
+2021,Healthcare / clinical,Transformers / attention,9,156,5.769230769230769,0.6419192471824051
+2021,Healthcare / clinical,State-space models / Mamba / linear attention,1,156,0.6410256410256411,6.267628205128204
+2021,Healthcare / clinical,LLMs / language models,2,156,1.2820512820512822,0.6821908250479678
+2021,Healthcare / clinical,Vision-language / multimodal LLMs,1,156,0.6410256410256411,1.0668303327877795
+2021,Healthcare / clinical,Foundation models,0,156,0.0,0.0
+2021,Healthcare / clinical,Reasoning / chain-of-thought,1,156,0.6410256410256411,0.43983355825461085
+2021,Healthcare / clinical,Fine-tuning / PEFT / prompting,7,156,4.487179487179487,1.4624465811965812
+2021,Healthcare / clinical,Reinforcement learning,8,156,5.128205128205129,0.5847349928982581
+2021,Healthcare / clinical,Self-supervised / contrastive learning,21,156,13.461538461538462,1.2840994371482177
+2021,Healthcare / clinical,Knowledge distillation,2,156,1.2820512820512822,0.51959612063239
+2021,Healthcare / clinical,3D Gaussian splatting,0,156,0.0,
+2021,Healthcare / clinical,Neural fields / NeRF,0,156,0.0,0.0
+2021,Tabular data,Diffusion models / score-based,0,34,0.0,0.0
+2021,Tabular data,Flow matching / normalizing flows,0,34,0.0,0.0
+2021,Tabular data,Transformers / attention,2,34,5.882352941176471,0.6545058990879423
+2021,Tabular data,State-space models / Mamba / linear attention,0,34,0.0,0.0
+2021,Tabular data,LLMs / language models,1,34,2.9411764705882355,1.5650260104041616
+2021,Tabular data,Vision-language / multimodal LLMs,0,34,0.0,0.0
+2021,Tabular data,Foundation models,0,34,0.0,0.0
+2021,Tabular data,Reasoning / chain-of-thought,1,34,2.9411764705882355,2.0180598555211557
+2021,Tabular data,Fine-tuning / PEFT / prompting,1,34,2.9411764705882355,0.958578431372549
+2021,Tabular data,Reinforcement learning,1,34,2.9411764705882355,0.33536271651517746
+2021,Tabular data,Self-supervised / contrastive learning,6,34,17.647058823529413,1.6833572453371595
+2021,Tabular data,Knowledge distillation,1,34,2.9411764705882355,1.1920146296860714
+2021,Tabular data,3D Gaussian splatting,0,34,0.0,
+2021,Tabular data,Neural fields / NeRF,0,34,0.0,0.0
+2021,Combinatorial optimization / scheduling,Diffusion models / score-based,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Flow matching / normalizing flows,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Transformers / attention,2,67,2.985074626865672,0.3321373219252245
+2021,Combinatorial optimization / scheduling,State-space models / Mamba / linear attention,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,LLMs / language models,1,67,1.492537313432836,0.7941923037871864
+2021,Combinatorial optimization / scheduling,Vision-language / multimodal LLMs,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Foundation models,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Reasoning / chain-of-thought,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Fine-tuning / PEFT / prompting,2,67,2.985074626865672,0.9728855721393035
+2021,Combinatorial optimization / scheduling,Reinforcement learning,11,67,16.417910447761194,1.8720247160697967
+2021,Combinatorial optimization / scheduling,Self-supervised / contrastive learning,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,Knowledge distillation,0,67,0.0,0.0
+2021,Combinatorial optimization / scheduling,3D Gaussian splatting,0,67,0.0,
+2021,Combinatorial optimization / scheduling,Neural fields / NeRF,0,67,0.0,0.0
+2021,Recommendation / information retrieval,Diffusion models / score-based,1,93,1.075268817204301,1.649167193759224
+2021,Recommendation / information retrieval,Flow matching / normalizing flows,0,93,0.0,0.0
+2021,Recommendation / information retrieval,Transformers / attention,7,93,7.526881720430108,0.8374860429189801
+2021,Recommendation / information retrieval,State-space models / Mamba / linear attention,0,93,0.0,0.0
+2021,Recommendation / information retrieval,LLMs / language models,3,93,3.225806451612903,1.716480140443274
+2021,Recommendation / information retrieval,Vision-language / multimodal LLMs,1,93,1.075268817204301,1.7895218485472433
+2021,Recommendation / information retrieval,Foundation models,0,93,0.0,0.0
+2021,Recommendation / information retrieval,Reasoning / chain-of-thought,3,93,3.225806451612903,2.21335597057159
+2021,Recommendation / information retrieval,Fine-tuning / PEFT / prompting,2,93,2.150537634408602,0.7008960573476702
+2021,Recommendation / information retrieval,Reinforcement learning,5,93,5.376344086021505,0.6130286215868835
+2021,Recommendation / information retrieval,Self-supervised / contrastive learning,9,93,9.67741935483871,0.9231313926042486
+2021,Recommendation / information retrieval,Knowledge distillation,1,93,1.075268817204301,0.4357902947239401
+2021,Recommendation / information retrieval,3D Gaussian splatting,0,93,0.0,
+2021,Recommendation / information retrieval,Neural fields / NeRF,0,93,0.0,0.0
+2021,Graph learning / knowledge graphs,Diffusion models / score-based,3,159,1.8867924528301887,2.893821679615242
+2021,Graph learning / knowledge graphs,Flow matching / normalizing flows,1,159,0.6289308176100629,0.9646072265384141
+2021,Graph learning / knowledge graphs,Transformers / attention,14,159,8.80503144654088,0.9797006539806936
+2021,Graph learning / knowledge graphs,State-space models / Mamba / linear attention,0,159,0.0,0.0
+2021,Graph learning / knowledge graphs,LLMs / language models,3,159,1.8867924528301887,1.0039789500705942
+2021,Graph learning / knowledge graphs,Vision-language / multimodal LLMs,0,159,0.0,0.0
+2021,Graph learning / knowledge graphs,Foundation models,0,159,0.0,0.0
+2021,Graph learning / knowledge graphs,Reasoning / chain-of-thought,11,159,6.918238993710692,4.746882930596932
+2021,Graph learning / knowledge graphs,Fine-tuning / PEFT / prompting,5,159,3.1446540880503147,1.024895178197065
+2021,Graph learning / knowledge graphs,Reinforcement learning,7,159,4.40251572327044,0.5019894750352971
+2021,Graph learning / knowledge graphs,Self-supervised / contrastive learning,36,159,22.641509433962263,2.1597791072250345
+2021,Graph learning / knowledge graphs,Knowledge distillation,3,159,1.8867924528301887,0.7646886303646495
+2021,Graph learning / knowledge graphs,3D Gaussian splatting,0,159,0.0,
+2021,Graph learning / knowledge graphs,Neural fields / NeRF,0,159,0.0,0.0
+2021,(all papers),Diffusion models / score-based,51,7822,0.6520071592942981,1.0
+2021,(all papers),Flow matching / normalizing flows,51,7822,0.6520071592942981,1.0
+2021,(all papers),Transformers / attention,703,7822,8.987471234978267,1.0
+2021,(all papers),State-space models / Mamba / linear attention,8,7822,0.10227563283047814,1.0
+2021,(all papers),LLMs / language models,147,7822,1.8793147532600358,1.0
+2021,(all papers),Vision-language / multimodal LLMs,47,7822,0.600869342879059,1.0
+2021,(all papers),Foundation models,4,7822,0.05113781641523907,1.0
+2021,(all papers),Reasoning / chain-of-thought,114,7822,1.4574277678343135,1.0
+2021,(all papers),Fine-tuning / PEFT / prompting,240,7822,3.068268984914344,1.0
+2021,(all papers),Reinforcement learning,686,7822,8.7701355152135,1.0
+2021,(all papers),Self-supervised / contrastive learning,820,7822,10.48325236512401,1.0
+2021,(all papers),Knowledge distillation,193,7822,2.4673996420352853,1.0
+2021,(all papers),3D Gaussian splatting,0,7822,0.0,
+2021,(all papers),Neural fields / NeRF,96,7822,1.2273075939657376,1.0
+2023,Image classification / recognition,Diffusion models / score-based,60,914,6.564551422319475,0.9468993380330597
+2023,Image classification / recognition,Flow matching / normalizing flows,6,914,0.6564551422319475,1.105644227056249
+2023,Image classification / recognition,Transformers / attention,231,914,25.27352297592998,1.8227812257136402
+2023,Image classification / recognition,State-space models / Mamba / linear attention,5,914,0.5470459518599562,2.0210700924684124
+2023,Image classification / recognition,LLMs / language models,46,914,5.032822757111598,0.8072957848347216
+2023,Image classification / recognition,Vision-language / multimodal LLMs,100,914,10.940919037199125,2.213893034152678
+2023,Image classification / recognition,Foundation models,26,914,2.8446389496717726,1.9745242357933825
+2023,Image classification / recognition,Reasoning / chain-of-thought,12,914,1.312910284463895,0.6087757687435218
+2023,Image classification / recognition,Fine-tuning / PEFT / prompting,129,914,14.113785557986871,1.8708933564308292
+2023,Image classification / recognition,Reinforcement learning,5,914,0.5470459518599562,0.06780646414125627
+2023,Image classification / recognition,Self-supervised / contrastive learning,200,914,21.88183807439825,1.7271722361549493
+2023,Image classification / recognition,Knowledge distillation,63,914,6.892778993435448,2.0829287021587386
+2023,Image classification / recognition,3D Gaussian splatting,0,914,0.0,
+2023,Image classification / recognition,Neural fields / NeRF,3,914,0.3282275711159737,0.08066932128736581
+2023,Object detection,Diffusion models / score-based,13,511,2.544031311154599,0.3669620983205746
+2023,Object detection,Flow matching / normalizing flows,1,511,0.19569471624266144,0.32960170369517666
+2023,Object detection,Transformers / attention,158,511,30.919765166340508,2.2300004436404146
+2023,Object detection,State-space models / Mamba / linear attention,0,511,0.0,0.0
+2023,Object detection,LLMs / language models,10,511,1.9569471624266144,0.31390638447159686
+2023,Object detection,Vision-language / multimodal LLMs,52,511,10.176125244618396,2.0591371453465457
+2023,Object detection,Foundation models,17,511,3.3268101761252447,2.3092095119492377
+2023,Object detection,Reasoning / chain-of-thought,11,511,2.152641878669276,0.9981460500566485
+2023,Object detection,Fine-tuning / PEFT / prompting,50,511,9.784735812133073,1.2970437413930564
+2023,Object detection,Reinforcement learning,2,511,0.3913894324853229,0.04851280487288315
+2023,Object detection,Self-supervised / contrastive learning,95,511,18.59099804305284,1.4674204037703937
+2023,Object detection,Knowledge distillation,52,511,10.176125244618396,3.075123019171886
+2023,Object detection,3D Gaussian splatting,0,511,0.0,
+2023,Object detection,Neural fields / NeRF,4,511,0.7827788649706457,0.19238554378774259
+2023,Segmentation,Diffusion models / score-based,44,874,5.034324942791762,0.7261728409293962
+2023,Segmentation,Flow matching / normalizing flows,0,874,0.0,0.0
+2023,Segmentation,Transformers / attention,221,874,25.28604118993135,1.823684066424961
+2023,Segmentation,State-space models / Mamba / linear attention,0,874,0.0,0.0
+2023,Segmentation,LLMs / language models,10,874,1.1441647597254005,0.18353107833522425
+2023,Segmentation,Vision-language / multimodal LLMs,73,874,8.352402745995423,1.6901072199626428
+2023,Segmentation,Foundation models,36,874,4.118993135011442,2.8590805075930934
+2023,Segmentation,Reasoning / chain-of-thought,10,874,1.1441647597254005,0.5305311333253041
+2023,Segmentation,Fine-tuning / PEFT / prompting,85,874,9.725400457665904,1.2891783731672177
+2023,Segmentation,Reinforcement learning,11,874,1.2585812356979404,0.1560014165849406
+2023,Segmentation,Self-supervised / contrastive learning,200,874,22.88329519450801,1.8062190204183337
+2023,Segmentation,Knowledge distillation,64,874,7.322654462242563,2.2128327587351997
+2023,Segmentation,3D Gaussian splatting,0,874,0.0,
+2023,Segmentation,Neural fields / NeRF,36,874,4.118993135011442,1.0123353728602154
+2023,Tracking / re-identification,Diffusion models / score-based,2,183,1.092896174863388,0.15764407922809046
+2023,Tracking / re-identification,Flow matching / normalizing flows,1,183,0.546448087431694,0.9203632272581163
+2023,Tracking / re-identification,Transformers / attention,46,183,25.136612021857925,1.8129069111230405
+2023,Tracking / re-identification,State-space models / Mamba / linear attention,0,183,0.0,0.0
+2023,Tracking / re-identification,LLMs / language models,5,183,2.73224043715847,0.43826820345624584
+2023,Tracking / re-identification,Vision-language / multimodal LLMs,3,183,1.639344262295082,0.3317210218386144
+2023,Tracking / re-identification,Foundation models,2,183,1.092896174863388,0.7586024176188111
+2023,Tracking / re-identification,Reasoning / chain-of-thought,3,183,1.639344262295082,0.7601380500431407
+2023,Tracking / re-identification,Fine-tuning / PEFT / prompting,12,183,6.557377049180328,0.8692319368548878
+2023,Tracking / re-identification,Reinforcement learning,2,183,1.092896174863388,0.13546471743193056
+2023,Tracking / re-identification,Self-supervised / contrastive learning,38,183,20.76502732240437,1.639020385413489
+2023,Tracking / re-identification,Knowledge distillation,4,183,2.185792349726776,0.660524532491313
+2023,Tracking / re-identification,3D Gaussian splatting,0,183,0.0,
+2023,Tracking / re-identification,Neural fields / NeRF,3,183,1.639344262295082,0.40290579047351016
+2023,Human pose / body / hands,Diffusion models / score-based,19,236,8.05084745762712,1.1612891175340476
+2023,Human pose / body / hands,Flow matching / normalizing flows,2,236,0.847457627118644,1.4273429710867398
+2023,Human pose / body / hands,Transformers / attention,51,236,21.610169491525422,1.5585722366904327
+2023,Human pose / body / hands,State-space models / Mamba / linear attention,0,236,0.0,0.0
+2023,Human pose / body / hands,LLMs / language models,2,236,0.847457627118644,0.13593742581778473
+2023,Human pose / body / hands,Vision-language / multimodal LLMs,4,236,1.694915254237288,0.34296580223992335
+2023,Human pose / body / hands,Foundation models,3,236,1.271186440677966,0.8823574730354392
+2023,Human pose / body / hands,Reasoning / chain-of-thought,1,236,0.423728813559322,0.19647636039250668
+2023,Human pose / body / hands,Fine-tuning / PEFT / prompting,18,236,7.627118644067797,1.011034604519774
+2023,Human pose / body / hands,Reinforcement learning,4,236,1.694915254237288,0.21008511262748553
+2023,Human pose / body / hands,Self-supervised / contrastive learning,21,236,8.898305084745763,0.7023589809482648
+2023,Human pose / body / hands,Knowledge distillation,6,236,2.542372881355932,0.7682795939358705
+2023,Human pose / body / hands,3D Gaussian splatting,0,236,0.0,
+2023,Human pose / body / hands,Neural fields / NeRF,23,236,9.745762711864407,2.395240779806503
+2023,Object 6D pose estimation,Diffusion models / score-based,2,43,4.651162790697675,0.6709038720637338
+2023,Object 6D pose estimation,Flow matching / normalizing flows,0,43,0.0,0.0
+2023,Object 6D pose estimation,Transformers / attention,3,43,6.976744186046512,0.5031779040478004
+2023,Object 6D pose estimation,State-space models / Mamba / linear attention,0,43,0.0,0.0
+2023,Object 6D pose estimation,LLMs / language models,0,43,0.0,0.0
+2023,Object 6D pose estimation,Vision-language / multimodal LLMs,1,43,2.3255813953488373,0.47058098446873203
+2023,Object 6D pose estimation,Foundation models,0,43,0.0,0.0
+2023,Object 6D pose estimation,Reasoning / chain-of-thought,1,43,2.3255813953488373,1.0783353733170136
+2023,Object 6D pose estimation,Fine-tuning / PEFT / prompting,0,43,0.0,0.0
+2023,Object 6D pose estimation,Reinforcement learning,0,43,0.0,0.0
+2023,Object 6D pose estimation,Self-supervised / contrastive learning,8,43,18.6046511627907,1.4684980686936033
+2023,Object 6D pose estimation,Knowledge distillation,2,43,4.651162790697675,1.4055347609989568
+2023,Object 6D pose estimation,3D Gaussian splatting,0,43,0.0,
+2023,Object 6D pose estimation,Neural fields / NeRF,1,43,2.3255813953488373,0.5715640283461423
+2023,Face analysis,Diffusion models / score-based,26,242,10.743801652892563,1.5497324978662284
+2023,Face analysis,Flow matching / normalizing flows,0,242,0.0,0.0
+2023,Face analysis,Transformers / attention,34,242,14.049586776859504,1.0132866332202262
+2023,Face analysis,State-space models / Mamba / linear attention,0,242,0.0,0.0
+2023,Face analysis,LLMs / language models,2,242,0.8264462809917356,0.1325670764173438
+2023,Face analysis,Vision-language / multimodal LLMs,11,242,4.545454545454546,0.9197719241888854
+2023,Face analysis,Foundation models,1,242,0.4132231404958678,0.2868269471575257
+2023,Face analysis,Reasoning / chain-of-thought,1,242,0.4132231404958678,0.19160504567203132
+2023,Face analysis,Fine-tuning / PEFT / prompting,13,242,5.371900826446281,0.7120877333945516
+2023,Face analysis,Reinforcement learning,0,242,0.0,0.0
+2023,Face analysis,Self-supervised / contrastive learning,26,242,10.743801652892563,0.8480272938013681
+2023,Face analysis,Knowledge distillation,5,242,2.0661157024793386,0.6243594496173052
+2023,Face analysis,3D Gaussian splatting,0,242,0.0,
+2023,Face analysis,Neural fields / NeRF,23,242,9.50413223140496,2.335854644769978
+2023,Image restoration / low-level vision,Diffusion models / score-based,81,464,17.45689655172414,2.51805839051507
+2023,Image restoration / low-level vision,Flow matching / normalizing flows,7,464,1.5086206896551724,2.540916582150101
+2023,Image restoration / low-level vision,Transformers / attention,97,464,20.905172413793103,1.5077263202466777
+2023,Image restoration / low-level vision,State-space models / Mamba / linear attention,0,464,0.0,0.0
+2023,Image restoration / low-level vision,LLMs / language models,4,464,0.8620689655172413,0.13828117453878103
+2023,Image restoration / low-level vision,Vision-language / multimodal LLMs,6,464,1.293103448275862,0.26165925429511394
+2023,Image restoration / low-level vision,Foundation models,3,464,0.646551724137931,0.44878526645768024
+2023,Image restoration / low-level vision,Reasoning / chain-of-thought,4,464,0.8620689655172413,0.3997277676950998
+2023,Image restoration / low-level vision,Fine-tuning / PEFT / prompting,19,464,4.094827586206897,0.5428016243614304
+2023,Image restoration / low-level vision,Reinforcement learning,0,464,0.0,0.0
+2023,Image restoration / low-level vision,Self-supervised / contrastive learning,62,464,13.362068965517242,1.054691770241688
+2023,Image restoration / low-level vision,Knowledge distillation,8,464,1.7241379310344827,0.5210171958875444
+2023,Image restoration / low-level vision,3D Gaussian splatting,0,464,0.0,
+2023,Image restoration / low-level vision,Neural fields / NeRF,44,464,9.482758620689655,2.3306015983424593
+2023,Video understanding / action recognition,Diffusion models / score-based,8,352,2.272727272727273,0.32782802839477904
+2023,Video understanding / action recognition,Flow matching / normalizing flows,0,352,0.0,0.0
+2023,Video understanding / action recognition,Transformers / attention,91,352,25.852272727272727,1.864521911495306
+2023,Video understanding / action recognition,State-space models / Mamba / linear attention,2,352,0.5681818181818182,2.099156891495601
+2023,Video understanding / action recognition,LLMs / language models,25,352,7.1022727272727275,1.1392483129615483
+2023,Video understanding / action recognition,Vision-language / multimodal LLMs,49,352,13.920454545454545,2.8168015178284613
+2023,Video understanding / action recognition,Foundation models,14,352,3.977272727272727,2.760709366391185
+2023,Video understanding / action recognition,Reasoning / chain-of-thought,15,352,4.261363636363637,1.975927033492823
+2023,Video understanding / action recognition,Fine-tuning / PEFT / prompting,40,352,11.363636363636363,1.506339436026936
+2023,Video understanding / action recognition,Reinforcement learning,7,352,1.9886363636363635,0.24649190771349863
+2023,Video understanding / action recognition,Self-supervised / contrastive learning,101,352,28.693181818181817,2.26480366205125
+2023,Video understanding / action recognition,Knowledge distillation,18,352,5.113636363636363,1.5452896378028305
+2023,Video understanding / action recognition,3D Gaussian splatting,0,352,0.0,
+2023,Video understanding / action recognition,Neural fields / NeRF,7,352,1.9886363636363635,0.4887521946937183
+2023,Visual QA / captioning / grounding,Diffusion models / score-based,11,280,3.9285714285714284,0.566674163368118
+2023,Visual QA / captioning / grounding,Flow matching / normalizing flows,0,280,0.0,0.0
+2023,Visual QA / captioning / grounding,Transformers / attention,54,280,19.285714285714285,1.3909274919035626
+2023,Visual QA / captioning / grounding,State-space models / Mamba / linear attention,0,280,0.0,0.0
+2023,Visual QA / captioning / grounding,LLMs / language models,65,280,23.214285714285715,3.723714485794318
+2023,Visual QA / captioning / grounding,Vision-language / multimodal LLMs,116,280,41.42857142857143,8.38306410903584
+2023,Visual QA / captioning / grounding,Foundation models,19,280,6.785714285714286,4.710108225108225
+2023,Visual QA / captioning / grounding,Reasoning / chain-of-thought,51,280,18.214285714285715,8.445676691729323
+2023,Visual QA / captioning / grounding,Fine-tuning / PEFT / prompting,60,280,21.428571428571427,2.8405257936507935
+2023,Visual QA / captioning / grounding,Reinforcement learning,7,280,2.5,0.30987554112554117
+2023,Visual QA / captioning / grounding,Self-supervised / contrastive learning,51,280,18.214285714285715,1.4376858324308357
+2023,Visual QA / captioning / grounding,Knowledge distillation,9,280,3.2142857142857144,0.9713249151903504
+2023,Visual QA / captioning / grounding,3D Gaussian splatting,0,280,0.0,
+2023,Visual QA / captioning / grounding,Neural fields / NeRF,1,280,0.35714285714285715,0.08777590435315756
+2023,OCR / documents / charts,Diffusion models / score-based,4,47,8.51063829787234,1.2276113403719384
+2023,OCR / documents / charts,Flow matching / normalizing flows,0,47,0.0,0.0
+2023,OCR / documents / charts,Transformers / attention,17,47,36.170212765957444,2.60867409829037
+2023,OCR / documents / charts,State-space models / Mamba / linear attention,0,47,0.0,0.0
+2023,OCR / documents / charts,LLMs / language models,11,47,23.404255319148938,3.754186781095417
+2023,OCR / documents / charts,Vision-language / multimodal LLMs,10,47,21.27659574468085,4.305315389820315
+2023,OCR / documents / charts,Foundation models,0,47,0.0,0.0
+2023,OCR / documents / charts,Reasoning / chain-of-thought,1,47,2.127659574468085,0.986562150055991
+2023,OCR / documents / charts,Fine-tuning / PEFT / prompting,6,47,12.76595744680851,1.6922281323877066
+2023,OCR / documents / charts,Reinforcement learning,1,47,2.127659574468085,0.2637238647876946
+2023,OCR / documents / charts,Self-supervised / contrastive learning,9,47,19.148936170212767,1.5114594483628312
+2023,OCR / documents / charts,Knowledge distillation,1,47,2.127659574468085,0.6429573906697356
+2023,OCR / documents / charts,3D Gaussian splatting,0,47,0.0,
+2023,OCR / documents / charts,Neural fields / NeRF,1,47,2.127659574468085,0.5229202812528536
+2023,Image retrieval / metric learning,Diffusion models / score-based,2,104,1.9230769230769231,0.2773929471032746
+2023,Image retrieval / metric learning,Flow matching / normalizing flows,0,104,0.0,0.0
+2023,Image retrieval / metric learning,Transformers / attention,12,104,11.538461538461538,0.8321788413098238
+2023,Image retrieval / metric learning,State-space models / Mamba / linear attention,0,104,0.0,0.0
+2023,Image retrieval / metric learning,LLMs / language models,7,104,6.730769230769231,1.079656862745098
+2023,Image retrieval / metric learning,Vision-language / multimodal LLMs,22,104,21.153846153846153,4.28047703180212
+2023,Image retrieval / metric learning,Foundation models,4,104,3.8461538461538463,2.66969696969697
+2023,Image retrieval / metric learning,Reasoning / chain-of-thought,3,104,2.8846153846153846,1.3375506072874495
+2023,Image retrieval / metric learning,Fine-tuning / PEFT / prompting,12,104,11.538461538461538,1.529513888888889
+2023,Image retrieval / metric learning,Reinforcement learning,2,104,1.9230769230769231,0.2383658008658009
+2023,Image retrieval / metric learning,Self-supervised / contrastive learning,22,104,21.153846153846153,1.6697105444521019
+2023,Image retrieval / metric learning,Knowledge distillation,4,104,3.8461538461538463,1.1622691292875988
+2023,Image retrieval / metric learning,3D Gaussian splatting,0,104,0.0,
+2023,Image retrieval / metric learning,Neural fields / NeRF,1,104,0.9615384615384616,0.23631974248927037
+2023,Medical imaging,Diffusion models / score-based,28,205,13.658536585365853,1.9701664925969162
+2023,Medical imaging,Flow matching / normalizing flows,3,205,1.4634146341463414,2.464777618364419
+2023,Medical imaging,Transformers / attention,31,205,15.121951219512194,1.0906278798304356
+2023,Medical imaging,State-space models / Mamba / linear attention,0,205,0.0,0.0
+2023,Medical imaging,LLMs / language models,7,205,3.4146341463414633,0.5477283596365375
+2023,Medical imaging,Vision-language / multimodal LLMs,15,205,7.317073170731708,1.4806084633284495
+2023,Medical imaging,Foundation models,6,205,2.926829268292683,2.0315742793791576
+2023,Medical imaging,Reasoning / chain-of-thought,3,205,1.4634146341463414,0.6785622593068037
+2023,Medical imaging,Fine-tuning / PEFT / prompting,21,205,10.24390243902439,1.3579098915989158
+2023,Medical imaging,Reinforcement learning,0,205,0.0,0.0
+2023,Medical imaging,Self-supervised / contrastive learning,49,205,23.902439024390244,1.8866618480106232
+2023,Medical imaging,Knowledge distillation,11,205,5.365853658536586,1.6215071754939183
+2023,Medical imaging,3D Gaussian splatting,0,205,0.0,
+2023,Medical imaging,Neural fields / NeRF,6,205,2.926829268292683,0.7193342405527059
+2023,Remote sensing / earth observation,Diffusion models / score-based,5,74,6.756756756756757,0.9746238682006945
+2023,Remote sensing / earth observation,Flow matching / normalizing flows,0,74,0.0,0.0
+2023,Remote sensing / earth observation,Transformers / attention,12,74,16.216216216216218,1.1695486418408334
+2023,Remote sensing / earth observation,State-space models / Mamba / linear attention,0,74,0.0,0.0
+2023,Remote sensing / earth observation,LLMs / language models,0,74,0.0,0.0
+2023,Remote sensing / earth observation,Vision-language / multimodal LLMs,1,74,1.3513513513513513,0.27344570719129024
+2023,Remote sensing / earth observation,Foundation models,4,74,5.405405405405405,3.752006552006552
+2023,Remote sensing / earth observation,Reasoning / chain-of-thought,3,74,4.054054054054054,1.879800853485064
+2023,Remote sensing / earth observation,Fine-tuning / PEFT / prompting,5,74,6.756756756756757,0.8956612862862864
+2023,Remote sensing / earth observation,Reinforcement learning,4,74,5.405405405405405,0.6700011700011701
+2023,Remote sensing / earth observation,Self-supervised / contrastive learning,17,74,22.972972972972972,1.8132974463091625
+2023,Remote sensing / earth observation,Knowledge distillation,0,74,0.0,0.0
+2023,Remote sensing / earth observation,3D Gaussian splatting,0,74,0.0,
+2023,Remote sensing / earth observation,Neural fields / NeRF,4,74,5.405405405405405,1.328500173993736
+2023,Autonomous driving,Diffusion models / score-based,14,406,3.4482758620689653,0.49739424997828546
+2023,Autonomous driving,Flow matching / normalizing flows,2,406,0.49261083743842365,0.8296870472326862
+2023,Autonomous driving,Transformers / attention,73,406,17.980295566502463,1.2967778660148157
+2023,Autonomous driving,State-space models / Mamba / linear attention,0,406,0.0,0.0
+2023,Autonomous driving,LLMs / language models,3,406,0.7389162561576355,0.11852672103324087
+2023,Autonomous driving,Vision-language / multimodal LLMs,10,406,2.4630541871921183,0.4983985796097409
+2023,Autonomous driving,Foundation models,3,406,0.7389162561576355,0.512897447380206
+2023,Autonomous driving,Reasoning / chain-of-thought,6,406,1.477832512315271,0.6852476017630282
+2023,Autonomous driving,Fine-tuning / PEFT / prompting,18,406,4.433497536945813,0.5876949917898194
+2023,Autonomous driving,Reinforcement learning,26,406,6.403940886699507,0.7937698590407951
+2023,Autonomous driving,Self-supervised / contrastive learning,53,406,13.054187192118226,1.0303901165494835
+2023,Autonomous driving,Knowledge distillation,22,406,5.41871921182266,1.637482615646568
+2023,Autonomous driving,3D Gaussian splatting,0,406,0.0,
+2023,Autonomous driving,Neural fields / NeRF,11,406,2.70935960591133,0.6658861709549885
+2023,Event cameras / computational imaging,Diffusion models / score-based,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Flow matching / normalizing flows,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Transformers / attention,18,80,22.5,1.6227487405541563
+2023,Event cameras / computational imaging,State-space models / Mamba / linear attention,0,80,0.0,0.0
+2023,Event cameras / computational imaging,LLMs / language models,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Vision-language / multimodal LLMs,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Foundation models,1,80,1.25,0.8676515151515153
+2023,Event cameras / computational imaging,Reasoning / chain-of-thought,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Fine-tuning / PEFT / prompting,1,80,1.25,0.165697337962963
+2023,Event cameras / computational imaging,Reinforcement learning,0,80,0.0,0.0
+2023,Event cameras / computational imaging,Self-supervised / contrastive learning,12,80,15.0,1.1839765678842176
+2023,Event cameras / computational imaging,Knowledge distillation,1,80,1.25,0.37773746701846966
+2023,Event cameras / computational imaging,3D Gaussian splatting,0,80,0.0,
+2023,Event cameras / computational imaging,Neural fields / NeRF,11,80,13.75,3.3793723175965664
+2023,3D reconstruction / SfM / SLAM,Diffusion models / score-based,20,372,5.376344086021505,0.7755071639446386
+2023,3D reconstruction / SfM / SLAM,Flow matching / normalizing flows,0,372,0.0,0.0
+2023,3D reconstruction / SfM / SLAM,Transformers / attention,46,372,12.365591397849462,0.8918332385363344
+2023,3D reconstruction / SfM / SLAM,State-space models / Mamba / linear attention,0,372,0.0,0.0
+2023,3D reconstruction / SfM / SLAM,LLMs / language models,1,372,0.26881720430107525,0.043119936146501614
+2023,3D reconstruction / SfM / SLAM,Vision-language / multimodal LLMs,3,372,0.8064516129032258,0.1631853413883506
+2023,3D reconstruction / SfM / SLAM,Foundation models,0,372,0.0,0.0
+2023,3D reconstruction / SfM / SLAM,Reasoning / chain-of-thought,1,372,0.26881720430107525,0.12464629315223544
+2023,3D reconstruction / SfM / SLAM,Fine-tuning / PEFT / prompting,11,372,2.956989247311828,0.3919721973317404
+2023,3D reconstruction / SfM / SLAM,Reinforcement learning,4,372,1.075268817204301,0.13327980263464137
+2023,3D reconstruction / SfM / SLAM,Self-supervised / contrastive learning,32,372,8.602150537634408,0.6789829779981177
+2023,3D reconstruction / SfM / SLAM,Knowledge distillation,8,372,2.150537634408602,0.6498709109995177
+2023,3D reconstruction / SfM / SLAM,3D Gaussian splatting,0,372,0.0,
+2023,3D reconstruction / SfM / SLAM,Neural fields / NeRF,126,372,33.87096774193548,8.324553509622039
+2023,Depth / stereo / optical flow / matching,Diffusion models / score-based,16,334,4.790419161676646,0.6909908143410912
+2023,Depth / stereo / optical flow / matching,Flow matching / normalizing flows,0,334,0.0,0.0
+2023,Depth / stereo / optical flow / matching,Transformers / attention,64,334,19.161676646706585,1.3819816286821824
+2023,Depth / stereo / optical flow / matching,State-space models / Mamba / linear attention,0,334,0.0,0.0
+2023,Depth / stereo / optical flow / matching,LLMs / language models,1,334,0.2994011976047904,0.04802579714520539
+2023,Depth / stereo / optical flow / matching,Vision-language / multimodal LLMs,8,334,2.395209580838323,0.48467023550073
+2023,Depth / stereo / optical flow / matching,Foundation models,5,334,1.4970059880239521,1.0391036109598983
+2023,Depth / stereo / optical flow / matching,Reasoning / chain-of-thought,2,334,0.5988023952095808,0.2776552158840215
+2023,Depth / stereo / optical flow / matching,Fine-tuning / PEFT / prompting,18,334,5.389221556886228,0.7143837325349301
+2023,Depth / stereo / optical flow / matching,Reinforcement learning,4,334,1.1976047904191616,0.1484433729942712
+2023,Depth / stereo / optical flow / matching,Self-supervised / contrastive learning,65,334,19.461077844311376,1.5360973435623584
+2023,Depth / stereo / optical flow / matching,Knowledge distillation,13,334,3.8922155688622753,1.1761885200575104
+2023,Depth / stereo / optical flow / matching,3D Gaussian splatting,0,334,0.0,
+2023,Depth / stereo / optical flow / matching,Neural fields / NeRF,38,334,11.377245508982035,2.7962144380766363
+2023,Novel view synthesis / neural rendering,Diffusion models / score-based,21,259,8.108108108108109,1.1695486418408334
+2023,Novel view synthesis / neural rendering,Flow matching / normalizing flows,0,259,0.0,0.0
+2023,Novel view synthesis / neural rendering,Transformers / attention,16,259,6.177606177606178,0.4455423397488889
+2023,Novel view synthesis / neural rendering,State-space models / Mamba / linear attention,0,259,0.0,0.0
+2023,Novel view synthesis / neural rendering,LLMs / language models,2,259,0.7722007722007722,0.1238657625212247
+2023,Novel view synthesis / neural rendering,Vision-language / multimodal LLMs,4,259,1.5444015444015444,0.31250937964718883
+2023,Novel view synthesis / neural rendering,Foundation models,3,259,1.1583011583011582,0.804001404001404
+2023,Novel view synthesis / neural rendering,Reasoning / chain-of-thought,0,259,0.0,0.0
+2023,Novel view synthesis / neural rendering,Fine-tuning / PEFT / prompting,9,259,3.474903474903475,0.46062580437580436
+2023,Novel view synthesis / neural rendering,Reinforcement learning,0,259,0.0,0.0
+2023,Novel view synthesis / neural rendering,Self-supervised / contrastive learning,17,259,6.563706563706564,0.5180849846597606
+2023,Novel view synthesis / neural rendering,Knowledge distillation,7,259,2.7027027027027026,0.8167296584183128
+2023,Novel view synthesis / neural rendering,3D Gaussian splatting,0,259,0.0,
+2023,Novel view synthesis / neural rendering,Neural fields / NeRF,153,259,59.07335907335907,14.518609044360117
+2023,Point clouds / 3D understanding,Diffusion models / score-based,29,602,4.8172757475083055,0.6948647246374386
+2023,Point clouds / 3D understanding,Flow matching / normalizing flows,0,602,0.0,0.0
+2023,Point clouds / 3D understanding,Transformers / attention,106,602,17.60797342192691,1.2699251864063532
+2023,Point clouds / 3D understanding,State-space models / Mamba / linear attention,0,602,0.0,0.0
+2023,Point clouds / 3D understanding,LLMs / language models,6,602,0.9966777408637874,0.15987325162623187
+2023,Point clouds / 3D understanding,Vision-language / multimodal LLMs,19,602,3.1561461794019934,0.6386456217789934
+2023,Point clouds / 3D understanding,Foundation models,6,602,0.9966777408637874,0.6918151615826035
+2023,Point clouds / 3D understanding,Reasoning / chain-of-thought,4,602,0.6644518272425249,0.30809582094771815
+2023,Point clouds / 3D understanding,Fine-tuning / PEFT / prompting,25,602,4.152823920265781,0.5504894948935647
+2023,Point clouds / 3D understanding,Reinforcement learning,8,602,1.3289036544850499,0.1647178956149056
+2023,Point clouds / 3D understanding,Self-supervised / contrastive learning,99,602,16.44518272425249,1.298047400005953
+2023,Point clouds / 3D understanding,Knowledge distillation,32,602,5.3156146179401995,1.606325441141665
+2023,Point clouds / 3D understanding,3D Gaussian splatting,0,602,0.0,
+2023,Point clouds / 3D understanding,Neural fields / NeRF,54,602,8.970099667774086,2.2046041093351203
+2023,Image generation / editing,Diffusion models / score-based,275,546,50.366300366300365,7.265053376514334
+2023,Image generation / editing,Flow matching / normalizing flows,3,546,0.5494505494505495,0.9254201680672269
+2023,Image generation / editing,Transformers / attention,96,546,17.582417582417584,1.268082043900684
+2023,Image generation / editing,State-space models / Mamba / linear attention,1,546,0.18315018315018314,0.6766513056835637
+2023,Image generation / editing,LLMs / language models,32,546,5.86080586080586,0.940109377084167
+2023,Image generation / editing,Vision-language / multimodal LLMs,82,546,15.018315018315018,3.0389533905434964
+2023,Image generation / editing,Foundation models,12,546,2.197802197802198,1.5255411255411258
+2023,Image generation / editing,Reasoning / chain-of-thought,11,546,2.0146520146520146,0.9341623288991711
+2023,Image generation / editing,Fine-tuning / PEFT / prompting,86,546,15.750915750915752,2.087907848324515
+2023,Image generation / editing,Reinforcement learning,10,546,1.8315018315018314,0.2270150484436199
+2023,Image generation / editing,Self-supervised / contrastive learning,59,546,10.805860805860807,0.8529257326638443
+2023,Image generation / editing,Knowledge distillation,13,546,2.380952380952381,0.7194999371780374
+2023,Image generation / editing,3D Gaussian splatting,0,546,0.0,
+2023,Image generation / editing,Neural fields / NeRF,38,546,6.95970695970696,1.710504802779481
+2023,Video generation / editing,Diffusion models / score-based,31,77,40.25974025974026,5.807239360136086
+2023,Video generation / editing,Flow matching / normalizing flows,1,77,1.2987012987012987,2.1873567608861726
+2023,Video generation / editing,Transformers / attention,19,77,24.675324675324674,1.7796378684288006
+2023,Video generation / editing,State-space models / Mamba / linear attention,0,77,0.0,0.0
+2023,Video generation / editing,LLMs / language models,3,77,3.896103896103896,0.6249590745389064
+2023,Video generation / editing,Vision-language / multimodal LLMs,4,77,5.194805194805195,1.0511679133587262
+2023,Video generation / editing,Foundation models,1,77,1.2987012987012987,0.9014561196379379
+2023,Video generation / editing,Reasoning / chain-of-thought,1,77,1.2987012987012987,0.6021872863978127
+2023,Video generation / editing,Fine-tuning / PEFT / prompting,8,77,10.38961038961039,1.3772246272246274
+2023,Video generation / editing,Reinforcement learning,1,77,1.2987012987012987,0.1609743070782032
+2023,Video generation / editing,Self-supervised / contrastive learning,7,77,9.090909090909092,0.7175615562934653
+2023,Video generation / editing,Knowledge distillation,0,77,0.0,0.0
+2023,Video generation / editing,3D Gaussian splatting,0,77,0.0,
+2023,Video generation / editing,Neural fields / NeRF,5,77,6.4935064935064934,1.5959255336937737
+2023,3D / 4D generation,Diffusion models / score-based,44,84,52.38095238095238,7.555655511574908
+2023,3D / 4D generation,Flow matching / normalizing flows,1,84,1.1904761904761905,2.0050770308123247
+2023,3D / 4D generation,Transformers / attention,9,84,10.714285714285714,0.7727374955019791
+2023,3D / 4D generation,State-space models / Mamba / linear attention,0,84,0.0,0.0
+2023,3D / 4D generation,LLMs / language models,3,84,3.5714285714285716,0.5728791516606643
+2023,3D / 4D generation,Vision-language / multimodal LLMs,10,84,11.904761904761905,2.4089264681137474
+2023,3D / 4D generation,Foundation models,1,84,1.1904761904761905,0.8263347763347764
+2023,3D / 4D generation,Reasoning / chain-of-thought,1,84,1.1904761904761905,0.5520050125313283
+2023,3D / 4D generation,Fine-tuning / PEFT / prompting,6,84,7.142857142857143,0.9468419312169312
+2023,3D / 4D generation,Reinforcement learning,0,84,0.0,0.0
+2023,3D / 4D generation,Self-supervised / contrastive learning,6,84,7.142857142857143,0.5637983656591513
+2023,3D / 4D generation,Knowledge distillation,2,84,2.380952380952381,0.7194999371780374
+2023,3D / 4D generation,3D Gaussian splatting,0,84,0.0,
+2023,3D / 4D generation,Neural fields / NeRF,28,84,33.333333333333336,8.19241773962804
+2023,3D humans / avatars / motion,Diffusion models / score-based,41,250,16.4,2.3656070528967255
+2023,3D humans / avatars / motion,Flow matching / normalizing flows,1,250,0.4,0.6737058823529412
+2023,3D humans / avatars / motion,Transformers / attention,47,250,18.8,1.355896725440806
+2023,3D humans / avatars / motion,State-space models / Mamba / linear attention,0,250,0.0,0.0
+2023,3D humans / avatars / motion,LLMs / language models,5,250,2.0,0.32081232492997197
+2023,3D humans / avatars / motion,Vision-language / multimodal LLMs,8,250,3.2,0.6475194346289753
+2023,3D humans / avatars / motion,Foundation models,3,250,1.2,0.8329454545454545
+2023,3D humans / avatars / motion,Reasoning / chain-of-thought,1,250,0.4,0.18547368421052632
+2023,3D humans / avatars / motion,Fine-tuning / PEFT / prompting,13,250,5.2,0.689300925925926
+2023,3D humans / avatars / motion,Reinforcement learning,5,250,2.0,0.24790043290043293
+2023,3D humans / avatars / motion,Self-supervised / contrastive learning,14,250,5.6,0.44201791867677465
+2023,3D humans / avatars / motion,Knowledge distillation,4,250,1.6,0.48350395778364114
+2023,3D humans / avatars / motion,3D Gaussian splatting,0,250,0.0,
+2023,3D humans / avatars / motion,Neural fields / NeRF,39,250,15.6,3.8340515021459223
+2023,AI for science: molecules / proteins / materials,Diffusion models / score-based,42,272,15.441176470588236,2.2273021929174694
+2023,AI for science: molecules / proteins / materials,Flow matching / normalizing flows,8,272,2.9411764705882355,4.953719723183391
+2023,AI for science: molecules / proteins / materials,Transformers / attention,32,272,11.764705882352942,0.8484960734923693
+2023,AI for science: molecules / proteins / materials,State-space models / Mamba / linear attention,1,272,0.36764705882352944,1.3582779886148006
+2023,AI for science: molecules / proteins / materials,LLMs / language models,18,272,6.617647058823529,1.0615113692535838
+2023,AI for science: molecules / proteins / materials,Vision-language / multimodal LLMs,0,272,0.0,0.0
+2023,AI for science: molecules / proteins / materials,Foundation models,2,272,0.7352941176470589,0.5103832442067736
+2023,AI for science: molecules / proteins / materials,Reasoning / chain-of-thought,3,272,1.1029411764705883,0.5114164086687307
+2023,AI for science: molecules / proteins / materials,Fine-tuning / PEFT / prompting,17,272,6.25,0.8284866898148149
+2023,AI for science: molecules / proteins / materials,Reinforcement learning,7,272,2.573529411764706,0.3189895276292335
+2023,AI for science: molecules / proteins / materials,Self-supervised / contrastive learning,41,272,15.073529411764707,1.1897803745895323
+2023,AI for science: molecules / proteins / materials,Knowledge distillation,1,272,0.36764705882352944,0.11109925500543225
+2023,AI for science: molecules / proteins / materials,3D Gaussian splatting,0,272,0.0,
+2023,AI for science: molecules / proteins / materials,Neural fields / NeRF,4,272,1.4705882352941178,0.3614301943953547
+2023,Scientific ML / PDEs / physics,Diffusion models / score-based,15,174,8.620689655172415,1.2434856249457138
+2023,Scientific ML / PDEs / physics,Flow matching / normalizing flows,4,174,2.2988505747126435,3.8718728870858685
+2023,Scientific ML / PDEs / physics,Transformers / attention,11,174,6.32183908045977,0.4559447291467617
+2023,Scientific ML / PDEs / physics,State-space models / Mamba / linear attention,0,174,0.0,0.0
+2023,Scientific ML / PDEs / physics,LLMs / language models,2,174,1.1494252873563218,0.18437489938504137
+2023,Scientific ML / PDEs / physics,Vision-language / multimodal LLMs,0,174,0.0,0.0
+2023,Scientific ML / PDEs / physics,Foundation models,3,174,1.7241379310344827,1.196760710553814
+2023,Scientific ML / PDEs / physics,Reasoning / chain-of-thought,2,174,1.1494252873563218,0.5329703569267997
+2023,Scientific ML / PDEs / physics,Fine-tuning / PEFT / prompting,4,174,2.2988505747126435,0.30473073648361004
+2023,Scientific ML / PDEs / physics,Reinforcement learning,4,174,2.2988505747126435,0.2849430263223367
+2023,Scientific ML / PDEs / physics,Self-supervised / contrastive learning,7,174,4.022988505747127,0.31754160824480937
+2023,Scientific ML / PDEs / physics,Knowledge distillation,0,174,0.0,0.0
+2023,Scientific ML / PDEs / physics,3D Gaussian splatting,0,174,0.0,
+2023,Scientific ML / PDEs / physics,Neural fields / NeRF,11,174,6.32183908045977,1.5537343988949732
+2023,Time series / forecasting,Diffusion models / score-based,9,152,5.921052631578948,0.8540782845021875
+2023,Time series / forecasting,Flow matching / normalizing flows,1,152,0.6578947368421053,1.1080688854489162
+2023,Time series / forecasting,Transformers / attention,27,152,17.763157894736842,1.2811174267532812
+2023,Time series / forecasting,State-space models / Mamba / linear attention,3,152,1.9736842105263157,7.291808149405772
+2023,Time series / forecasting,LLMs / language models,2,152,1.3157894736842106,0.21106074008550788
+2023,Time series / forecasting,Vision-language / multimodal LLMs,0,152,0.0,0.0
+2023,Time series / forecasting,Foundation models,1,152,0.6578947368421053,0.456658692185008
+2023,Time series / forecasting,Reasoning / chain-of-thought,0,152,0.0,0.0
+2023,Time series / forecasting,Fine-tuning / PEFT / prompting,8,152,5.2631578947368425,0.6976730019493177
+2023,Time series / forecasting,Reinforcement learning,4,152,2.6315789473684212,0.3261847801321486
+2023,Time series / forecasting,Self-supervised / contrastive learning,17,152,11.18421052631579,0.8827895462294606
+2023,Time series / forecasting,Knowledge distillation,0,152,0.0,0.0
+2023,Time series / forecasting,3D Gaussian splatting,0,152,0.0,
+2023,Time series / forecasting,Neural fields / NeRF,3,152,1.9736842105263157,0.4850773661621865
+2023,Speech / audio / music,Diffusion models / score-based,38,280,13.571428571428571,1.9576016552716804
+2023,Speech / audio / music,Flow matching / normalizing flows,2,280,0.7142857142857143,1.203046218487395
+2023,Speech / audio / music,Transformers / attention,66,280,23.571428571428573,1.7000224901043541
+2023,Speech / audio / music,State-space models / Mamba / linear attention,6,280,2.142857142857143,7.916820276497695
+2023,Speech / audio / music,LLMs / language models,41,280,14.642857142857142,2.3488045218087237
+2023,Speech / audio / music,Vision-language / multimodal LLMs,23,280,8.214285714285714,1.6621592629984856
+2023,Speech / audio / music,Foundation models,9,280,3.2142857142857144,2.231103896103896
+2023,Speech / audio / music,Reasoning / chain-of-thought,5,280,1.7857142857142858,0.8280075187969924
+2023,Speech / audio / music,Fine-tuning / PEFT / prompting,28,280,10.0,1.325578703703704
+2023,Speech / audio / music,Reinforcement learning,6,280,2.142857142857143,0.26560760667903527
+2023,Speech / audio / music,Self-supervised / contrastive learning,70,280,25.0,1.9732942798070294
+2023,Speech / audio / music,Knowledge distillation,10,280,3.5714285714285716,1.0792499057670562
+2023,Speech / audio / music,3D Gaussian splatting,0,280,0.0,
+2023,Speech / audio / music,Neural fields / NeRF,10,280,3.5714285714285716,0.8777590435315756
+2023,NLP tasks,Diffusion models / score-based,10,357,2.8011204481792715,0.40404574928208065
+2023,NLP tasks,Flow matching / normalizing flows,0,357,0.0,0.0
+2023,NLP tasks,Transformers / attention,72,357,20.168067226890756,1.4545646974154902
+2023,NLP tasks,State-space models / Mamba / linear attention,0,357,0.0,0.0
+2023,NLP tasks,LLMs / language models,159,357,44.53781512605042,7.144140008944754
+2023,NLP tasks,Vision-language / multimodal LLMs,21,357,5.882352941176471,1.1902930783620869
+2023,NLP tasks,Foundation models,19,357,5.322128851540616,3.694202529496647
+2023,NLP tasks,Reasoning / chain-of-thought,31,357,8.683473389355742,4.026389503169689
+2023,NLP tasks,Fine-tuning / PEFT / prompting,90,357,25.210084033613445,3.341795051353875
+2023,NLP tasks,Reinforcement learning,22,357,6.162464985994398,0.7638388688808858
+2023,NLP tasks,Self-supervised / contrastive learning,41,357,11.484593837535014,0.9064993330205962
+2023,NLP tasks,Knowledge distillation,10,357,2.8011204481792715,0.8464705143271029
+2023,NLP tasks,3D Gaussian splatting,0,357,0.0,
+2023,NLP tasks,Neural fields / NeRF,0,357,0.0,0.0
+2023,Robotics / embodied AI,Diffusion models / score-based,27,381,7.086614173228346,1.0222039310577362
+2023,Robotics / embodied AI,Flow matching / normalizing flows,2,381,0.5249343832020997,0.8841284545314188
+2023,Robotics / embodied AI,Transformers / attention,37,381,9.711286089238845,0.7003989897988192
+2023,Robotics / embodied AI,State-space models / Mamba / linear attention,0,381,0.0,0.0
+2023,Robotics / embodied AI,LLMs / language models,28,381,7.349081364829396,1.178837939375225
+2023,Robotics / embodied AI,Vision-language / multimodal LLMs,26,381,6.824146981627297,1.3808649360526049
+2023,Robotics / embodied AI,Foundation models,11,381,2.8871391076115485,2.0040244969378826
+2023,Robotics / embodied AI,Reasoning / chain-of-thought,20,381,5.2493438320209975,2.4340378505318414
+2023,Robotics / embodied AI,Fine-tuning / PEFT / prompting,37,381,9.711286089238845,1.2873074025469038
+2023,Robotics / embodied AI,Reinforcement learning,126,381,33.07086614173228,4.099141016463852
+2023,Robotics / embodied AI,Self-supervised / contrastive learning,40,381,10.498687664041995,0.8286800125173878
+2023,Robotics / embodied AI,Knowledge distillation,6,381,1.5748031496062993,0.47588972222799325
+2023,Robotics / embodied AI,3D Gaussian splatting,0,381,0.0,
+2023,Robotics / embodied AI,Neural fields / NeRF,15,381,3.937007874015748,0.9676083944442566
+2023,Healthcare / clinical,Diffusion models / score-based,10,242,4.132231404958677,0.5960509607177801
+2023,Healthcare / clinical,Flow matching / normalizing flows,1,242,0.4132231404958678,0.695977151191055
+2023,Healthcare / clinical,Transformers / attention,25,242,10.330578512396695,0.7450637008972251
+2023,Healthcare / clinical,State-space models / Mamba / linear attention,0,242,0.0,0.0
+2023,Healthcare / clinical,LLMs / language models,11,242,4.545454545454546,0.7291189202953909
+2023,Healthcare / clinical,Vision-language / multimodal LLMs,11,242,4.545454545454546,0.9197719241888854
+2023,Healthcare / clinical,Foundation models,7,242,2.8925619834710745,2.00778863010268
+2023,Healthcare / clinical,Reasoning / chain-of-thought,3,242,1.2396694214876034,0.574815137016094
+2023,Healthcare / clinical,Fine-tuning / PEFT / prompting,20,242,8.264462809917354,1.0955195898377716
+2023,Healthcare / clinical,Reinforcement learning,16,242,6.6115702479338845,0.8195055633072162
+2023,Healthcare / clinical,Self-supervised / contrastive learning,34,242,14.049586776859504,1.1089587688171736
+2023,Healthcare / clinical,Knowledge distillation,4,242,1.6528925619834711,0.4994875596938442
+2023,Healthcare / clinical,3D Gaussian splatting,0,242,0.0,
+2023,Healthcare / clinical,Neural fields / NeRF,1,242,0.4132231404958678,0.1015588975986947
+2023,Tabular data,Diffusion models / score-based,5,68,7.352941176470588,1.0606200918654616
+2023,Tabular data,Flow matching / normalizing flows,0,68,0.0,0.0
+2023,Tabular data,Transformers / attention,7,68,10.294117647058824,0.742434064305823
+2023,Tabular data,State-space models / Mamba / linear attention,0,68,0.0,0.0
+2023,Tabular data,LLMs / language models,7,68,10.294117647058824,1.6512399077277968
+2023,Tabular data,Vision-language / multimodal LLMs,1,68,1.4705882352941178,0.2975732695905217
+2023,Tabular data,Foundation models,0,68,0.0,0.0
+2023,Tabular data,Reasoning / chain-of-thought,1,68,1.4705882352941178,0.6818885448916409
+2023,Tabular data,Fine-tuning / PEFT / prompting,7,68,10.294117647058824,1.3645663126361656
+2023,Tabular data,Reinforcement learning,2,68,2.9411764705882355,0.36455946014769547
+2023,Tabular data,Self-supervised / contrastive learning,10,68,14.705882352941176,1.1607613410629585
+2023,Tabular data,Knowledge distillation,0,68,0.0,0.0
+2023,Tabular data,3D Gaussian splatting,0,68,0.0,
+2023,Tabular data,Neural fields / NeRF,1,68,1.4705882352941178,0.3614301943953547
+2023,Combinatorial optimization / scheduling,Diffusion models / score-based,3,95,3.1578947368421053,0.4555084184011667
+2023,Combinatorial optimization / scheduling,Flow matching / normalizing flows,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,Transformers / attention,4,95,4.2105263157894735,0.3036722789341111
+2023,Combinatorial optimization / scheduling,State-space models / Mamba / linear attention,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,LLMs / language models,3,95,3.1578947368421053,0.5065457762052189
+2023,Combinatorial optimization / scheduling,Vision-language / multimodal LLMs,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,Foundation models,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,Reasoning / chain-of-thought,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,Fine-tuning / PEFT / prompting,6,95,6.315789473684211,0.8372076023391813
+2023,Combinatorial optimization / scheduling,Reinforcement learning,22,95,23.157894736842106,2.870426065162907
+2023,Combinatorial optimization / scheduling,Self-supervised / contrastive learning,3,95,3.1578947368421053,0.24925822481773005
+2023,Combinatorial optimization / scheduling,Knowledge distillation,0,95,0.0,0.0
+2023,Combinatorial optimization / scheduling,3D Gaussian splatting,0,95,0.0,
+2023,Combinatorial optimization / scheduling,Neural fields / NeRF,0,95,0.0,0.0
+2023,Recommendation / information retrieval,Diffusion models / score-based,2,152,1.3157894736842106,0.18979517433381943
+2023,Recommendation / information retrieval,Flow matching / normalizing flows,0,152,0.0,0.0
+2023,Recommendation / information retrieval,Transformers / attention,10,152,6.578947368421052,0.47448793583454857
+2023,Recommendation / information retrieval,State-space models / Mamba / linear attention,0,152,0.0,0.0
+2023,Recommendation / information retrieval,LLMs / language models,21,152,13.81578947368421,2.216137770897833
+2023,Recommendation / information retrieval,Vision-language / multimodal LLMs,6,152,3.9473684210526314,0.7987493025850846
+2023,Recommendation / information retrieval,Foundation models,1,152,0.6578947368421053,0.456658692185008
+2023,Recommendation / information retrieval,Reasoning / chain-of-thought,3,152,1.9736842105263157,0.9151662049861495
+2023,Recommendation / information retrieval,Fine-tuning / PEFT / prompting,5,152,3.289473684210526,0.43604562621832355
+2023,Recommendation / information retrieval,Reinforcement learning,13,152,8.552631578947368,1.0601005354294828
+2023,Recommendation / information retrieval,Self-supervised / contrastive learning,19,152,12.5,0.9866471399035147
+2023,Recommendation / information retrieval,Knowledge distillation,1,152,0.6578947368421053,0.19880919316761558
+2023,Recommendation / information retrieval,3D Gaussian splatting,0,152,0.0,
+2023,Recommendation / information retrieval,Neural fields / NeRF,0,152,0.0,0.0
+2023,Graph learning / knowledge graphs,Diffusion models / score-based,16,257,6.22568093385214,0.8980191906222741
+2023,Graph learning / knowledge graphs,Flow matching / normalizing flows,0,257,0.0,0.0
+2023,Graph learning / knowledge graphs,Transformers / attention,31,257,12.062256809338521,0.8699560909153281
+2023,Graph learning / knowledge graphs,State-space models / Mamba / linear attention,0,257,0.0,0.0
+2023,Graph learning / knowledge graphs,LLMs / language models,6,257,2.3346303501945527,0.37448909524899454
+2023,Graph learning / knowledge graphs,Vision-language / multimodal LLMs,5,257,1.9455252918287937,0.39367669906917274
+2023,Graph learning / knowledge graphs,Foundation models,1,257,0.38910505836575876,0.27008607475533547
+2023,Graph learning / knowledge graphs,Reasoning / chain-of-thought,17,257,6.614785992217898,3.067171820602089
+2023,Graph learning / knowledge graphs,Fine-tuning / PEFT / prompting,11,257,4.280155642023346,0.5673683167603402
+2023,Graph learning / knowledge graphs,Reinforcement learning,5,257,1.9455252918287937,0.24114828103154953
+2023,Graph learning / knowledge graphs,Self-supervised / contrastive learning,66,257,25.68093385214008,2.0270415948212284
+2023,Graph learning / knowledge graphs,Knowledge distillation,4,257,1.556420233463035,0.4703345892836976
+2023,Graph learning / knowledge graphs,3D Gaussian splatting,0,257,0.0,
+2023,Graph learning / knowledge graphs,Neural fields / NeRF,1,257,0.38910505836575876,0.09563133548203938
+2023,(all papers),Diffusion models / score-based,794,11453,6.9326813935213485,1.0
+2023,(all papers),Flow matching / normalizing flows,68,11453,0.5937309002008208,1.0
+2023,(all papers),Transformers / attention,1588,11453,13.865362787042697,1.0
+2023,(all papers),State-space models / Mamba / linear attention,31,11453,0.27067143979743297,1.0
+2023,(all papers),LLMs / language models,714,11453,6.2341744521086175,1.0
+2023,(all papers),Vision-language / multimodal LLMs,566,11453,4.941936610495067,1.0
+2023,(all papers),Foundation models,165,11453,1.4406705666637563,1.0
+2023,(all papers),Reasoning / chain-of-thought,247,11453,2.1566401816118046,1.0
+2023,(all papers),Fine-tuning / PEFT / prompting,864,11453,7.543874967257487,1.0
+2023,(all papers),Reinforcement learning,924,11453,8.067755173317035,1.0
+2023,(all papers),Self-supervised / contrastive learning,1451,11453,12.669169649873396,1.0
+2023,(all papers),Knowledge distillation,379,11453,3.30917663494281,1.0
+2023,(all papers),3D Gaussian splatting,0,11453,0.0,
+2023,(all papers),Neural fields / NeRF,466,11453,4.068802933729154,1.0
+2025,Image classification / recognition,Diffusion models / score-based,97,719,13.490959666203059,0.8893465542082691
+2025,Image classification / recognition,Flow matching / normalizing flows,15,719,2.086230876216968,1.2673507170555132
+2025,Image classification / recognition,Transformers / attention,166,719,23.08762169680111,1.6487563551946798
+2025,Image classification / recognition,State-space models / Mamba / linear attention,33,719,4.589707927677329,2.498598861755736
+2025,Image classification / recognition,LLMs / language models,98,719,13.630041724617524,0.5279914389354585
+2025,Image classification / recognition,Vision-language / multimodal LLMs,123,719,17.10709318497914,1.3435219673442949
+2025,Image classification / recognition,Foundation models,53,719,7.37134909596662,1.4588432633722073
+2025,Image classification / recognition,Reasoning / chain-of-thought,22,719,3.0598052851182196,0.3683411270392314
+2025,Image classification / recognition,Fine-tuning / PEFT / prompting,135,719,18.776077885952713,1.304795170059426
+2025,Image classification / recognition,Reinforcement learning,9,719,1.2517385257301807,0.15739818363979366
+2025,Image classification / recognition,Self-supervised / contrastive learning,88,719,12.239221140472878,1.5327013723079552
+2025,Image classification / recognition,Knowledge distillation,66,719,9.179415855354659,3.0619193324061196
+2025,Image classification / recognition,3D Gaussian splatting,1,719,0.13908205841446453,0.04916376577402247
+2025,Image classification / recognition,Neural fields / NeRF,1,719,0.13908205841446453,0.08074681783771412
+2025,Object detection,Diffusion models / score-based,31,367,8.446866485013624,0.5568315218615161
+2025,Object detection,Flow matching / normalizing flows,0,367,0.0,0.0
+2025,Object detection,Transformers / attention,87,367,23.705722070844686,1.6928967579280523
+2025,Object detection,State-space models / Mamba / linear attention,17,367,4.632152588555858,2.5217053824820703
+2025,Object detection,LLMs / language models,36,367,9.809264305177111,0.37998471905147657
+2025,Object detection,Vision-language / multimodal LLMs,59,367,16.076294277929154,1.2625671867418162
+2025,Object detection,Foundation models,26,367,7.084468664850136,1.4020675525926711
+2025,Object detection,Reasoning / chain-of-thought,12,367,3.2697547683923704,0.3936149670664464
+2025,Object detection,Fine-tuning / PEFT / prompting,46,367,12.534059945504087,0.8710222112129469
+2025,Object detection,Reinforcement learning,3,367,0.8174386920980926,0.10278773300364363
+2025,Object detection,Self-supervised / contrastive learning,38,367,10.354223433242506,1.2966456184728123
+2025,Object detection,Knowledge distillation,23,367,6.267029972752043,2.0904533069110722
+2025,Object detection,3D Gaussian splatting,6,367,1.6348773841961852,0.5779086799703894
+2025,Object detection,Neural fields / NeRF,8,367,2.1798365122615806,1.2655468561376884
+2025,Segmentation,Diffusion models / score-based,108,947,11.40443505807814,0.7517993732500955
+2025,Segmentation,Flow matching / normalizing flows,6,947,0.6335797254487856,0.38488919347958356
+2025,Segmentation,Transformers / attention,192,947,20.27455121436114,1.4478665495471759
+2025,Segmentation,State-space models / Mamba / linear attention,35,947,3.6958817317845827,2.0120073071608298
+2025,Segmentation,LLMs / language models,112,947,11.826821541710665,0.45813950169810785
+2025,Segmentation,Vision-language / multimodal LLMs,199,947,21.013727560718056,1.6503332441307084
+2025,Segmentation,Foundation models,170,947,17.95142555438226,3.5527168632221895
+2025,Segmentation,Reasoning / chain-of-thought,54,947,5.70221752903907,0.686436238764769
+2025,Segmentation,Fine-tuning / PEFT / prompting,148,947,15.62829989440338,1.0860484464497138
+2025,Segmentation,Reinforcement learning,10,947,1.0559662090813093,0.1327810560096347
+2025,Segmentation,Self-supervised / contrastive learning,131,947,13.833157338965153,1.7323078808235812
+2025,Segmentation,Knowledge distillation,37,947,3.907074973600845,1.3032581357396564
+2025,Segmentation,3D Gaussian splatting,44,947,4.646251319957761,1.6423916515596357
+2025,Segmentation,Neural fields / NeRF,20,947,2.1119324181626187,1.2261238020130192
+2025,Tracking / re-identification,Diffusion models / score-based,14,209,6.698564593301436,0.44158054627634974
+2025,Tracking / re-identification,Flow matching / normalizing flows,0,209,0.0,0.0
+2025,Tracking / re-identification,Transformers / attention,43,209,20.574162679425836,1.469262703451718
+2025,Tracking / re-identification,State-space models / Mamba / linear attention,4,209,1.9138755980861244,1.0418979739610694
+2025,Tracking / re-identification,LLMs / language models,17,209,8.133971291866029,0.31508833893702315
+2025,Tracking / re-identification,Vision-language / multimodal LLMs,26,209,12.440191387559809,0.9770023595726552
+2025,Tracking / re-identification,Foundation models,22,209,10.526315789473685,2.0832339749049
+2025,Tracking / re-identification,Reasoning / chain-of-thought,7,209,3.349282296650718,0.40318853683959366
+2025,Tracking / re-identification,Fine-tuning / PEFT / prompting,21,209,10.047846889952153,0.698249238799478
+2025,Tracking / re-identification,Reinforcement learning,1,209,0.4784688995215311,0.060164430641686154
+2025,Tracking / re-identification,Self-supervised / contrastive learning,32,209,15.311004784688995,1.9173767493508824
+2025,Tracking / re-identification,Knowledge distillation,4,209,1.9138755980861244,0.638399304045237
+2025,Tracking / re-identification,3D Gaussian splatting,6,209,2.8708133971291865,1.0147965815747988
+2025,Tracking / re-identification,Neural fields / NeRF,2,209,0.9569377990430622,0.5555690145963297
+2025,Human pose / body / hands,Diffusion models / score-based,56,216,25.925925925925927,1.709080262439946
+2025,Human pose / body / hands,Flow matching / normalizing flows,2,216,0.9259259259259259,0.5624846701005641
+2025,Human pose / body / hands,Transformers / attention,38,216,17.59259259259259,1.2563398353589088
+2025,Human pose / body / hands,State-space models / Mamba / linear attention,7,216,3.240740740740741,1.764232333223431
+2025,Human pose / body / hands,LLMs / language models,17,216,7.87037037037037,0.3048771427677678
+2025,Human pose / body / hands,Vision-language / multimodal LLMs,18,216,8.333333333333334,0.6544663242009132
+2025,Human pose / body / hands,Foundation models,6,216,2.7777777777777777,0.5497422989332374
+2025,Human pose / body / hands,Reasoning / chain-of-thought,4,216,1.8518518518518519,0.2229269952367065
+2025,Human pose / body / hands,Fine-tuning / PEFT / prompting,10,216,4.62962962962963,0.32172418630751964
+2025,Human pose / body / hands,Reinforcement learning,1,216,0.46296296296296297,0.05821465742644632
+2025,Human pose / body / hands,Self-supervised / contrastive learning,8,216,3.7037037037037037,0.46380988497029446
+2025,Human pose / body / hands,Knowledge distillation,3,216,1.3888888888888888,0.46328282828282824
+2025,Human pose / body / hands,3D Gaussian splatting,11,216,5.092592592592593,1.8001677014201098
+2025,Human pose / body / hands,Neural fields / NeRF,9,216,4.166666666666667,2.4190400843881856
+2025,Object 6D pose estimation,Diffusion models / score-based,13,67,19.402985074626866,1.2790771260478062
+2025,Object 6D pose estimation,Flow matching / normalizing flows,1,67,1.492537313432836,0.9066917070277751
+2025,Object 6D pose estimation,Transformers / attention,6,67,8.955223880597014,0.6395194134427125
+2025,Object 6D pose estimation,State-space models / Mamba / linear attention,0,67,0.0,0.0
+2025,Object 6D pose estimation,LLMs / language models,3,67,4.477611940298507,0.17345073618394513
+2025,Object 6D pose estimation,Vision-language / multimodal LLMs,6,67,8.955223880597014,0.7033070946636679
+2025,Object 6D pose estimation,Foundation models,5,67,7.462686567164179,1.4769196090743693
+2025,Object 6D pose estimation,Reasoning / chain-of-thought,3,67,4.477611940298507,0.5390175108708426
+2025,Object 6D pose estimation,Fine-tuning / PEFT / prompting,6,67,8.955223880597014,0.6223202170963364
+2025,Object 6D pose estimation,Reinforcement learning,2,67,2.985074626865672,0.3753542090779823
+2025,Object 6D pose estimation,Self-supervised / contrastive learning,6,67,8.955223880597014,1.1214507666445925
+2025,Object 6D pose estimation,Knowledge distillation,2,67,2.985074626865672,0.9957123473541384
+2025,Object 6D pose estimation,3D Gaussian splatting,4,67,5.970149253731344,2.1103729905386364
+2025,Object 6D pose estimation,Neural fields / NeRF,3,67,4.477611940298507,2.5995654638201398
+2025,Face analysis,Diffusion models / score-based,112,290,38.62068965517241,2.5459402530139887
+2025,Face analysis,Flow matching / normalizing flows,6,290,2.0689655172413794,1.2568622973281571
+2025,Face analysis,Transformers / attention,51,290,17.586206896551722,1.2558838136400852
+2025,Face analysis,State-space models / Mamba / linear attention,1,290,0.3448275862068966,0.1877212728947099
+2025,Face analysis,LLMs / language models,20,290,6.896551724137931,0.2671540074557316
+2025,Face analysis,Vision-language / multimodal LLMs,29,290,10.0,0.7853595890410959
+2025,Face analysis,Foundation models,14,290,4.827586206896552,0.9554142022839713
+2025,Face analysis,Reasoning / chain-of-thought,1,290,0.3448275862068966,0.041510543940628114
+2025,Face analysis,Fine-tuning / PEFT / prompting,36,290,12.413793103448276,0.8626645768025079
+2025,Face analysis,Reinforcement learning,1,290,0.3448275862068966,0.0433598827728014
+2025,Face analysis,Self-supervised / contrastive learning,25,290,8.620689655172415,1.0795574908791339
+2025,Face analysis,Knowledge distillation,6,290,2.0689655172413794,0.6901316614420062
+2025,Face analysis,3D Gaussian splatting,18,290,6.206896551724138,2.194060195335858
+2025,Face analysis,Neural fields / NeRF,9,290,3.103448275862069,1.8017677869925797
+2025,Image restoration / low-level vision,Diffusion models / score-based,237,596,39.76510067114094,2.6213817352236854
+2025,Image restoration / low-level vision,Flow matching / normalizing flows,16,596,2.684563758389262,1.6308280368016357
+2025,Image restoration / low-level vision,Transformers / attention,94,596,15.771812080536913,1.1263124345252244
+2025,Image restoration / low-level vision,State-space models / Mamba / linear attention,29,596,4.865771812080537,2.6488857467189773
+2025,Image restoration / low-level vision,LLMs / language models,17,596,2.8523489932885906,0.11049238731180847
+2025,Image restoration / low-level vision,Vision-language / multimodal LLMs,27,596,4.530201342281879,0.35578370644479174
+2025,Image restoration / low-level vision,Foundation models,13,596,2.1812080536912752,0.4316768387596563
+2025,Image restoration / low-level vision,Reasoning / chain-of-thought,3,596,0.5033557046979866,0.06059425038313164
+2025,Image restoration / low-level vision,Fine-tuning / PEFT / prompting,80,596,13.422818791946309,0.9327842180191174
+2025,Image restoration / low-level vision,Reinforcement learning,11,596,1.8456375838926173,0.2320772249081149
+2025,Image restoration / low-level vision,Self-supervised / contrastive learning,40,596,6.7114093959731544,0.8404608653824128
+2025,Image restoration / low-level vision,Knowledge distillation,23,596,3.859060402684564,1.2872422208663818
+2025,Image restoration / low-level vision,3D Gaussian splatting,28,596,4.697986577181208,1.6606794170513766
+2025,Image restoration / low-level vision,Neural fields / NeRF,29,596,4.865771812080537,2.8249192931781497
+2025,Video understanding / action recognition,Diffusion models / score-based,28,571,4.903677758318739,0.3232586135613208
+2025,Video understanding / action recognition,Flow matching / normalizing flows,1,571,0.17513134851138354,0.10638939469502791
+2025,Video understanding / action recognition,Transformers / attention,79,571,13.8353765323993,0.9880257604647626
+2025,Video understanding / action recognition,State-space models / Mamba / linear attention,10,571,1.7513134851138354,0.9534005103233955
+2025,Video understanding / action recognition,LLMs / language models,245,571,42.90718038528897,1.662109652340607
+2025,Video understanding / action recognition,Vision-language / multimodal LLMs,243,571,42.556917688266196,3.342248338651249
+2025,Video understanding / action recognition,Foundation models,42,571,7.355516637478108,1.455709905406401
+2025,Video understanding / action recognition,Reasoning / chain-of-thought,96,571,16.81260945709282,2.023911634513287
+2025,Video understanding / action recognition,Fine-tuning / PEFT / prompting,90,571,15.761821366024519,1.0953271772010826
+2025,Video understanding / action recognition,Reinforcement learning,20,571,3.502626970227671,0.4404331349951806
+2025,Video understanding / action recognition,Self-supervised / contrastive learning,74,571,12.959719789842381,1.6229284591429918
+2025,Video understanding / action recognition,Knowledge distillation,9,571,1.5761821366024518,0.5257570450565197
+2025,Video understanding / action recognition,3D Gaussian splatting,6,571,1.0507880910683012,0.3714404300335078
+2025,Video understanding / action recognition,Neural fields / NeRF,6,571,1.0507880910683012,0.6100556429980714
+2025,Visual QA / captioning / grounding,Diffusion models / score-based,38,573,6.631762652705061,0.4371768509756631
+2025,Visual QA / captioning / grounding,Flow matching / normalizing flows,2,573,0.34904013961605584,0.21203610600649542
+2025,Visual QA / captioning / grounding,Transformers / attention,50,573,8.726003490401396,0.6231500974499962
+2025,Visual QA / captioning / grounding,State-space models / Mamba / linear attention,4,573,0.6980802792321117,0.380029103940425
+2025,Visual QA / captioning / grounding,LLMs / language models,296,573,51.65794066317626,2.0010907504363002
+2025,Visual QA / captioning / grounding,Vision-language / multimodal LLMs,370,573,64.57242582897034,5.071257381242679
+2025,Visual QA / captioning / grounding,Foundation models,53,573,9.24956369982548,1.8305555084897334
+2025,Visual QA / captioning / grounding,Reasoning / chain-of-thought,190,573,33.1588132635253,3.9916770874844834
+2025,Visual QA / captioning / grounding,Fine-tuning / PEFT / prompting,131,573,22.862129144851657,1.5887447776191232
+2025,Visual QA / captioning / grounding,Reinforcement learning,39,573,6.806282722513089,0.8558469008034623
+2025,Visual QA / captioning / grounding,Self-supervised / contrastive learning,60,573,10.471204188481675,1.3112949627432409
+2025,Visual QA / captioning / grounding,Knowledge distillation,11,573,1.9197207678883073,0.640349040139616
+2025,Visual QA / captioning / grounding,3D Gaussian splatting,7,573,1.2216404886561956,0.4318346128109164
+2025,Visual QA / captioning / grounding,Neural fields / NeRF,6,573,1.0471204188481675,0.6079263039300152
+2025,OCR / documents / charts,Diffusion models / score-based,7,115,6.086956521739131,0.4012623224859004
+2025,OCR / documents / charts,Flow matching / normalizing flows,0,115,0.0,0.0
+2025,OCR / documents / charts,Transformers / attention,16,115,13.91304347826087,0.9935721901602721
+2025,OCR / documents / charts,State-space models / Mamba / linear attention,1,115,0.8695652173913043,0.4733840794736163
+2025,OCR / documents / charts,LLMs / language models,69,115,60.0,2.324239864864865
+2025,OCR / documents / charts,Vision-language / multimodal LLMs,68,115,59.130434782608695,4.643865396069089
+2025,OCR / documents / charts,Foundation models,6,115,5.217391304347826,1.0325594484311242
+2025,OCR / documents / charts,Reasoning / chain-of-thought,32,115,27.82608695652174,3.3497204153828597
+2025,OCR / documents / charts,Fine-tuning / PEFT / prompting,30,115,26.08695652173913,1.8128458498023716
+2025,OCR / documents / charts,Reinforcement learning,5,115,4.3478260869565215,0.5467115653961916
+2025,OCR / documents / charts,Self-supervised / contrastive learning,14,115,12.173913043478262,1.5245229262501854
+2025,OCR / documents / charts,Knowledge distillation,4,115,3.4782608695652173,1.1602213438735178
+2025,OCR / documents / charts,3D Gaussian splatting,0,115,0.0,0.0
+2025,OCR / documents / charts,Neural fields / NeRF,0,115,0.0,0.0
+2025,Image retrieval / metric learning,Diffusion models / score-based,6,102,5.882352941176471,0.3877745133267105
+2025,Image retrieval / metric learning,Flow matching / normalizing flows,1,102,0.9803921568627451,0.5955720036358915
+2025,Image retrieval / metric learning,Transformers / attention,12,102,11.764705882352942,0.8401529549149359
+2025,Image retrieval / metric learning,State-space models / Mamba / linear attention,2,102,1.9607843137254901,1.0674346890091349
+2025,Image retrieval / metric learning,LLMs / language models,16,102,15.686274509803921,0.6076444091149974
+2025,Image retrieval / metric learning,Vision-language / multimodal LLMs,29,102,28.431372549019606,2.2328851060972337
+2025,Image retrieval / metric learning,Foundation models,5,102,4.901960784313726,0.9701334687057132
+2025,Image retrieval / metric learning,Reasoning / chain-of-thought,7,102,6.862745098039215,0.8261412176419125
+2025,Image retrieval / metric learning,Fine-tuning / PEFT / prompting,14,102,13.72549019607843,0.9538175876411171
+2025,Image retrieval / metric learning,Reinforcement learning,2,102,1.9607843137254901,0.2465561961590668
+2025,Image retrieval / metric learning,Self-supervised / contrastive learning,24,102,23.529411764705884,2.946556916281871
+2025,Image retrieval / metric learning,Knowledge distillation,5,102,4.901960784313726,1.6351158645276291
+2025,Image retrieval / metric learning,3D Gaussian splatting,1,102,0.9803921568627451,0.34655634893649173
+2025,Image retrieval / metric learning,Neural fields / NeRF,0,102,0.0,0.0
+2025,Medical imaging,Diffusion models / score-based,56,386,14.507772020725389,0.9563765199145812
+2025,Medical imaging,Flow matching / normalizing flows,9,386,2.33160621761658,1.4164121744501255
+2025,Medical imaging,Transformers / attention,61,386,15.803108808290155,1.1285474277808143
+2025,Medical imaging,State-space models / Mamba / linear attention,17,386,4.404145077720207,2.3975799880075646
+2025,Medical imaging,LLMs / language models,47,386,12.176165803108809,0.4716721660131635
+2025,Medical imaging,Vision-language / multimodal LLMs,74,386,19.17098445595855,1.5056116473844843
+2025,Medical imaging,Foundation models,58,386,15.025906735751295,2.973735544488601
+2025,Medical imaging,Reasoning / chain-of-thought,15,386,3.8860103626943006,0.46780017135163804
+2025,Medical imaging,Fine-tuning / PEFT / prompting,61,386,15.803108808290155,1.098196341654891
+2025,Medical imaging,Reinforcement learning,5,386,1.2953367875647668,0.16288038865430576
+2025,Medical imaging,Self-supervised / contrastive learning,68,386,17.616580310880828,2.2061009036410897
+2025,Medical imaging,Knowledge distillation,10,386,2.5906735751295336,0.8641544983513895
+2025,Medical imaging,3D Gaussian splatting,3,386,0.7772020725388601,0.2747311988978406
+2025,Medical imaging,Neural fields / NeRF,8,386,2.0725388601036268,1.2032530989702892
+2025,Remote sensing / earth observation,Diffusion models / score-based,25,172,14.534883720930232,0.9581637683944881
+2025,Remote sensing / earth observation,Flow matching / normalizing flows,2,172,1.1627906976744187,0.7063760973355923
+2025,Remote sensing / earth observation,Transformers / attention,28,172,16.27906976744186,1.1625372283125277
+2025,Remote sensing / earth observation,State-space models / Mamba / linear attention,3,172,1.744186046511628,0.9495203919674281
+2025,Remote sensing / earth observation,LLMs / language models,17,172,9.883720930232558,0.3828689699874293
+2025,Remote sensing / earth observation,Vision-language / multimodal LLMs,33,172,19.186046511627907,1.5067945603695445
+2025,Remote sensing / earth observation,Foundation models,28,172,16.27906976744186,3.221745565841299
+2025,Remote sensing / earth observation,Reasoning / chain-of-thought,13,172,7.558139534883721,0.9098532014893487
+2025,Remote sensing / earth observation,Fine-tuning / PEFT / prompting,20,172,11.627906976744185,0.8080514446793516
+2025,Remote sensing / earth observation,Reinforcement learning,2,172,1.1627906976744187,0.14621355818735354
+2025,Remote sensing / earth observation,Self-supervised / contrastive learning,25,172,14.534883720930232,1.8201841415985396
+2025,Remote sensing / earth observation,Knowledge distillation,3,172,1.744186046511628,0.5817970401691331
+2025,Remote sensing / earth observation,3D Gaussian splatting,4,172,2.3255813953488373,0.8220638974772595
+2025,Remote sensing / earth observation,Neural fields / NeRF,4,172,2.3255813953488373,1.350161907565499
+2025,Autonomous driving,Diffusion models / score-based,70,547,12.79707495429616,0.8436045171092971
+2025,Autonomous driving,Flow matching / normalizing flows,6,547,1.0968921389396709,0.6663438139399737
+2025,Autonomous driving,Transformers / attention,69,547,12.614259597806216,0.9008221353886836
+2025,Autonomous driving,State-space models / Mamba / linear attention,12,547,2.1937842778793417,1.1942779335897449
+2025,Autonomous driving,LLMs / language models,61,547,11.151736745886655,0.4319885184544691
+2025,Autonomous driving,Vision-language / multimodal LLMs,63,547,11.517367458866545,0.9045274974330721
+2025,Autonomous driving,Foundation models,22,547,4.021937842778794,0.795970568108088
+2025,Autonomous driving,Reasoning / chain-of-thought,37,547,6.764168190127971,0.8142744725465076
+2025,Autonomous driving,Fine-tuning / PEFT / prompting,37,547,6.764168190127971,0.4700584455154839
+2025,Autonomous driving,Reinforcement learning,40,547,7.312614259597806,0.9195148814707427
+2025,Autonomous driving,Self-supervised / contrastive learning,60,547,10.968921389396709,1.3736234253233583
+2025,Autonomous driving,Knowledge distillation,19,547,3.473491773308958,1.1586305467841116
+2025,Autonomous driving,3D Gaussian splatting,52,547,9.506398537477148,3.360392824056951
+2025,Autonomous driving,Neural fields / NeRF,21,547,3.8391224862888484,2.228877883970102
+2025,Event cameras / computational imaging,Diffusion models / score-based,9,125,7.2,0.47463600431189357
+2025,Event cameras / computational imaging,Flow matching / normalizing flows,1,125,0.8,0.4859867549668875
+2025,Event cameras / computational imaging,Transformers / attention,17,125,13.6,0.9712168158816661
+2025,Event cameras / computational imaging,State-space models / Mamba / linear attention,7,125,5.6,3.048593471810089
+2025,Event cameras / computational imaging,LLMs / language models,2,125,1.6,0.06197972972972974
+2025,Event cameras / computational imaging,Vision-language / multimodal LLMs,4,125,3.2,0.2513150684931507
+2025,Event cameras / computational imaging,Foundation models,2,125,1.6,0.3166515641855448
+2025,Event cameras / computational imaging,Reasoning / chain-of-thought,2,125,1.6,0.19260892388451445
+2025,Event cameras / computational imaging,Fine-tuning / PEFT / prompting,7,125,5.6,0.38915757575757576
+2025,Event cameras / computational imaging,Reinforcement learning,0,125,0.0,0.0
+2025,Event cameras / computational imaging,Self-supervised / contrastive learning,8,125,6.4,0.801463481228669
+2025,Event cameras / computational imaging,Knowledge distillation,4,125,3.2,1.0674036363636363
+2025,Event cameras / computational imaging,3D Gaussian splatting,10,125,8.0,2.827899807321773
+2025,Event cameras / computational imaging,Neural fields / NeRF,7,125,5.6,3.2511898734177214
+2025,3D reconstruction / SfM / SLAM,Diffusion models / score-based,98,592,16.554054054054053,1.0912708432471279
+2025,3D reconstruction / SfM / SLAM,Flow matching / normalizing flows,5,592,0.8445945945945946,0.5130772328620011
+2025,3D reconstruction / SfM / SLAM,Transformers / attention,67,592,11.317567567567568,0.8082214659190136
+2025,3D reconstruction / SfM / SLAM,State-space models / Mamba / linear attention,8,592,1.3513513513513513,0.73566444783062
+2025,3D reconstruction / SfM / SLAM,LLMs / language models,13,592,2.195945945945946,0.0850650851442659
+2025,3D reconstruction / SfM / SLAM,Vision-language / multimodal LLMs,27,592,4.5608108108108105,0.3581876504072566
+2025,3D reconstruction / SfM / SLAM,Foundation models,33,592,5.574324324324325,1.103199072859267
+2025,3D reconstruction / SfM / SLAM,Reasoning / chain-of-thought,9,592,1.5202702702702702,0.18301101298148545
+2025,3D reconstruction / SfM / SLAM,Fine-tuning / PEFT / prompting,43,592,7.263513513513513,0.5047591625716625
+2025,3D reconstruction / SfM / SLAM,Reinforcement learning,5,592,0.8445945945945946,0.1062024155752737
+2025,3D reconstruction / SfM / SLAM,Self-supervised / contrastive learning,32,592,5.405405405405405,0.6769117240107001
+2025,3D reconstruction / SfM / SLAM,Knowledge distillation,10,592,1.6891891891891893,0.5634520884520885
+2025,3D reconstruction / SfM / SLAM,3D Gaussian splatting,200,592,33.78378378378378,11.942144456595324
+2025,3D reconstruction / SfM / SLAM,Neural fields / NeRF,95,592,16.0472972972973,9.316573297981526
+2025,Depth / stereo / optical flow / matching,Diffusion models / score-based,79,439,17.995444191343964,1.1862896842773851
+2025,Depth / stereo / optical flow / matching,Flow matching / normalizing flows,6,439,1.366742596810934,0.8302734993739536
+2025,Depth / stereo / optical flow / matching,Transformers / attention,74,439,16.856492027334852,1.203772684832562
+2025,Depth / stereo / optical flow / matching,State-space models / Mamba / linear attention,4,439,0.9111617312072893,0.49602887598602163
+2025,Depth / stereo / optical flow / matching,LLMs / language models,16,439,3.644646924829157,0.1411838946007511
+2025,Depth / stereo / optical flow / matching,Vision-language / multimodal LLMs,26,439,5.922551252847381,0.46513324180110466
+2025,Depth / stereo / optical flow / matching,Foundation models,55,439,12.528473804100228,2.479475516828725
+2025,Depth / stereo / optical flow / matching,Reasoning / chain-of-thought,8,439,1.8223234624145785,0.219372350665734
+2025,Depth / stereo / optical flow / matching,Fine-tuning / PEFT / prompting,48,439,10.933940774487471,0.7598260509422241
+2025,Depth / stereo / optical flow / matching,Reinforcement learning,3,439,0.683371298405467,0.08592960822855858
+2025,Depth / stereo / optical flow / matching,Self-supervised / contrastive learning,47,439,10.70615034168565,1.340716956782013
+2025,Depth / stereo / optical flow / matching,Knowledge distillation,17,439,3.8724373576309796,1.291704286601781
+2025,Depth / stereo / optical flow / matching,3D Gaussian splatting,41,439,9.339407744874716,3.301363670278835
+2025,Depth / stereo / optical flow / matching,Neural fields / NeRF,23,439,5.239179954441913,3.041708716588334
+2025,Novel view synthesis / neural rendering,Diffusion models / score-based,89,388,22.938144329896907,1.5121207182044147
+2025,Novel view synthesis / neural rendering,Flow matching / normalizing flows,5,388,1.288659793814433,0.7828394893152182
+2025,Novel view synthesis / neural rendering,Transformers / attention,32,388,8.24742268041237,0.5889732055073778
+2025,Novel view synthesis / neural rendering,State-space models / Mamba / linear attention,0,388,0.0,0.0
+2025,Novel view synthesis / neural rendering,LLMs / language models,3,388,0.7731958762886598,0.029951544650320426
+2025,Novel view synthesis / neural rendering,Vision-language / multimodal LLMs,9,388,2.3195876288659796,0.18217103869509957
+2025,Novel view synthesis / neural rendering,Foundation models,11,388,2.8350515463917527,0.5610771916947476
+2025,Novel view synthesis / neural rendering,Reasoning / chain-of-thought,2,388,0.5154639175257731,0.06205184403495955
+2025,Novel view synthesis / neural rendering,Fine-tuning / PEFT / prompting,31,388,7.989690721649485,0.5552229771946267
+2025,Novel view synthesis / neural rendering,Reinforcement learning,3,388,0.7731958762886598,0.09722447941324025
+2025,Novel view synthesis / neural rendering,Self-supervised / contrastive learning,20,388,5.154639175257732,0.6455086027937088
+2025,Novel view synthesis / neural rendering,Knowledge distillation,7,388,1.8041237113402062,0.6017900656044985
+2025,Novel view synthesis / neural rendering,3D Gaussian splatting,193,388,49.74226804123711,17.5832687761953
+2025,Novel view synthesis / neural rendering,Neural fields / NeRF,96,388,24.742268041237114,14.36460916090304
+2025,Point clouds / 3D understanding,Diffusion models / score-based,88,724,12.154696132596685,0.801257834166794
+2025,Point clouds / 3D understanding,Flow matching / normalizing flows,5,724,0.6906077348066298,0.4195327649921335
+2025,Point clouds / 3D understanding,Transformers / attention,101,724,13.950276243093922,0.9962310936387743
+2025,Point clouds / 3D understanding,State-space models / Mamba / linear attention,23,724,3.1767955801104972,1.72942111907143
+2025,Point clouds / 3D understanding,LLMs / language models,62,724,8.56353591160221,0.3317285258324623
+2025,Point clouds / 3D understanding,Vision-language / multimodal LLMs,96,724,13.259668508287293,1.041360781048967
+2025,Point clouds / 3D understanding,Foundation models,47,724,6.49171270718232,1.2847568643577871
+2025,Point clouds / 3D understanding,Reasoning / chain-of-thought,39,724,5.386740331491713,0.6484589115587072
+2025,Point clouds / 3D understanding,Fine-tuning / PEFT / prompting,63,724,8.701657458563536,0.6046992717227524
+2025,Point clouds / 3D understanding,Reinforcement learning,6,724,0.8287292817679558,0.10420745307275474
+2025,Point clouds / 3D understanding,Self-supervised / contrastive learning,88,724,12.154696132596685,1.522116418079309
+2025,Point clouds / 3D understanding,Knowledge distillation,27,724,3.729281767955801,1.2439527875439478
+2025,Point clouds / 3D understanding,3D Gaussian splatting,81,724,11.187845303867404,3.954763197394054
+2025,Point clouds / 3D understanding,Neural fields / NeRF,57,724,7.87292817679558,4.570782921882649
+2025,Image generation / editing,Diffusion models / score-based,806,1229,65.58177379983726,4.323259871116832
+2025,Image generation / editing,Flow matching / normalizing flows,47,1229,3.824247355573637,2.3231669531574157
+2025,Image generation / editing,Transformers / attention,257,1229,20.911310008136695,1.493339406030657
+2025,Image generation / editing,State-space models / Mamba / linear attention,11,1229,0.8950366151342555,0.48725049677308757
+2025,Image generation / editing,LLMs / language models,177,1229,14.401952807160294,0.5578932141050734
+2025,Image generation / editing,Vision-language / multimodal LLMs,218,1229,17.737998372660698,1.3930707112364435
+2025,Image generation / editing,Foundation models,48,1229,3.9056143205858422,0.7729493023243567
+2025,Image generation / editing,Reasoning / chain-of-thought,61,1229,4.963384865744508,0.5974951361348343
+2025,Image generation / editing,Fine-tuning / PEFT / prompting,262,1229,21.31814483319772,1.4814495648100205
+2025,Image generation / editing,Reinforcement learning,40,1229,3.254678600488202,0.4092551994829099
+2025,Image generation / editing,Self-supervised / contrastive learning,78,1229,6.346623270951993,0.7947791844975104
+2025,Image generation / editing,Knowledge distillation,59,1229,4.800650935720098,1.6013225830312892
+2025,Image generation / editing,3D Gaussian splatting,19,1229,1.545972335231896,0.5464818586158836
+2025,Image generation / editing,Neural fields / NeRF,6,1229,0.4882017900732303,0.28343512786973046
+2025,Video generation / editing,Diffusion models / score-based,402,609,66.00985221674877,4.351479514080031
+2025,Video generation / editing,Flow matching / normalizing flows,12,609,1.9704433497536946,1.197011711741102
+2025,Video generation / editing,Transformers / attention,154,609,25.28735632183908,1.8058460065412993
+2025,Video generation / editing,State-space models / Mamba / linear attention,6,609,0.9852216748768473,0.5363464939848855
+2025,Video generation / editing,LLMs / language models,54,609,8.866995073891626,0.34348372387165493
+2025,Video generation / editing,Vision-language / multimodal LLMs,51,609,8.374384236453203,0.6576902962413118
+2025,Video generation / editing,Foundation models,24,609,3.9408866995073892,0.7799299610481398
+2025,Video generation / editing,Reasoning / chain-of-thought,20,609,3.284072249589491,0.39533851372026774
+2025,Video generation / editing,Fine-tuning / PEFT / prompting,111,609,18.226600985221676,1.2666106881624124
+2025,Video generation / editing,Reinforcement learning,12,609,1.9704433497536946,0.2477707587017223
+2025,Video generation / editing,Self-supervised / contrastive learning,34,609,5.582922824302135,0.6991419940931533
+2025,Video generation / editing,Knowledge distillation,16,609,2.6272577996715927,0.8763576653231825
+2025,Video generation / editing,3D Gaussian splatting,21,609,3.4482758620689653,1.2189223307421433
+2025,Video generation / editing,Neural fields / NeRF,10,609,1.6420361247947455,0.9533162894140633
+2025,3D / 4D generation,Diffusion models / score-based,171,293,58.3617747440273,3.8473054957022095
+2025,3D / 4D generation,Flow matching / normalizing flows,7,293,2.3890784982935154,1.4513256334335378
+2025,3D / 4D generation,Transformers / attention,48,293,16.38225255972696,1.1699058211784774
+2025,3D / 4D generation,State-space models / Mamba / linear attention,4,293,1.3651877133105803,0.7431968483203533
+2025,3D / 4D generation,LLMs / language models,27,293,9.215017064846416,0.3569651669587677
+2025,3D / 4D generation,Vision-language / multimodal LLMs,19,293,6.484641638225256,0.5092775492075365
+2025,3D / 4D generation,Foundation models,18,293,6.143344709897611,1.215812319825044
+2025,3D / 4D generation,Reasoning / chain-of-thought,8,293,2.7303754266211606,0.3286841704513898
+2025,3D / 4D generation,Fine-tuning / PEFT / prompting,31,293,10.580204778156997,0.7352440790154101
+2025,3D / 4D generation,Reinforcement learning,7,293,2.3890784982935154,0.300411474500979
+2025,3D / 4D generation,Self-supervised / contrastive learning,8,293,2.7303754266211606,0.3419212803876574
+2025,3D / 4D generation,Knowledge distillation,24,293,8.19112627986348,2.7322618678250077
+2025,3D / 4D generation,3D Gaussian splatting,54,293,18.43003412969283,6.514786245536507
+2025,3D / 4D generation,Neural fields / NeRF,17,293,5.802047781569966,3.368492677236791
+2025,3D humans / avatars / motion,Diffusion models / score-based,124,359,34.540389972144844,2.276960094965754
+2025,3D humans / avatars / motion,Flow matching / normalizing flows,5,359,1.392757660167131,0.8460772196498737
+2025,3D humans / avatars / motion,Transformers / attention,66,359,18.384401114206128,1.312885258237546
+2025,3D humans / avatars / motion,State-space models / Mamba / linear attention,10,359,2.785515320334262,1.5164113966425035
+2025,3D humans / avatars / motion,LLMs / language models,36,359,10.027855153203342,0.38845234510276294
+2025,3D humans / avatars / motion,Vision-language / multimodal LLMs,20,359,5.571030640668524,0.4375262334490785
+2025,3D humans / avatars / motion,Foundation models,16,359,4.456824512534819,0.8820377832466428
+2025,3D humans / avatars / motion,Reasoning / chain-of-thought,6,359,1.6713091922005572,0.20119316561752904
+2025,3D humans / avatars / motion,Fine-tuning / PEFT / prompting,37,359,10.30640668523677,0.7162171857854309
+2025,3D humans / avatars / motion,Reinforcement learning,8,359,2.2284122562674096,0.2802087131835634
+2025,3D humans / avatars / motion,Self-supervised / contrastive learning,18,359,5.013927576601671,0.6278874765893123
+2025,3D humans / avatars / motion,Knowledge distillation,8,359,2.2284122562674096,0.7433172955178526
+2025,3D humans / avatars / motion,3D Gaussian splatting,36,359,10.027855153203342,3.5447212069492973
+2025,3D humans / avatars / motion,Neural fields / NeRF,14,359,3.8997214484679668,2.264059800430168
+2025,AI for science: molecules / proteins / materials,Diffusion models / score-based,144,637,22.60596546310832,1.4902229334753332
+2025,AI for science: molecules / proteins / materials,Flow matching / normalizing flows,54,637,8.47723704866562,5.149781155457599
+2025,AI for science: molecules / proteins / materials,Transformers / attention,80,637,12.558869701726845,0.8968665766752848
+2025,AI for science: molecules / proteins / materials,State-space models / Mamba / linear attention,6,637,0.9419152276295133,0.5127708239196158
+2025,AI for science: molecules / proteins / materials,LLMs / language models,122,637,19.152276295133436,0.741908067800925
+2025,AI for science: molecules / proteins / materials,Vision-language / multimodal LLMs,19,637,2.9827315541601256,0.23425168275951058
+2025,AI for science: molecules / proteins / materials,Foundation models,50,637,7.849293563579278,1.5534319279118172
+2025,AI for science: molecules / proteins / materials,Reasoning / chain-of-thought,30,637,4.7095761381475665,0.5669414949504938
+2025,AI for science: molecules / proteins / materials,Fine-tuning / PEFT / prompting,74,637,11.616954474097332,0.8072903287189002
+2025,AI for science: molecules / proteins / materials,Reinforcement learning,30,637,4.7095761381475665,0.5921993408530176
+2025,AI for science: molecules / proteins / materials,Self-supervised / contrastive learning,66,637,10.361067503924646,1.2975026923344817
+2025,AI for science: molecules / proteins / materials,Knowledge distillation,10,637,1.5698587127158556,0.5236477807906379
+2025,AI for science: molecules / proteins / materials,3D Gaussian splatting,2,637,0.3139717425431711,0.11098507878028936
+2025,AI for science: molecules / proteins / materials,Neural fields / NeRF,2,637,0.3139717425431711,0.1822824553385132
+2025,Scientific ML / PDEs / physics,Diffusion models / score-based,54,360,15.0,0.9888250089831117
+2025,Scientific ML / PDEs / physics,Flow matching / normalizing flows,15,360,4.166666666666667,2.531181015452539
+2025,Scientific ML / PDEs / physics,Transformers / attention,44,360,12.222222222222221,0.8728255698282945
+2025,Scientific ML / PDEs / physics,State-space models / Mamba / linear attention,10,360,2.7777777777777777,1.5121991427629409
+2025,Scientific ML / PDEs / physics,LLMs / language models,40,360,11.11111111111111,0.4304147897897898
+2025,Scientific ML / PDEs / physics,Vision-language / multimodal LLMs,7,360,1.9444444444444444,0.1527088089802131
+2025,Scientific ML / PDEs / physics,Foundation models,15,360,4.166666666666667,0.8246134483998562
+2025,Scientific ML / PDEs / physics,Reasoning / chain-of-thought,13,360,3.611111111111111,0.4347076407115777
+2025,Scientific ML / PDEs / physics,Fine-tuning / PEFT / prompting,31,360,8.61111111111111,0.5984069865319865
+2025,Scientific ML / PDEs / physics,Reinforcement learning,17,360,4.722222222222222,0.5937895057497525
+2025,Scientific ML / PDEs / physics,Self-supervised / contrastive learning,18,360,5.0,0.6261433447098976
+2025,Scientific ML / PDEs / physics,Knowledge distillation,3,360,0.8333333333333334,0.277969696969697
+2025,Scientific ML / PDEs / physics,3D Gaussian splatting,2,360,0.5555555555555556,0.196381931064012
+2025,Scientific ML / PDEs / physics,Neural fields / NeRF,9,360,2.5,1.4514240506329115
+2025,Time series / forecasting,Diffusion models / score-based,33,326,10.122699386503067,0.667305220786149
+2025,Time series / forecasting,Flow matching / normalizing flows,7,326,2.147239263803681,1.3044123024417993
+2025,Time series / forecasting,Transformers / attention,53,326,16.257668711656443,1.161008914690732
+2025,Time series / forecasting,State-space models / Mamba / linear attention,17,326,5.214723926380368,2.8388523784384043
+2025,Time series / forecasting,LLMs / language models,37,326,11.349693251533742,0.43965682515337423
+2025,Time series / forecasting,Vision-language / multimodal LLMs,8,326,2.4539877300613497,0.19272627951928736
+2025,Time series / forecasting,Foundation models,45,326,13.803680981595091,2.731848233962714
+2025,Time series / forecasting,Reasoning / chain-of-thought,5,326,1.5337423312883436,0.18463278746598394
+2025,Time series / forecasting,Fine-tuning / PEFT / prompting,32,326,9.815950920245399,0.6821342256925079
+2025,Time series / forecasting,Reinforcement learning,2,326,0.6134969325153374,0.07714334971848102
+2025,Time series / forecasting,Self-supervised / contrastive learning,37,326,11.349693251533742,1.421306978789338
+2025,Time series / forecasting,Knowledge distillation,3,326,0.9202453987730062,0.30696040156162857
+2025,Time series / forecasting,3D Gaussian splatting,0,326,0.0,0.0
+2025,Time series / forecasting,Neural fields / NeRF,0,326,0.0,0.0
+2025,Speech / audio / music,Diffusion models / score-based,99,474,20.88607594936709,1.376844949216991
+2025,Speech / audio / music,Flow matching / normalizing flows,25,474,5.274261603375527,3.204026601838657
+2025,Speech / audio / music,Transformers / attention,93,474,19.620253164556964,1.4011411621524406
+2025,Speech / audio / music,State-space models / Mamba / linear attention,11,474,2.320675105485232,1.2633562458525838
+2025,Speech / audio / music,LLMs / language models,135,474,28.481012658227847,1.1032784168662335
+2025,Speech / audio / music,Vision-language / multimodal LLMs,76,474,16.033755274261605,1.2592263452979597
+2025,Speech / audio / music,Foundation models,28,474,5.9071729957805905,1.169072230642834
+2025,Speech / audio / music,Reasoning / chain-of-thought,32,474,6.751054852320675,0.8126958813692592
+2025,Speech / audio / music,Fine-tuning / PEFT / prompting,56,474,11.814345991561181,0.821007543792354
+2025,Speech / audio / music,Reinforcement learning,10,474,2.109704641350211,0.2652819832091225
+2025,Speech / audio / music,Self-supervised / contrastive learning,57,474,12.025316455696203,1.5059143733529183
+2025,Speech / audio / music,Knowledge distillation,17,474,3.586497890295359,1.1963252780974298
+2025,Speech / audio / music,3D Gaussian splatting,2,474,0.4219409282700422,0.14915083371950277
+2025,Speech / audio / music,Neural fields / NeRF,8,474,1.6877637130801688,0.9798643379800245
+2025,NLP tasks,Diffusion models / score-based,26,488,5.327868852459017,0.35122199772624185
+2025,NLP tasks,Flow matching / normalizing flows,2,488,0.4098360655737705,0.24896862447074156
+2025,NLP tasks,Transformers / attention,104,488,21.311475409836067,1.521916418329515
+2025,NLP tasks,State-space models / Mamba / linear attention,19,488,3.8934426229508197,2.1195578148562535
+2025,NLP tasks,LLMs / language models,312,488,63.9344262295082,2.4766490363314135
+2025,NLP tasks,Vision-language / multimodal LLMs,56,488,11.475409836065573,0.9012323152930609
+2025,NLP tasks,Foundation models,29,488,5.942622950819672,1.1760880329637293
+2025,NLP tasks,Reasoning / chain-of-thought,80,488,16.39344262295082,1.9734520889806806
+2025,NLP tasks,Fine-tuning / PEFT / prompting,124,488,25.40983606557377,1.7657911077993045
+2025,NLP tasks,Reinforcement learning,33,488,6.762295081967213,0.8503157338846504
+2025,NLP tasks,Self-supervised / contrastive learning,33,488,6.762295081967213,0.8468332121076484
+2025,NLP tasks,Knowledge distillation,15,488,3.0737704918032787,1.0252980625931445
+2025,NLP tasks,3D Gaussian splatting,0,488,0.0,0.0
+2025,NLP tasks,Neural fields / NeRF,0,488,0.0,0.0
+2025,Robotics / embodied AI,Diffusion models / score-based,118,879,13.424345847554038,0.8849552602200014
+2025,Robotics / embodied AI,Flow matching / normalizing flows,15,879,1.7064846416382253,1.0366611667382413
+2025,Robotics / embodied AI,Transformers / attention,74,879,8.418657565415245,0.6012016025500508
+2025,Robotics / embodied AI,State-space models / Mamba / linear attention,5,879,0.5688282138794084,0.30966535346681384
+2025,Robotics / embodied AI,LLMs / language models,184,879,20.93287827076223,0.8108838360544846
+2025,Robotics / embodied AI,Vision-language / multimodal LLMs,227,879,25.82480091012514,2.0281755029844
+2025,Robotics / embodied AI,Foundation models,77,879,8.759954493742889,1.7336583078986738
+2025,Robotics / embodied AI,Reasoning / chain-of-thought,129,879,14.675767918088738,1.7666774161762202
+2025,Robotics / embodied AI,Fine-tuning / PEFT / prompting,112,879,12.741751990898749,0.8854552349432895
+2025,Robotics / embodied AI,Reinforcement learning,167,879,18.99886234357224,2.3889864876982614
+2025,Robotics / embodied AI,Self-supervised / contrastive learning,77,879,8.759954493742889,1.0969974412437342
+2025,Robotics / embodied AI,Knowledge distillation,17,879,1.9340159271899886,0.6451173854586824
+2025,Robotics / embodied AI,3D Gaussian splatting,45,879,5.1194539249146755,1.809662845982363
+2025,Robotics / embodied AI,Neural fields / NeRF,18,879,2.04778156996587,1.1888797684365144
+2025,Healthcare / clinical,Diffusion models / score-based,37,514,7.198443579766537,0.47453340249513787
+2025,Healthcare / clinical,Flow matching / normalizing flows,9,514,1.7509727626459144,1.0636869636921176
+2025,Healthcare / clinical,Transformers / attention,52,514,10.116731517509727,0.7224661596739332
+2025,Healthcare / clinical,State-space models / Mamba / linear attention,15,514,2.9182879377431905,1.5886917064046462
+2025,Healthcare / clinical,LLMs / language models,115,514,22.373540856031127,0.8666912595961721
+2025,Healthcare / clinical,Vision-language / multimodal LLMs,79,514,15.369649805447471,1.2070701854911787
+2025,Healthcare / clinical,Foundation models,67,514,13.035019455252918,2.579724562309278
+2025,Healthcare / clinical,Reasoning / chain-of-thought,40,514,7.782101167315175,0.9368138321231247
+2025,Healthcare / clinical,Fine-tuning / PEFT / prompting,73,514,14.202334630350194,0.9869546633651692
+2025,Healthcare / clinical,Reinforcement learning,21,514,4.085603112840467,0.5137386888839699
+2025,Healthcare / clinical,Self-supervised / contrastive learning,75,514,14.591439688715953,1.8272665701650708
+2025,Healthcare / clinical,Knowledge distillation,12,514,2.3346303501945527,0.7787477891758048
+2025,Healthcare / clinical,3D Gaussian splatting,1,514,0.19455252918287938,0.06877188247377852
+2025,Healthcare / clinical,Neural fields / NeRF,3,514,0.5836575875486382,0.338853863960991
+2025,Tabular data,Diffusion models / score-based,13,111,11.711711711711711,0.7720555625693964
+2025,Tabular data,Flow matching / normalizing flows,4,111,3.6036036036036037,2.1891295268778714
+2025,Tabular data,Transformers / attention,15,111,13.513513513513514,0.9650405563212103
+2025,Tabular data,State-space models / Mamba / linear attention,2,111,1.8018018018018018,0.9808859304408266
+2025,Tabular data,LLMs / language models,33,111,29.72972972972973,1.1516503834915999
+2025,Tabular data,Vision-language / multimodal LLMs,6,111,5.405405405405405,0.4245186967789708
+2025,Tabular data,Foundation models,17,111,15.315315315315315,3.0310115941183904
+2025,Tabular data,Reasoning / chain-of-thought,10,111,9.00900900900901,1.0845097065569507
+2025,Tabular data,Fine-tuning / PEFT / prompting,12,111,10.81081081081081,0.7512694512694513
+2025,Tabular data,Reinforcement learning,2,111,1.8018018018018018,0.22656515322725054
+2025,Tabular data,Self-supervised / contrastive learning,12,111,10.81081081081081,1.3538234480214002
+2025,Tabular data,Knowledge distillation,0,111,0.0,0.0
+2025,Tabular data,3D Gaussian splatting,0,111,0.0,0.0
+2025,Tabular data,Neural fields / NeRF,0,111,0.0,0.0
+2025,Combinatorial optimization / scheduling,Diffusion models / score-based,14,188,7.446808510638298,0.49090603282849515
+2025,Combinatorial optimization / scheduling,Flow matching / normalizing flows,3,188,1.5957446808510638,0.9693884740030999
+2025,Combinatorial optimization / scheduling,Transformers / attention,22,188,11.702127659574469,0.8356840562185799
+2025,Combinatorial optimization / scheduling,State-space models / Mamba / linear attention,2,188,1.0638297872340425,0.5791400972283604
+2025,Combinatorial optimization / scheduling,LLMs / language models,44,188,23.404255319148938,0.9066183870040254
+2025,Combinatorial optimization / scheduling,Vision-language / multimodal LLMs,5,188,2.6595744680851063,0.20887223112795106
+2025,Combinatorial optimization / scheduling,Foundation models,4,188,2.127659574468085,0.42107920769354357
+2025,Combinatorial optimization / scheduling,Reasoning / chain-of-thought,10,188,5.319148936170213,0.6403222203607528
+2025,Combinatorial optimization / scheduling,Fine-tuning / PEFT / prompting,15,188,7.9787234042553195,0.5544608317214701
+2025,Combinatorial optimization / scheduling,Reinforcement learning,39,188,20.74468085106383,2.6085120965977864
+2025,Combinatorial optimization / scheduling,Self-supervised / contrastive learning,4,188,2.127659574468085,0.26644397647229684
+2025,Combinatorial optimization / scheduling,Knowledge distillation,2,188,1.0638297872340425,0.3548549323017408
+2025,Combinatorial optimization / scheduling,3D Gaussian splatting,3,188,1.5957446808510638,0.5640757594391833
+2025,Combinatorial optimization / scheduling,Neural fields / NeRF,1,188,0.5319148936170213,0.30881362779423643
+2025,Recommendation / information retrieval,Diffusion models / score-based,10,259,3.861003861003861,0.25452381183606476
+2025,Recommendation / information retrieval,Flow matching / normalizing flows,1,259,0.3861003861003861,0.23454959216548624
+2025,Recommendation / information retrieval,Transformers / attention,19,259,7.335907335907336,0.5238791591457999
+2025,Recommendation / information retrieval,State-space models / Mamba / linear attention,1,259,0.3861003861003861,0.21018984223731998
+2025,Recommendation / information retrieval,LLMs / language models,112,259,43.24324324324324,1.6751278305332362
+2025,Recommendation / information retrieval,Vision-language / multimodal LLMs,29,259,11.196911196911197,0.8793601576135823
+2025,Recommendation / information retrieval,Foundation models,7,259,2.7027027027027026,0.534884398962069
+2025,Recommendation / information retrieval,Reasoning / chain-of-thought,24,259,9.266409266409266,1.1154956981728634
+2025,Recommendation / information retrieval,Fine-tuning / PEFT / prompting,40,259,15.444015444015443,1.0732420732420733
+2025,Recommendation / information retrieval,Reinforcement learning,23,259,8.88030888030888,1.116642540905735
+2025,Recommendation / information retrieval,Self-supervised / contrastive learning,32,259,12.355212355212355,1.547226797738743
+2025,Recommendation / information retrieval,Knowledge distillation,7,259,2.7027027027027026,0.9015233415233416
+2025,Recommendation / information retrieval,3D Gaussian splatting,0,259,0.0,0.0
+2025,Recommendation / information retrieval,Neural fields / NeRF,0,259,0.0,0.0
+2025,Graph learning / knowledge graphs,Diffusion models / score-based,35,406,8.620689655172415,0.5682902350477653
+2025,Graph learning / knowledge graphs,Flow matching / normalizing flows,3,406,0.7389162561576355,0.44887939190291326
+2025,Graph learning / knowledge graphs,Transformers / attention,51,406,12.561576354679802,0.8970598668857753
+2025,Graph learning / knowledge graphs,State-space models / Mamba / linear attention,6,406,1.477832512315271,0.8045197409773283
+2025,Graph learning / knowledge graphs,LLMs / language models,77,406,18.96551724137931,0.734673520503262
+2025,Graph learning / knowledge graphs,Vision-language / multimodal LLMs,15,406,3.6945812807881775,0.2901574836358729
+2025,Graph learning / knowledge graphs,Foundation models,29,406,7.142857142857143,1.4136230543997534
+2025,Graph learning / knowledge graphs,Reasoning / chain-of-thought,32,406,7.8817733990147785,0.9488124329286426
+2025,Graph learning / knowledge graphs,Fine-tuning / PEFT / prompting,37,406,9.113300492610838,0.6333053440812062
+2025,Graph learning / knowledge graphs,Reinforcement learning,12,406,2.955665024630542,0.3716561380525834
+2025,Graph learning / knowledge graphs,Self-supervised / contrastive learning,78,406,19.211822660098523,2.405870979673498
+2025,Graph learning / knowledge graphs,Knowledge distillation,9,406,2.2167487684729066,0.7394267801164353
+2025,Graph learning / knowledge graphs,3D Gaussian splatting,2,406,0.49261083743842365,0.17413176153459192
+2025,Graph learning / knowledge graphs,Neural fields / NeRF,1,406,0.24630541871921183,0.1429974434121095
+2025,(all papers),Diffusion models / score-based,2783,18346,15.169519241251498,1.0
+2025,(all papers),Flow matching / normalizing flows,302,18346,1.6461353973618227,1.0
+2025,(all papers),Transformers / attention,2569,18346,14.00305243649842,1.0
+2025,(all papers),State-space models / Mamba / linear attention,337,18346,1.8369126785130274,1.0
+2025,(all papers),LLMs / language models,4736,18346,25.814891529488715,1.0
+2025,(all papers),Vision-language / multimodal LLMs,2336,18346,12.733020821977544,1.0
+2025,(all papers),Foundation models,927,18346,5.052872560776191,1.0
+2025,(all papers),Reasoning / chain-of-thought,1524,18346,8.306987899269595,1.0
+2025,(all papers),Fine-tuning / PEFT / prompting,2640,18346,14.39005777826229,1.0
+2025,(all papers),Reinforcement learning,1459,18346,7.952687234274501,1.0
+2025,(all papers),Self-supervised / contrastive learning,1465,18346,7.985391911043279,1.0
+2025,(all papers),Knowledge distillation,550,18346,2.9979287038046443,1.0
+2025,(all papers),3D Gaussian splatting,519,18346,2.8289545404992915,1.0
+2025,(all papers),Neural fields / NeRF,316,18346,1.7224463098223046,1.0

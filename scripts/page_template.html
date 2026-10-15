@@ -1,0 +1,650 @@
+<title>ML &amp; CV Topic Trends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a header band, then three views (Topics table, Combine explorer, Method) switched by tabs; one column on phones */
+:root {
+  --bg: #f3f5f4; --surface: #ffffff; --fg: #16191c; --muted: #59616a; --line: #dbe0de;
+  --accent: #4a3aa7; --accent-soft: #ece9f9; --accent-ink: #ffffff;
+  --rise: #2a78d6; --fall: #d63c3b; --flat: #6f6e6a; --bar: #c9c3ee;
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121518; --surface: #1a1e22; --fg: #e6e8ea; --muted: #9aa3ab; --line: #2c3238;
+    --accent: #9a8ff0; --accent-soft: #292545; --accent-ink: #121518;
+    --rise: #4a95ec; --fall: #ec6f6e; --flat: #959ba1; --bar: #4a4380; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121518; --surface: #1a1e22; --fg: #e6e8ea; --muted: #9aa3ab; --line: #2c3238;
+  --accent: #9a8ff0; --accent-soft: #292545; --accent-ink: #121518;
+  --rise: #4a95ec; --fall: #ec6f6e; --flat: #959ba1; --bar: #4a4380; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--font-body); margin: 0; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 20px; padding-block: 0 48px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+header.top { padding-block: 28px 18px; display: grid; gap: 6px; }
+h1 { font: 600 2rem/1.1 var(--font-display); letter-spacing: 0.01em; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 70ch; margin: 0; }
+.note { font-size: 0.85rem; color: var(--muted); margin: 0; }
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-block: 8px 20px; flex-wrap: wrap; }
+nav.tabs button { font: 500 0.95rem var(--font-body); color: var(--muted); background: none; border: 0; border-bottom: 2px solid transparent;
+  padding: 10px 14px; cursor: pointer; margin-bottom: -1px; }
+nav.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin-bottom: 14px; }
+.controls label { font-size: 0.85rem; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+select, input[type="search"] { font: 0.9rem var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 6px 8px; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+th, td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+th { font: 600 0.75rem var(--font-body); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); position: sticky; top: 0; background: var(--surface); }
+th:first-child, td:first-child { text-align: left; white-space: normal; min-width: 13rem; }
+td.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+#topictable thead th { white-space: normal; vertical-align: bottom; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--accent-soft); }
+.fam { display: block; font-size: 0.75rem; color: var(--muted); }
+.call { font: 500 0.78rem var(--font-body); padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; display: inline-block; }
+.call.rising { color: var(--rise); } .call.declining { color: var(--fall); } .call.unclear { color: var(--flat); }
+svg.spark { display: block; }
+.grid2 { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 820px) { .grid2 { grid-template-columns: minmax(0, 1fr); } .grid2 > .results { order: -1; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; min-width: 0; }
+.panel h2 { font: 600 1.05rem var(--font-display); margin: 0 0 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 0.82rem var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 999px;
+  padding: 3px 10px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.chip.static { cursor: default; }
+.chip.small { font-size: 0.72rem; padding: 1px 7px; color: var(--muted); }
+.chip.small.hit { color: var(--accent); border-color: var(--accent); }
+.cloudhead { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin-bottom: 10px; }
+.cloudhead h2 { margin: 0; }
+.cloudhead .more { margin-top: 0; margin-left: auto; }
+.cloud { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; --cloud-range: 18px; }
+@media (max-width: 600px) { .cloud { --cloud-range: 7px; } }
+.cloud button { font-family: var(--font-body); font-weight: 500; line-height: 1.15; text-align: left; color: var(--fg);
+  font-size: calc(12px + var(--s, 0) * var(--cloud-range)); background: none; border: 1px solid transparent;
+  border-radius: 999px; padding: 3px 9px; cursor: pointer; }
+.cloud button:hover { background: var(--accent-soft); border-color: var(--line); }
+.cloud button .n { font: 400 0.68rem var(--font-data); color: var(--muted); margin-left: 5px; vertical-align: 0.15em; font-variant-numeric: tabular-nums; }
+.cloud button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.cloud button[aria-pressed="true"] .n { color: var(--accent-ink); }
+.cloud button[disabled] { opacity: 0.35; cursor: default; }
+.cloud button[disabled]:hover { background: none; border-color: transparent; }
+.summary { display: grid; gap: 10px; }
+.big { font: 600 2.2rem/1 var(--font-display); }
+.years { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 0.88rem; color: var(--muted); }
+.years b { color: var(--fg); font-family: var(--font-data); font-weight: 500; }
+ol.papers { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 2px; }
+ol.papers li { padding: 9px 4px; border-bottom: 1px solid var(--line); display: grid; gap: 4px; }
+ol.papers a { color: var(--fg); text-decoration: none; font-weight: 500; }
+ol.papers a:hover { color: var(--accent); text-decoration: underline; }
+.meta { font: 0.78rem var(--font-data); color: var(--muted); }
+.more { margin-top: 12px; font: 500 0.9rem var(--font-body); background: var(--surface); color: var(--accent); border: 1px solid var(--accent);
+  border-radius: var(--radius); padding: 6px 14px; cursor: pointer; }
+.prose { max-width: 75ch; display: grid; gap: 10px; }
+.prose h2 { font: 600 1.2rem var(--font-display); margin: 12px 0 0; }
+.prose p, .prose li { margin: 0; }
+.matrix td, .matrix th { text-align: center; padding: 5px 6px; font-size: 0.8rem; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix td.cell { font-family: var(--font-data); font-variant-numeric: tabular-nums; cursor: pointer;
+  background: color-mix(in srgb, var(--rise) calc(var(--v) * 1%), var(--surface)); }
+.matrix td.cell:hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+.matrix td.cell.dark { color: #ffffff; }
+.matrix .up { color: var(--rise); font-weight: 600; } .matrix .down { color: var(--fall); font-weight: 600; }
+.matrix td.cell.dark .up, .matrix td.cell.dark .down { color: #ffffff; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: var(--muted); align-items: center; }
+.controls[hidden] { display: none; }
+.venuepick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; flex-basis: 100%; }
+.venuepick .lbl { font-size: 0.85rem; color: var(--muted); margin-right: 4px; }
+.venuepick .vsep { width: 1px; align-self: stretch; background: var(--line); margin: 2px 4px; }
+.chip.quick { background: var(--bg); }
+.chip.quick[aria-pressed="true"] { background: var(--accent-soft); color: var(--fg); border-color: var(--accent); }
+body[data-view="charts"] .tableonly, body:not([data-view="charts"]) .chartonly { display: none; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.seg button { font: 500 0.85rem var(--font-body); color: var(--muted); background: none; border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+tr.totals td { font-weight: 600; background: var(--bg); cursor: default; }
+tbody tr.totals:hover { background: var(--bg); }
+/* Charts: one small chart per topic (small multiples), papers or share per year */
+.smgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.sm { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 10px 4px; min-width: 0;
+  display: flex; flex-direction: column; }
+.sm .smbody { margin-top: auto; }
+.sm[data-i] { cursor: pointer; }
+.sm[data-i]:hover { border-color: var(--accent); }
+.sm h3 { font: 600 0.84rem/1.25 var(--font-body); margin: 0; min-height: 2.5em; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px; }
+.sm h3 .call { font-size: 0.68rem; padding: 0 6px; flex: none; }
+.sm .sub { font: 0.74rem var(--font-data); color: var(--muted); margin: 2px 0 4px; font-variant-numeric: tabular-nums; }
+.sm svg { display: block; width: 100%; height: auto; overflow: visible; }
+.sm svg text { font: 10px var(--font-data); fill: var(--muted); }
+.sm svg .grid, .sm svg .base { stroke: var(--line); stroke-width: 1; }
+.sm svg .hit { fill: transparent; }
+.sm svg .hit:hover { fill: var(--accent-soft); }
+.sm svg .bar { fill: var(--accent); pointer-events: none; }
+.sm svg .bar.part { fill-opacity: 0.4; }
+.sm svg .band { fill: var(--accent); fill-opacity: 0.1; pointer-events: none; }
+.sm svg .line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; pointer-events: none; }
+.sm svg .dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; pointer-events: none; }
+.sm svg .dot.est { fill: var(--surface); stroke: var(--accent); }
+.tip { position: fixed; z-index: 10; pointer-events: none; background: var(--surface); color: var(--fg); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 6px 9px; font-size: 0.8rem; line-height: 1.4; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); max-width: 280px; }
+.tip b { font: 600 0.95rem var(--font-data); }
+@media (prefers-reduced-motion: no-preference) { tbody tr, .chip, .cloud button { transition: background-color .12s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>ML &amp; CV Topic Trends</h1>
+    <p class="lede" id="lede">What the papers at NeurIPS, ICML, ICLR, CVPR, ICCV and ECCV are about, read from their titles and abstracts. Shares, how they changed, and which papers combine which topics.</p>
+    <p class="note" id="datanote">2026 so far: ICLR, ICML, CVPR and ECCV. NeurIPS 2026 meets in December; ICCV meets in odd years and ECCV in even years.</p>
+  </header>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-topics" aria-selected="true" aria-controls="view-topics">Topics</button>
+    <button role="tab" id="tab-charts" aria-selected="false" aria-controls="view-charts">Charts</button>
+    <button role="tab" id="tab-venues" aria-selected="false" aria-controls="view-venues">By venue</button>
+    <button role="tab" id="tab-combine" aria-selected="false" aria-controls="view-combine">Combine topics</button>
+    <button role="tab" id="tab-method" aria-selected="false" aria-controls="view-method">Method and data</button>
+  </nav>
+
+  <div class="controls" id="topiccontrols">
+      <div class="venuepick" role="group" aria-label="Venues">
+        <span class="lbl">Venues</span>
+        <button type="button" class="chip quick" data-set="all">All six</button>
+        <button type="button" class="chip quick" data-set="ml">ML (NeurIPS, ICML, ICLR)</button>
+        <button type="button" class="chip quick" data-set="cv">Vision (CVPR, ICCV, ECCV)</button>
+        <span class="vsep" aria-hidden="true"></span>
+        <span class="chips" id="venuechips"></span>
+      </div>
+      <div class="seg" id="modeseg" role="group" aria-label="Show shares or numbers of papers">
+        <button type="button" data-mode="share" aria-pressed="true">Share %</button>
+        <button type="button" data-mode="count" aria-pressed="false">Papers</button>
+      </div>
+      <label for="sortby">Sort by
+        <select id="sortby">
+          <option value="sref">Share in 2025</option>
+          <option value="dpp">Change, first to last year (points)</option>
+          <option value="or">Change per year, whole period</option>
+          <option value="ror">Change per year, 2024 onwards</option>
+          <option value="tot">Papers, all years</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+      <label for="family">Group
+        <select id="family">
+          <option value="all">All topics</option>
+          <option value="architectures">Architectures and model families</option>
+          <option value="llm">Large and foundation models</option>
+          <option value="paradigms">Learning paradigms</option>
+          <option value="trustworthy">Trustworthy ML</option>
+          <option value="efficiency">Efficiency</option>
+          <option value="theory">Theory and foundations</option>
+          <option value="vision">Vision tasks</option>
+          <option value="3d">3D, video and generation</option>
+          <option value="applications">Applications</option>
+          <option value="data">Data and evaluation</option>
+        </select>
+      </label>
+      <label for="onlysig"><input type="checkbox" id="onlysig"> Only clear trends</label>
+      <label for="samescale" class="chartonly"><input type="checkbox" id="samescale"> Same scale for all topics</label>
+      <span class="legend tableonly"><span id="sparklegend">dots on a log scale</span></span>
+  </div>
+
+  <section id="view-topics" role="tabpanel" aria-labelledby="tab-topics">
+    <div class="tablewrap">
+      <table id="topictable">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:10px" id="scopenote"></p>
+    <p class="note">Share = percentage of papers whose title or abstract names the topic; Papers = the number of those papers.
+      A paper can count for several topics. The first row gives all papers in the data.
+      "Change" is first to last year in percentage points of share; "per year" is the change in the topic's odds per year.
+      Trend is called only when significant after correction for testing all topics (q &lt; 0.05).
+      Hover a number for its 95% interval and paper counts. Click a row to see its papers.</p>
+  </section>
+
+  <section id="view-charts" role="tabpanel" aria-labelledby="tab-charts" hidden>
+    <p class="note" id="chartnote" style="margin-bottom:10px"></p>
+    <div class="smgrid" id="smgrid"></div>
+    <p class="note" style="margin-top:10px">Each chart is one topic, by year. Papers: bars, the number of papers whose title or abstract names the topic.
+      Share %: line, the same share as in the Topics table, with its 95% interval as a band. Each chart has its own scale unless
+      "Same scale" is ticked. Hover a year for its numbers; click a chart to see its papers.</p>
+  </section>
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+
+  <section id="view-venues" role="tabpanel" aria-labelledby="tab-venues" hidden>
+    <p class="note" style="margin-bottom:10px">Share of each topic in each venue's latest year (2026 for ICLR, ICML, CVPR and ECCV; 2025 for NeurIPS and ICCV).
+      ↑ / ↓ mark a trend over <span id="mx-range">the whole period</span> that is significant within that venue. Darker cells are larger shares. Click a cell to see those papers.</p>
+    <div class="tablewrap"><table class="matrix" id="matrix"></table></div>
+  </section>
+
+  <section id="view-combine" role="tabpanel" aria-labelledby="tab-combine" hidden>
+    <div class="panel">
+      <div class="cloudhead">
+        <h2>Topics</h2>
+        <p class="note">Word size = number of papers. Click a topic to keep only its papers; click more topics to keep the papers
+          that have all of them; click a selected topic again to remove it.</p>
+        <button type="button" class="more" id="clearsel" hidden>Clear selection</button>
+      </div>
+      <div class="cloud" id="cloud" role="group" aria-label="Topics"></div>
+    </div>
+    <div class="panel results" style="margin-top:14px">
+      <div class="summary">
+        <div><span class="big" id="count">–</span> <span class="note" id="countlabel">papers</span></div>
+        <div class="years" id="years"></div>
+        <div class="controls" style="margin:0">
+          <span class="chips" id="venuefilter" aria-label="Venues"></span>
+          <span class="chips" id="yearfilter" aria-label="Years"></span>
+        </div>
+      </div>
+      <ol class="papers" id="papers"></ol>
+      <button type="button" class="more" id="more" hidden>Show 100 more</button>
+    </div>
+  </section>
+
+  <section id="view-method" role="tabpanel" aria-labelledby="tab-method" hidden>
+    <div class="prose">
+      <h2>Papers</h2>
+      <p>Main-track papers of NeurIPS, ICML and ICLR (machine learning) and CVPR, ICCV and ECCV (computer vision), <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Workshops, co-located events, Tiny Papers, position papers and competition or demo tracks are left out. The list of papers comes from the dblp XML dump of 2026-10-13, plus ICML 2026 from its PMLR volume (the dump did not have it yet); position papers are left out by their "Position:" title prefix as well. Abstracts come from each conference's own pages wherever possible: PMLR (ICML), the NeurIPS proceedings, the ICLR proceedings (2024–2026) and the ICLR virtual site (2020–2023), CVF open access (CVPR, ICCV) and ECVA (ECCV); OpenAlex by DOI for CVPR and ICCV; when dblp writes a title slightly differently from the conference's own listing (formulas, typos, a method name added), the most similar title of the same venue and year (145 pairs, each read); the arXiv version, only when the title is identical, for what remains. OpenReview's API refuses anonymous requests and was not used. Code and project links are removed from abstracts before matching.</p>
+      <div class="tablewrap" style="max-width:640px"><table id="coverage"></table></div>
+      <h2>Topics</h2>
+      <p>Topics were drawn from the most frequent and the fastest-changing title phrases of the six venues, then written as rules (keywords and phrases). A paper counts for a topic when the rule matches its title or its abstract. Words that are generic inside abstracts (dataset, attention, reasoning, agents, fine-tuning, optimization, distillation, unsupervised, face) have stricter abstract rules. For every topic, random papers matched only through the abstract were read, in 2020–2023 and in 2024–2026, to check that the words keep the topic's sense; rules were corrected until the samples held up. The method is the same as in the robotics study.</p>
+      <h2>Shares and trends</h2>
+      <p>Shares are standardised to the venue mix of 2024 and 2025 together, so that both ICCV and ECCV are in it and the years compare. A venue that did not meet in a year (ICCV in even years, ECCV in odd years, NeurIPS in 2026) contributes its share from the model, with a 95% interval. The trend is a logistic regression of topic on venue and year over the whole period; a topic is called rising or declining only when significant after Benjamini–Hochberg correction across all topics. "2024 onwards" repeats the test on 2024–2026 alone. Per venue, the trend is a likelihood-ratio test.</p>
+      <h2>Limits</h2>
+      <ul>
+        <li>A share counts papers that name a topic, including in passing; it is not a count of papers whose main contribution is that topic.</li>
+        <li>Keyword rules miss papers that describe a topic without its usual words.</li>
+        <li id="m-small">ICCV meets in odd years and ECCV in even years, so each has three or four years of data and its single-venue trends rest on few points.</li>
+        <li id="m-length">Abstracts got slightly longer over the years, so a topic has slightly more chances to be named in later years.</li>
+        <li>Conference years follow submission by six to nine months; arXiv runs ahead of all of this.</li>
+      </ul>
+      <h2>Code and tables</h2>
+      <p>Scripts, topic rules and result tables are kept with the study. Abstract texts are not redistributed; the scripts fetch them from the original sources.</p>
+      <p class="note" id="built"></p>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  const $ = (s) => document.querySelector(s);
+  // Same rounding as the result tables: Python formats exact binary ties (6.25, 0.75...) half-to-even, JS toFixed rounds
+  // them up; ties are exactly the values v = odd / 2^(d+1), detected without rounding error.
+  const fmt = (v, d) => { const q = v * 2 ** (d + 1);
+    if (Number.isInteger(q) && Math.abs(q % 2) === 1) { const sc = 10 ** d, t = Math.round(v * sc - 0.5); return ((t % 2 === 0 ? t : t + 1) / sc).toFixed(d); }
+    return v.toFixed(d); };
+  const state = { sel: [], venues: new Set(), years: new Set(), shown: 100, mode: "share", vsel: new Set() };
+  try { const m = localStorage.getItem("rta-mode"); if (m === "share" || m === "count") state.mode = m; } catch (e) { /* storage unavailable */ }
+  let D = null, TOP = [], P = [];
+
+  const TABS = ["topics", "charts", "venues", "combine", "method"];
+  function tab(name) {
+    for (const t of TABS) {
+      $("#tab-" + t).setAttribute("aria-selected", String(t === name));
+      $("#view-" + t).hidden = t !== name;
+    }
+    document.body.dataset.view = name;
+    $("#topiccontrols").hidden = !(name === "topics" || name === "charts");
+    $("#tip").hidden = true;
+  }
+  for (const t of TABS) $("#tab-" + t).addEventListener("click", () => tab(t));
+  const fromHash = () => {
+    const [h, opt] = location.hash.slice(1).split("/");
+    if (opt === "papers" || opt === "share") setMode(opt === "papers" ? "count" : "share");
+    if (TABS.includes(h)) tab(h);
+    if (h.startsWith("venue-") && D) {            // e.g. #venue-ICLR, #venue-Vision, #venue-NeurIPS+CVPR
+      const want = decodeURIComponent(h.slice(6));
+      const named = { Allvenues: D.venues, All: D.venues, ML: SCOPE_VENUES.ML, Vision: SCOPE_VENUES.Vision };
+      const list = named[want] || want.split("+").filter((v) => D.venues.includes(v));
+      if (list.length) { if (!TABS.includes(h)) tab("topics"); setVenues(list); }
+    }
+  };
+  window.addEventListener("hashchange", fromHash); fromHash();
+
+  // ---------- Topics table ----------
+  const LX = (v) => Math.log10(Math.max(v, 0.1));
+  const SCOPE_VENUES = { "All venues": null, "ML": ["NeurIPS", "ICML", "ICLR"], "Vision": ["CVPR", "ICCV", "ECCV"] };
+  const VLABEL = {};
+  // Venue selection (Topics and Charts): any combination; named scopes for all / ML / Vision / one venue,
+  // the other 117 combinations come from subsets.json (same computation, scripts/20b_scope_subsets.py)
+  function scopeKey() {
+    const sel = D.venues.filter((v) => state.vsel.has(v));
+    const same = (g) => sel.length === g.length && g.every((v) => state.vsel.has(v));
+    if (sel.length === D.venues.length) return "All venues";
+    if (same(SCOPE_VENUES.ML)) return "ML";
+    if (same(SCOPE_VENUES.Vision)) return "Vision";
+    return sel.join("+");
+  }
+  let SUB = null, subLoading = null;
+  const getScope = (key) => D.scopes[key] || (SUB && SUB[key]) || null;
+  const scopeLabel = (key) => key.split("+").map((v) => VLABEL[v] || v).join(" + ");
+  function loadSubsets() {
+    if (!subLoading) subLoading = fetch("subsets.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((d) => { SUB = d.scopes; renderTopics(); })
+      .catch((err) => { subLoading = null; for (const id of ["#scopenote", "#chartnote"]) $(id).textContent = "The venue combinations did not load (" + err.message + ")."; });
+    return subLoading;
+  }
+  function venuePick() {
+    $("#venuechips").innerHTML = D.venues.map((v) => `<button type="button" class="chip" data-v="${v}" aria-pressed="${state.vsel.has(v)}">${VLABEL[v] || v}</button>`).join("");
+    const key = scopeKey();
+    for (const b of document.querySelectorAll(".venuepick .quick"))
+      b.setAttribute("aria-pressed", String({ all: "All venues", ml: "ML", cv: "Vision" }[b.dataset.set] === key));
+  }
+  function setVenues(list) { state.vsel = new Set(list); venuePick(); renderTopics(); }
+  const pct = (v) => (v == null ? "–" : fmt(v, 1) + "%");
+  function scopeRows() {
+    const sc = getScope(scopeKey());
+    return sc.rows.map((r) => {
+      const t = TOP[r.i], by = {};
+      sc.years.forEach((y, j) => { by[y] = { s: r.s[j], lo: r.lo[j], hi: r.hi[j], k: r.k[j], n: r.n[j] }; });
+      return { i: r.i, name: t.name, family: t.family, by, years: sc.years, sref: (by[D.ref] || {}).s ?? -1, tot: r.k.reduce((a, b) => a + b, 0),
+               dpp: r.dpp ?? 0, or: r.or ?? 1, orlo: r.orlo, orhi: r.orhi, call: r.call, ror: r.ror, rcall: r.rcall || "unclear", single: sc.single };
+    });
+  }
+  function spark2(t) {
+    const w = 120, h = 18, x = (v) => 6 + (LX(v) - LX(0.1)) / (LX(30) - LX(0.1)) * (w - 12);
+    const c = t.call === "rising" ? "var(--rise)" : t.call === "declining" ? "var(--fall)" : "var(--flat)";
+    const ys = t.years.filter((y) => t.by[y].s != null), first = t.by[ys[0]].s, last = t.by[ys[ys.length - 1]].s;
+    const dots = ys.map((y, j) => { const v = t.by[y].s, big = j === ys.length - 1, hollow = j === 0;
+      return `<circle cx="${x(v)}" cy="9" r="${hollow ? 4 : big ? 4.4 : 2.2}" fill="${hollow ? "var(--surface)" : c}" stroke="${c}" stroke-width="${hollow ? 1.6 : 0}"/>`; }).join("");
+    return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">
+      <line x1="6" y1="9" x2="${w - 6}" y2="9" stroke="var(--line)" stroke-width="1"/>
+      <line x1="${x(first)}" y1="9" x2="${x(last)}" y2="9" stroke="${c}" stroke-width="2"/>${dots}</svg>`;
+  }
+  function topicRows() {
+    const by = $("#sortby").value, fam = $("#family").value, sig = $("#onlysig").checked;
+    const rows = scopeRows().filter((t) => (fam === "all" || t.family === fam) && (!sig || t.call !== "unclear"));
+    return rows.sort((a, b) => by === "name" ? a.name.localeCompare(b.name) : (b[by] ?? -1e9) - (a[by] ?? -1e9));
+  }
+  const JOURNALS = new Set();                   // no journals in this study
+  const NOT_HELD = (v, y) => (v === "ICCV" && y % 2 === 0) || (v === "ECCV" && y % 2 === 1);
+  function lastYearNote(scope, mode) {            // why the last year is not comparable as a count / is an estimate
+    const sc = getScope(scope), last = D.years[D.years.length - 1];
+    if (!sc.years.includes(last)) return `No ${last} papers yet.`;
+    const members = sc.members;
+    const missing = members.filter((v) => !(D.totals[v + "|" + last] > 0)), jr = members.filter((v) => JOURNALS.has(v));
+    const parts = [];
+    const notHeld = missing.filter((v) => NOT_HELD(v, last)), notYet = missing.filter((v) => !NOT_HELD(v, last));
+    if (notYet.length) parts.push(`${notYet.join(" and ")} ${last} not in the data yet`);
+    if (notHeld.length) parts.push(`${notHeld.join(" and ")} not held in ${last}`);
+    if (jr.length) parts.push(`${jr.length > 1 ? "journals" : jr[0]} only up to mid-October ${last}`);
+    if (!parts.length) return "";
+    if (mode === "count") return `*${last} is not a full year (${parts.join("; ")}), so its numbers of papers are not comparable with earlier years.`;
+    return missing.length ? `*${last} is estimated from the venues published so far (${parts.join("; ")}).` : `*${last}: ${parts.join("; ")}.`;
+  }
+  function renderTopics() {
+    if (!getScope(scopeKey())) {                 // a combination: wait for subsets.json
+      for (const id of ["#scopenote", "#chartnote"]) $(id).textContent = "Loading the venue combination…";
+      loadSubsets(); return;
+    }
+    renderTable(); renderCharts();
+  }
+  function renderTable() {
+    const scope = scopeKey(), mode = state.mode;
+    const sc = getScope(scope), yrs = sc.years, Y = D.years;
+    const rows = topicRows(), star = new Set(mode === "count" ? sc.partial : sc.estimated);
+    const arrow = { rising: "↑ rising", declining: "↓ declining", unclear: "· unclear" };
+    const mark = { rising: " ↑", declining: " ↓", unclear: "" };
+    const n = sc.rows[0].n, nby = {}; yrs.forEach((y, j) => { nby[y] = n[j]; });
+    const ntot = n.reduce((a, b) => a + b, 0);
+    $("#topictable thead").innerHTML = `<tr><th>Topic</th>${Y.map((y) => `<th>${y}${star.has(y) ? "*" : ""}</th>`).join("")}${mode === "count" ? "<th>All years</th>" : ""}
+      <th>${mode === "count" ? "Share change" : "Change"} ${String(yrs[0]).slice(2)}→${String(yrs[yrs.length - 1]).slice(2)}</th><th>${mode === "count" ? "Share " : ""}per year</th><th>${mode === "count" ? "Share " : ""}since 2024</th><th>${mode === "count" ? "Share trend" : "Trend"}</th><th>${Y[0]} … ${Y[Y.length - 1]}</th></tr>`;
+    const cellv = (t, y) => { const b = t.by[y]; if (!b || b.s == null) return `<td class="num" title="no papers published yet">–</td>`;
+      const tip = `${y}: ${b.k.toLocaleString("en")} of ${b.n.toLocaleString("en")} papers; share ${fmt(b.s, 1)}%, 95% interval ${fmt(b.lo, 1)}–${fmt(b.hi, 1)}%`;
+      return `<td class="num" title="${tip}">${mode === "count" ? b.k.toLocaleString("en") : fmt(b.s, 1)}</td>`; };
+    const totalsRow = `<tr class="totals"><td>All papers<span class="fam">number of papers in the data</span></td>
+      ${Y.map((y) => `<td class="num">${nby[y] != null ? nby[y].toLocaleString("en") : "–"}</td>`).join("")}${mode === "count" ? `<td class="num">${ntot.toLocaleString("en")}</td>` : ""}
+      <td colspan="5"></td></tr>`;
+    $("#topictable tbody").innerHTML = totalsRow + rows.map((t) => `<tr data-i="${t.i}" tabindex="0">
+      <td>${t.name}<span class="fam">${t.family}</span></td>
+      ${Y.map((y) => cellv(t, y)).join("")}${mode === "count" ? `<td class="num">${t.tot.toLocaleString("en")}</td>` : ""}
+      <td class="num">${t.dpp > 0 ? "+" : ""}${fmt(t.dpp, 1)}</td>
+      <td class="num" title="${t.orlo == null ? "not estimable" : "95% interval ×" + fmt(t.orlo, 2) + "–×" + fmt(t.orhi, 2)}">${t.orlo == null ? "–" : "×" + fmt(t.or, 2)}</td>
+      <td class="num" title="2024 onwards">${t.ror == null ? "–" : "×" + fmt(t.ror, 2)}${mark[t.rcall]}</td>
+      <td><span class="call ${t.call}">${arrow[t.call]}</span></td><td>${mode === "count" ? sparkBars(t, new Set(sc.partial)) : spark2(t)}</td></tr>`).join("");
+    const lab = scopeLabel(scope);
+    const what = mode === "count" ? `${lab}: number of papers per year whose title or abstract names the topic (`
+      : sc.single ? `${lab}: raw shares of its papers, in % (` : `${lab}: shares in %, standardised to the ${(D.ref_years || [D.ref]).join(" + ")} venue mix of the selection (`;
+    $("#scopenote").textContent = [what + yrs.map((y, j) => `${y}: ${n[j].toLocaleString("en")}`).join(", ") + " papers).", lastYearNote(scope, mode)].filter(Boolean).join(" ");
+    $("#sparklegend").textContent = mode === "count" ? `bars: papers per year, ${Y[0]}–${Y[Y.length - 1]} (own scale per row)`
+      : `dots on a log scale: ○ ${Y[0]} · • ${Y[1]}–${Y[Y.length - 2]} · ● ${Y[Y.length - 1]}`;
+  }
+  function sparkBars(t, partial) {
+    const w = 120, h = 18, Y = D.years, slot = (w - 4) / Y.length, bw = Math.min(12, slot - 3);
+    const mx = Math.max(1, ...t.years.map((y) => t.by[y].k));
+    return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">` + Y.map((y, j) => {
+      const b = t.by[y]; if (!b || !b.k) return "";
+      const bh = Math.max(1.5, (h - 2) * b.k / mx), x = 2 + j * slot + (slot - bw) / 2;
+      return `<rect x="${fmt(x, 1)}" y="${fmt((h - bh), 1)}" width="${fmt(bw, 1)}" height="${fmt(bh, 1)}" rx="1.5" fill="var(--accent)"${partial.has(y) ? ' fill-opacity="0.4"' : ""}/>`;
+    }).join("") + "</svg>";
+  }
+
+  // ---------- Charts: one small chart per topic, papers or share by year ----------
+  const niceMax = (v) => { if (!(v > 0)) return 1; const e = 10 ** Math.floor(Math.log10(v)), m = v / e;
+    return [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10].find((x) => m <= x + 1e-9) * e; };
+  const tick = (v, mode) => mode === "count" ? v.toLocaleString("en") : (v < 1 ? +fmt(v, 2) : v < 10 ? +fmt(v, 1) : Math.round(v)) + "%";
+  const colPath = (x, y, w, h, r) => { r = Math.min(r, h, w / 2);
+    return `M${fmt(x, 1)},${fmt((y + h), 1)}V${fmt((y + r), 1)}Q${fmt(x, 1)},${fmt(y, 1)} ${fmt((x + r), 1)},${fmt(y, 1)}H${fmt((x + w - r), 1)}Q${fmt((x + w), 1)},${fmt(y, 1)} ${fmt((x + w), 1)},${fmt((y + r), 1)}V${fmt((y + h), 1)}Z`; };
+  function chartSVG(S, o) {          // S: one entry per year of D.years {y, v, lo, hi, k, n}; o: {mode, max, star, label}
+    const W = 220, H = 92, L = 4, R = 4, T = 14, B = 16, pw = W - L - R, ph = H - T - B, slot = pw / S.length;
+    const yv = (v) => T + ph - (Math.min(v, o.max) / o.max) * ph, xc = (j) => L + slot * (j + 0.5);
+    let g = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${o.label}">
+      <line class="grid" x1="${L}" x2="${W - R}" y1="${T}" y2="${T}"/><text x="${L}" y="${T - 4}">${tick(o.max, o.mode)}</text>`;
+    g += S.map((d, j) => `<rect class="hit" data-j="${j}" x="${fmt((L + slot * j), 1)}" y="${T}" width="${fmt(slot, 1)}" height="${ph}"/>`).join("");
+    if (o.mode === "count") {
+      const bw = Math.min(20, slot - 4);
+      g += S.map((d, j) => { if (!d.k) return ""; const h = Math.max(1, (Math.min(d.k, o.max) / o.max) * ph);
+        return `<path class="bar${o.star.has(d.y) ? " part" : ""}" d="${colPath(xc(j) - bw / 2, T + ph - h, bw, h, 4)}"/>`; }).join("");
+    } else {
+      const P2 = S.map((d, j) => (d.v == null ? null : { x: xc(j), d })).filter(Boolean);
+      if (P2.length > 1) g += `<path class="band" d="M${P2.map((p) => `${fmt(p.x, 1)},${fmt(yv(p.d.hi), 1)}`).join("L")}L${P2.slice().reverse().map((p) => `${fmt(p.x, 1)},${fmt(yv(p.d.lo), 1)}`).join("L")}Z"/>`;
+      g += `<path class="line" d="M${P2.map((p) => `${fmt(p.x, 1)},${fmt(yv(p.d.v), 1)}`).join("L")}"/>`;
+      g += P2.map((p) => `<circle class="dot${o.star.has(p.d.y) ? " est" : ""}" cx="${fmt(p.x, 1)}" cy="${fmt(yv(p.d.v), 1)}" r="4"/>`).join("");
+    }
+    g += `<line class="base" x1="${L}" x2="${W - R}" y1="${T + ph}" y2="${T + ph}"/>`;
+    g += S.map((d, j) => `<text x="${fmt(xc(j), 1)}" y="${H - 3}" text-anchor="middle">${String(d.y).slice(2)}${o.star.has(d.y) ? "*" : ""}</text>`).join("");
+    return g + "</svg>";
+  }
+  let CHART = new Map();              // card key -> series, for the tooltip
+  function renderCharts() {
+    if (!D) return;
+    const scope = scopeKey(), sc = getScope(scope), mode = state.mode, Y = D.years;
+    const star = new Set(mode === "count" ? sc.partial : sc.estimated), arrow = { rising: "↑ rising", declining: "↓ declining", unclear: "· unclear" };
+    const ser = (t) => Y.map((y) => { const b = t.by[y]; return b && b.s != null ? { y, v: b.s, lo: b.lo, hi: b.hi, k: b.k, n: b.n } : { y, v: null, lo: null, hi: null, k: null, n: null }; });
+    const peak = (S) => Math.max(0, ...S.map((d) => (mode === "count" ? d.k || 0 : d.hi ?? d.v ?? 0)));
+    const rows = topicRows().map((t) => [t, ser(t)]);
+    const same = $("#samescale").checked ? niceMax(Math.max(0, ...rows.map(([, S]) => peak(S)))) : null;
+    const full = sc.years.filter((y) => !(sc.partial || []).includes(y)), endC = full[full.length - 1], endS = sc.years[sc.years.length - 1];
+    CHART = new Map();
+    const card = (key, title, chip, S, max) => {
+      CHART.set(String(key), S);
+      const a = S.find((d) => (mode === "count" ? d.k != null : d.v != null)), z = S.find((d) => d.y === (mode === "count" ? endC : endS));
+      const sub = !a || !z ? "" : mode === "count" ? `${a.y}: ${a.k.toLocaleString("en")} → ${z.y}: ${z.k.toLocaleString("en")} papers`
+        : `${a.y}: ${fmt(a.v, 1)}% → ${z.y}${star.has(z.y) ? "*" : ""}: ${fmt(z.v, 1)}%`;
+      return `<div class="sm" data-key="${key}"${key === "all" ? "" : ` data-i="${key}" tabindex="0" role="button" aria-label="${title}: show its papers"`}>
+        <h3><span>${title}</span>${chip}</h3><div class="smbody"><p class="sub">${sub}</p>${chartSVG(S, { mode, max, star, label: `${title}, ${mode === "count" ? "papers" : "share"} per year` })}</div></div>`;
+    };
+    let html = "";
+    if (mode === "count") {
+      const S = Y.map((y) => { const j = sc.years.indexOf(y); return j < 0 ? { y, k: null, n: null } : { y, k: sc.rows[0].n[j], n: sc.rows[0].n[j], v: 100 }; });
+      html += card("all", "All papers in the data", "", S, niceMax(peak(S)));
+    }
+    html += rows.map(([t, S]) => card(t.i, t.name, `<span class="call ${t.call}">${arrow[t.call]}</span>`, S, same ?? niceMax(peak(S)))).join("");
+    $("#smgrid").innerHTML = rows.length ? html : `<p class="note">No topic matches these filters.</p>`;
+    $("#chartnote").textContent = (mode === "count"
+      ? [`${scopeLabel(scope)}: number of papers per year whose title or abstract names the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
+      : [`${scopeLabel(scope)}: share of papers per year, in %${sc.single ? "" : `, standardised to the ${(D.ref_years || [D.ref]).join(" + ")} venue mix of the selection`}.`, sc.estimated.length ? "Hollow dot: estimated." : ""])
+      .concat(lastYearNote(scope, mode)).filter(Boolean).join(" ");
+  }
+  const TIP = $("#tip");
+  const tipLine = (strong, rest) => { const d = document.createElement("div");
+    if (strong != null) { const b = document.createElement("b"); b.textContent = strong; d.append(b, " "); } d.append(rest); return d; };
+  $("#smgrid").addEventListener("pointermove", (e) => {
+    const r = e.target.closest("rect.hit"); if (!r) { TIP.hidden = true; return; }
+    const key = r.closest(".sm").dataset.key, S = CHART.get(key), d = S && S[+r.dataset.j]; if (!d) return;
+    const sc = getScope(scopeKey()), lines = [];
+    if (d.k == null) lines.push(tipLine(null, `${d.y}: no papers published yet`));
+    else if (key === "all") lines.push(tipLine(d.n.toLocaleString("en"), `papers in ${d.y}${sc.partial.includes(d.y) ? " (year not complete)" : ""}`));
+    else if (state.mode === "count") {
+      lines.push(tipLine(d.k.toLocaleString("en"), `papers in ${d.y}${sc.partial.includes(d.y) ? " (year not complete)" : ""}`));
+      lines.push(tipLine(null, `${fmt((100 * d.k / d.n), 1)}% of ${d.n.toLocaleString("en")} papers`));
+    } else {
+      lines.push(tipLine(fmt(d.v, 1) + "%", `in ${d.y}${sc.estimated.includes(d.y) ? " (estimated)" : ""}`));
+      lines.push(tipLine(null, `95% interval ${fmt(d.lo, 1)}–${fmt(d.hi, 1)}%`));
+      lines.push(tipLine(null, `${d.k.toLocaleString("en")} of ${d.n.toLocaleString("en")} papers`));
+    }
+    TIP.replaceChildren(...lines); TIP.hidden = false;
+    const w = TIP.offsetWidth, h = TIP.offsetHeight;
+    TIP.style.left = Math.max(8, Math.min(e.clientX + 14, innerWidth - w - 8)) + "px";
+    TIP.style.top = Math.max(8, Math.min(e.clientY + 14, innerHeight - h - 8)) + "px";
+  });
+  $("#smgrid").addEventListener("pointerleave", () => { TIP.hidden = true; });
+  $("#smgrid").addEventListener("click", (e) => { const c = e.target.closest(".sm[data-i]"); if (c) { TIP.hidden = true; openTopic(+c.dataset.i); } });
+  $("#smgrid").addEventListener("keydown", (e) => { const c = e.target.closest(".sm[data-i]"); if (c && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openTopic(+c.dataset.i); } });
+  $("#samescale").addEventListener("change", renderCharts);
+  function setMode(m) {
+    state.mode = m;
+    for (const b of document.querySelectorAll("#modeseg button")) b.setAttribute("aria-pressed", String(b.dataset.mode === m));
+    try { localStorage.setItem("rta-mode", m); } catch (e) { /* storage unavailable */ }
+    if (D) renderTopics();
+  }
+  $("#modeseg").addEventListener("click", (e) => { const b = e.target.closest("button[data-mode]"); if (b) setMode(b.dataset.mode); });
+  function setVenueScope(scope) {
+    const vs = SCOPE_VENUES[scope] === undefined ? scope.split("+") : SCOPE_VENUES[scope];
+    state.venues = new Set(vs ? vs.map((v) => D.venues.indexOf(v)) : D.venues.map((_, j) => j));
+  }
+  function openTopic(i, scope) { state.sel = [i]; state.shown = 100; setVenueScope(scope || scopeKey()); filters(); tab("combine"); renderCombine(); }
+  $("#topictable tbody").addEventListener("click", (e) => { const tr = e.target.closest("tr[data-i]"); if (tr) openTopic(+tr.dataset.i); });
+  $("#topictable tbody").addEventListener("keydown", (e) => { const tr = e.target.closest("tr[data-i]"); if (tr && e.key === "Enter") openTopic(+tr.dataset.i); });
+  for (const id of ["#sortby", "#family", "#onlysig"]) $(id).addEventListener("change", renderTopics);
+  $("#venuechips").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-v]"); if (!b) return;
+    const v = b.dataset.v;
+    if (state.vsel.has(v) && state.vsel.size === 1) return;          // keep at least one venue
+    const next = new Set(state.vsel); next.has(v) ? next.delete(v) : next.add(v);
+    setVenues([...next]);
+  });
+  document.querySelector(".venuepick").addEventListener("click", (e) => {
+    const b = e.target.closest("button.quick"); if (!b) return;
+    setVenues(b.dataset.set === "all" ? D.venues : SCOPE_VENUES[b.dataset.set === "ml" ? "ML" : "Vision"]);
+  });
+  // ---------- By venue matrix ----------
+  const SCOPE_ORDER = ["All venues", "ML", "Vision", "NeurIPS", "ICML", "ICLR", "CVPR", "ICCV", "ECCV"];
+  const SCOPE_LABEL = { "All venues": "All" };
+  function renderMatrix() {
+    const jr = D.scopes["All venues"].years.indexOf(D.ref);
+    const order = D.scopes["All venues"].rows.slice().sort((a, b) => b.s[jr] - a.s[jr]).map((r) => r.i);
+    const look = {};
+    for (const sc of SCOPE_ORDER) { look[sc] = {}; for (const r of D.scopes[sc].rows) look[sc][r.i] = r; }
+    const head = `<thead><tr><th>Topic</th>${SCOPE_ORDER.map((sc) => `<th>${SCOPE_LABEL[sc] || sc}</th>`).join("")}</tr></thead>`;
+    const body = order.map((i) => `<tr><td>${TOP[i].name}</td>${SCOPE_ORDER.map((sc) => {
+      const r = look[sc][i], j = D.scopes[sc].years.length - 1, v = r.s[j], y = D.scopes[sc].years[j];
+      if (v == null) return `<td title="not available">–</td>`;
+      const pctv = Math.min(100, (v / 30) * 100), mark = r.call === "rising" ? ' <span class="up">↑</span>' : r.call === "declining" ? ' <span class="down">↓</span>' : "";
+      return `<td class="cell${pctv > 55 ? " dark" : ""}" style="--v:${fmt(pctv, 0)}" data-i="${i}" data-sc="${sc}" title="${TOP[i].name}, ${sc} ${y}: ${r.k[j]} of ${r.n[j]} papers">${fmt(v, 1)}${mark}</td>`; }).join("")}</tr>`).join("");
+    const tot = `<tr class="totals"><td>All papers (number)</td>${SCOPE_ORDER.map((sc) => { const g = D.scopes[sc], j = g.years.length - 1;
+      return `<td class="num" title="${sc} ${g.years[j]}">${g.rows[0].n[j].toLocaleString("en")}</td>`; }).join("")}</tr>`;
+    $("#matrix").innerHTML = head + "<tbody>" + tot + body + "</tbody>";
+  }
+  $("#matrix").addEventListener("click", (e) => { const td = e.target.closest("td[data-sc]"); if (td) openTopic(+td.dataset.i, td.dataset.sc); });
+
+  // ---------- Combine ----------
+  function passes(p) {
+    if (!state.years.has(p[2])) return false;
+    if (!state.venues.has(p[1])) return false;
+    return true;
+  }
+  function renderCombine() {
+    const sel = state.sel, hits = [], counts = new Array(TOP.length).fill(0), byYear = {}, base = {};
+    for (const y of D.years) { byYear[y] = 0; base[y] = 0; }
+    for (const p of P) {
+      if (!passes(p)) continue;
+      base[p[2]]++;
+      if (sel.every((i) => p[6].has(i))) {
+        hits.push(p); byYear[p[2]]++;
+        for (const k of p[4]) counts[k]++;
+      }
+    }
+    $("#count").textContent = hits.length.toLocaleString("en");
+    $("#countlabel").textContent = (hits.length === 1 ? "paper" : "papers") + (sel.length ? " with " + sel.map((i) => TOP[i].name).join(" + ") : " (no topic selected)");
+    $("#years").innerHTML = D.years.filter((y) => state.years.has(y)).map((y) =>
+      `<span>${y}: <b>${byYear[y]}</b> of ${base[y].toLocaleString("en")} (${base[y] ? fmt((100 * byYear[y] / base[y]), 2) : "0"}%)</span>`).join("");
+    // word cloud: selected topics first, then the others by how many of the remaining papers also have them
+    const rest = TOP.map((t, i) => ({ i, n: counts[i] })).filter((o) => !sel.includes(o.i))
+      .sort((a, b) => b.n - a.n || TOP[a.i].name.localeCompare(TOP[b.i].name));
+    const max = Math.max(1, ...rest.map((o) => o.n));
+    const size = (n) => fmt(Math.sqrt(n / max), 3);      // 0..1, mapped to 12px + up to 18px (7px on phones) in CSS
+    $("#cloud").innerHTML = sel.map((i) => `<button type="button" data-i="${i}" aria-pressed="true" style="--s:0.22" title="Click to remove">${esc(TOP[i].name)} ✕</button>`).join("")
+      + rest.map((o) => `<button type="button" data-i="${o.i}" aria-pressed="false" style="--s:${size(o.n)}"${o.n ? "" : " disabled"}
+          title="${o.n ? `${o.n.toLocaleString("en")} papers would remain` : "no paper has this topic together with the selection"}">${esc(TOP[o.i].name)}<span class="n">${o.n.toLocaleString("en")}</span></button>`).join("");
+    $("#clearsel").hidden = !sel.length;
+    const vn = D.venues;
+    $("#papers").innerHTML = hits.slice(0, state.shown).map((p) => `<li>
+      <a href="${p[3]}" target="_blank" rel="noopener">${esc(p[0])}</a>
+      <span class="meta">${vn[p[1]]} ${p[2]}</span>
+      <span class="chips">${p[4].map((k) => `<span class="chip small static${sel.includes(k) ? " hit" : ""}">${TOP[k].name}</span>`).join("")}</span></li>`).join("");
+    $("#more").hidden = hits.length <= state.shown;
+  }
+  function esc(s) { return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+  $("#cloud").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-i]"); if (!b || b.disabled) return;
+    const i = +b.dataset.i;
+    state.sel = state.sel.includes(i) ? state.sel.filter((k) => k !== i) : [...state.sel, i];   // click again = remove
+    state.shown = 100; renderCombine();
+  });
+  $("#clearsel").addEventListener("click", () => { state.sel = []; state.shown = 100; renderCombine(); });
+  $("#more").addEventListener("click", () => { state.shown += 100; renderCombine(); });
+
+  function filters() {
+    $("#venuefilter").innerHTML = D.venues.map((v, i) => `<button class="chip" data-v="${i}" aria-pressed="${state.venues.has(i)}">${v}</button>`).join("");
+    $("#yearfilter").innerHTML = D.years.map((y) => `<button class="chip" data-y="${y}" aria-pressed="${state.years.has(y)}">${y}</button>`).join("");
+  }
+  $("#venuefilter").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; const v = +b.dataset.v;
+    if (state.venues.has(v) && state.venues.size === 1) return; state.venues.has(v) ? state.venues.delete(v) : state.venues.add(v); state.shown = 100; filters(); renderCombine(); });
+  $("#yearfilter").addEventListener("click", (e) => { const b = e.target.closest("button[data-y]"); if (!b) return; const y = +b.dataset.y;
+    if (state.years.has(y) && state.years.size === 1) return; state.years.has(y) ? state.years.delete(y) : state.years.add(y); state.shown = 100; filters(); renderCombine(); });
+
+  function coverage() {
+    const ys = D.years;
+    $("#coverage").innerHTML = `<thead><tr><th>Venue</th>${ys.map((y) => `<th>${y}</th>`).join("")}</tr></thead><tbody>` +
+      D.venues.map((v) => `<tr><td>${v}</td>${ys.map((y) => `<td class="num">${(D.totals[v + "|" + y] || 0).toLocaleString("en")}</td>`).join("")}</tr>`).join("") + "</tbody>";
+    $("#built").textContent = "Built " + D.built + ".";
+  }
+
+  fetch("data.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((d) => {
+    D = d;
+    TOP = d.topics.map((t, i) => Object.assign({ i }, t));
+    state.venues = new Set(d.venues.map((_, i) => i));   // all venues on; click to leave one out
+    state.years = new Set(d.years);
+    state.vsel = new Set(d.venues);
+    venuePick();
+    const nPapers = d.papers.length, y0 = d.years[0], y1 = d.years[d.years.length - 1];
+    $("#lede").textContent = `What ${nPapers.toLocaleString("en")} papers at NeurIPS, ICML, ICLR, CVPR, ICCV and ECCV (${y0}–${y1}) are about, read from their titles and abstracts. Shares, how they changed, and which papers combine which topics.`;
+    $("#m-range").textContent = String(y0); $("#m-n").textContent = nPapers.toLocaleString("en") + " papers";
+    for (const b of document.querySelectorAll("#modeseg button")) b.setAttribute("aria-pressed", String(b.dataset.mode === state.mode));
+    $("#mx-range").textContent = `${y0}–${y1}`;
+    if (d.abs_words) $("#m-length").textContent = "Abstracts got longer (median words: " + d.years.map((y) => `${y} ${d.abs_words[y]}`).join(", ") +
+      "). Counting any mention, a longer abstract has more chances to name a topic, so part of a small rise can come from length alone.";
+    const url = (x) => Array.isArray(x) ? d.lp[x[0]] + x[1] + d.ls[x[2]] : x;   // links are stored as [prefix, middle, suffix]
+    P = d.papers.map((p) => [p[0], p[1], p[2], url(p[3]), p[4], p[0].toLowerCase(), new Set(p[4])]);
+    renderTopics(); renderMatrix(); filters(); renderCombine(); coverage();
+    fromHash();
+  }).catch((err) => {
+    $("#datanote").textContent = "The paper data did not load (" + err.message + "). Open this page through a web server, not as a local file.";
+  });
+})();
+</script>
