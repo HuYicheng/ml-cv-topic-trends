@@ -2,6 +2,8 @@
 
 **Page:** https://huyicheng.github.io/ml-cv-topic-trends/
 
+**Submission deadlines** of the six venues, one year from 20 October 2026, with official links: https://huyicheng.github.io/ml-cv-topic-trends/deadlines.html
+
 What 85,364 main-track papers at NeurIPS, ICML, ICLR, CVPR, ICCV and ECCV (2020 to October 2026) are about, read from
 their titles and abstracts: the share and the number of papers of each of 106 topics per year, how they changed, the
 same for any combination of venues, one small chart per topic, and a topic word cloud that lists the papers combining
@@ -48,6 +50,6 @@ respected; OpenReview's API refuses anonymous requests and was not used).
 
 ## Files
 
-`index.html`, `data.json`, `subsets.json`: the page (GitHub Pages). `data/papers.csv`: the paper list.
+`index.html`, `data.json`, `subsets.json`: the page (GitHub Pages). `deadlines.html`: submission deadlines of the six venues for one year from 20 October 2026, each date with the official page it was read from (built by `scripts/22_deadlines_page.py`, which holds the dates). `data/papers.csv`: the paper list.
 `data/topic_matrix_ta.csv`: paper × topic matrix of the final measure. `scripts/`: the full pipeline
 (`scripts/run_pipeline.sh` after the fetch steps). `results/`, `figures/`: outputs.
