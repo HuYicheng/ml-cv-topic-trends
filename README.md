@@ -2,7 +2,7 @@
 
 **Page:** https://huyicheng.github.io/ml-cv-topic-trends/
 
-**Submission deadlines** of the six venues, one year from 20 October 2026, with official links: https://huyicheng.github.io/ml-cv-topic-trends/deadlines.html
+**Submission deadlines** of the six venues, one year from 21 November 2026, with official links: https://huyicheng.github.io/ml-cv-topic-trends/deadlines.html
 
 What 85,364 main-track papers at NeurIPS, ICML, ICLR, CVPR, ICCV and ECCV (2020 to October 2026) are about, read from
 their titles and abstracts by a language model against a written topic codebook: the share and the number of papers of
@@ -63,7 +63,7 @@ respected; OpenReview's API refuses anonymous requests and was not used).
 
 ## Files
 
-`index.html`, `data.json`, `subsets.json`: the page (GitHub Pages). `deadlines.html`: submission deadlines of the six venues for one year from 20 October 2026, each date with the official page it was read from (built by `scripts/22_deadlines_page.py`, which holds the dates). `data/papers.csv`: the paper list.
+`index.html`, `data.json`, `subsets.json`: the page (GitHub Pages). `deadlines.html`: submission deadlines of the six venues for one year from 21 November 2026, each date with the official page it was read from (built by `scripts/22_deadlines_page.py`, which holds the dates). `data/papers.csv`: the paper list.
 `data/topic_matrix_ta.csv`: paper × topic matrix of the final measure (semantic labels, "involves");
 `data/topic_matrix_ta_main.csv`: the same for the main-contribution labels; `data/topic_matrix_ta_keyword.csv`: the
 keyword-rule matrix. `data/semantic_labels.csv`, `data/semantic_codebook_v2.md`, `data/semantic_labelling_prompt.md`: the

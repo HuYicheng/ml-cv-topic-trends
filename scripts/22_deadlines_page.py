@@ -12,26 +12,19 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 SITE = "ML & CV Topic Trends"
 TITLE = "ML & CV Deadlines"
 SCOPE = "the six venues this site covers (NeurIPS, ICML, ICLR, CVPR, ICCV and ECCV)"
-CHECKED = dt.date(2026, 10, 20)
-UNTIL = dt.date(2027, 10, 20)
+CHECKED = dt.date(2026, 11, 21)
+UNTIL = dt.date(2027, 11, 21)
 OFFSET = {"AoE": -12, "HST": -10, "UTC": 0, "PST": -8}  # hours from UTC
 
 # steps: (what, date, time or None, time zone or None); a venue without steps has not announced its deadline
 VENUES = [
-    dict(name="CVPR 2027",
-         steps=[("Paper enrollment", "2026-11-10", "23:59", "AoE"),
-                ("Full paper", "2026-11-16", "23:59", "AoE"),
-                ("Supplementary material", "2026-11-23", None, "AoE")],
-         remark="The call: “Date is fixed, no extension will be given.” All co-authors need an up-to-date OpenReview "
-                "profile.",
-         conf=("20–25 June 2027", "Seattle, WA, USA"),
-         links=[("Call for papers", "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"),
-                ("Conference site", "https://cvpr.thecvf.com/Conferences/2027")]),
-    dict(name="ICML 2027", steps=[], order="2027-01-28",
-         prev="ICML 2026: abstract 23 January 2026, full paper 28 January 2026 (AoE).",
-         conf=("Not announced", "South America (city not announced)"),
-         links=[("Future meetings", "https://icml.cc/Conferences/FutureMeetings"),
-                ("ICML 2026 dates", "https://icml.cc/Conferences/2026/Dates")]),
+    dict(name="ICML 2027",
+         steps=[("Abstract", "2027-01-14", "23:59", "AoE"),
+                ("Full paper", "2027-01-22", "23:59", "AoE")],
+         remark="The dates page gives the day and “Anywhere on Earth”; its countdowns end at 23:59:59 AoE.",
+         conf=("2–4 August 2027 (main conference; expo, tutorials and workshops 31 July – 6 August)", "Rio de Janeiro, Brazil"),
+         links=[("ICML 2027 dates", "https://icml.cc/Conferences/2027/Dates"),
+                ("Future meetings", "https://icml.cc/Conferences/FutureMeetings")]),
     dict(name="ICCV 2027", steps=[], order="2027-03-07",
          prev="ICCV 2025: paper registration 3 March 2025, full paper 7 March 2025, 23:59 HST.",
          conf=("3–7 October 2027", "Hong Kong (HKCEC)"),
@@ -48,12 +41,18 @@ VENUES = [
          conf=("Not announced", ""),
          links=[("ICLR 2027 dates", "https://iclr.cc/Conferences/2027/Dates"),
                 ("Future meetings", "https://iclr.cc/Conferences/FutureMeetings")]),
+    dict(name="CVPR 2028", steps=[], order="2027-11-16",
+         prev="CVPR 2027: paper enrollment 10 November 2026, full paper 16 November 2026 (AoE).",
+         conf=("Not announced", ""),
+         links=[("CVPR 2027 call for papers", "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"),
+                ("CVPR site", "https://cvpr.thecvf.com/")]),
 ]
-CLOSED = [("ICLR 2027 (main conference 26–28 April 2027) closed on 25 September 2026, AoE.",
+CLOSED = [("CVPR 2027 (Seattle, 20–24 June 2027) closed on 16 November 2026, 23:59 AoE (full paper; supplementary "
+            "material until 23 November 2026, AoE).", "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"),
+          ("ICLR 2027 (main conference 26–28 April 2027) closed on 25 September 2026, AoE.",
            "https://iclr.cc/Conferences/2027/Dates")]
 LATER = ("ECCV meets in even years. ECCV 2028 has announced nothing; ECCV 2026 closed on 5 March 2026, 22:00 UTC "
-         "(eccv.ecva.net/Conferences/2026/Dates). CVPR 2028 has announced nothing either; CVPR 2027 closes in "
-         "November 2026. If they keep those months, both deadlines fall after 20 October 2027.")
+         "(eccv.ecva.net/Conferences/2026/Dates). If it keeps that month, its deadline falls after 21 November 2027.")
 JOURNALS = []
 
 E = html.escape
