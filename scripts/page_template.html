@@ -212,7 +212,7 @@ tbody tr.totals:hover { background: var(--bg); }
       </table>
     </div>
     <p class="note" style="margin-top:10px" id="scopenote"></p>
-    <p class="note">Share = percentage of papers whose title or abstract names the topic; Papers = the number of those papers.
+    <p class="note">Share = percentage of papers whose own work involves the topic, as read from the title and abstract; Papers = the number of those papers.
       A paper can count for several topics. The first row gives all papers in the data.
       "Change" is first to last year in percentage points of share; "per year" is the change in the topic's odds per year.
       Trend is called only when significant after correction for testing all topics (q &lt; 0.05).
@@ -222,7 +222,7 @@ tbody tr.totals:hover { background: var(--bg); }
   <section id="view-charts" role="tabpanel" aria-labelledby="tab-charts" hidden>
     <p class="note" id="chartnote" style="margin-bottom:10px"></p>
     <div class="smgrid" id="smgrid"></div>
-    <p class="note" style="margin-top:10px">Each chart is one topic, by year. Papers: bars, the number of papers whose title or abstract names the topic.
+    <p class="note" style="margin-top:10px">Each chart is one topic, by year. Papers: bars, the number of papers whose own work involves the topic.
       Share %: line, the same share as in the Topics table, with its 95% interval as a band. Each chart has its own scale unless
       "Same scale" is ticked. Hover a year for its numbers; click a chart to see its papers.</p>
   </section>
@@ -261,22 +261,23 @@ tbody tr.totals:hover { background: var(--bg); }
   <section id="view-method" role="tabpanel" aria-labelledby="tab-method" hidden>
     <div class="prose">
       <h2>Papers</h2>
-      <p>Main-track papers of NeurIPS, ICML and ICLR (machine learning) and CVPR, ICCV and ECCV (computer vision), <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Workshops, co-located events, Tiny Papers, position papers and competition or demo tracks are left out. The list of papers comes from the dblp XML dump of 2026-10-13, plus ICML 2026 from its PMLR volume (the dump did not have it yet); position papers are left out by their "Position:" title prefix as well. Abstracts come from each conference's own pages wherever possible: PMLR (ICML), the NeurIPS proceedings, the ICLR proceedings (2024–2026) and the ICLR virtual site (2020–2023), CVF open access (CVPR, ICCV) and ECVA (ECCV); OpenAlex by DOI for CVPR and ICCV; when dblp writes a title slightly differently from the conference's own listing (formulas, typos, a method name added), the most similar title of the same venue and year (145 pairs, each read); the arXiv version, only when the title is identical, for what remains. OpenReview's API refuses anonymous requests and was not used. Code and project links are removed from abstracts before matching.</p>
+      <p>Main-track papers of NeurIPS, ICML and ICLR (machine learning) and CVPR, ICCV and ECCV (computer vision), <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Workshops, co-located events, Tiny Papers, position papers and competition or demo tracks are left out. The list of papers comes from the dblp XML dump of 2026-10-13, plus ICML 2026 from its PMLR volume (the dump did not have it yet); position papers are left out by their "Position:" title prefix as well. Abstracts come from each conference's own pages wherever possible: PMLR (ICML), the NeurIPS proceedings, the ICLR proceedings (2024–2026) and the ICLR virtual site (2020–2023), CVF open access (CVPR, ICCV) and ECVA (ECCV); OpenAlex by DOI for CVPR and ICCV; when dblp writes a title slightly differently from the conference's own listing (formulas, typos, a method name added), the most similar title of the same venue and year (145 pairs, each read); the arXiv version, only when the title is identical, for what remains. OpenReview's API refuses anonymous requests and was not used. Code and project links are removed from abstracts before reading.</p>
       <div class="tablewrap" style="max-width:640px"><table id="coverage"></table></div>
       <h2>Topics</h2>
-      <p>Topics were drawn from the most frequent and the fastest-changing title phrases of the six venues, then written as rules (keywords and phrases). A paper counts for a topic when the rule matches its title or its abstract. Words that are generic inside abstracts (dataset, attention, reasoning, agents, fine-tuning, optimization, distillation, unsupervised, face) have stricter abstract rules. For every topic, random papers matched only through the abstract were read, in 2020–2023 and in 2024–2026, to check that the words keep the topic's sense; rules were corrected until the samples held up. The method is the same as in the robotics study.</p>
+      <p>The 106 topics were drawn from the most frequent and the fastest-changing title phrases of the six venues. Each paper's title and abstract were read by a language model (Claude Opus 5.5) against a written codebook of the 106 topics that says what counts and what does not. A paper counts for a topic when its own work &mdash; its method, model, theory, task, data or evaluation &mdash; involves the topic; a topic named only as background, motivation, contrast, related or future work does not count. Several topics per paper are normal. These labels replaced keyword rules on 20 November 2026: the rules had missed papers that describe a topic in other words and counted words used in passing or in another sense. A random 10% of the papers was labelled a second time by other agents in other batches; the two readings agree closely (median kappa across topics 0.96, lowest 0.89). Codebook, labels, prompts and checks are in the repository. The method is the same as in the robotics study.</p>
       <h2>Shares and trends</h2>
       <p>Shares are standardised to the venue mix of 2024 and 2025 together, so that both ICCV and ECCV are in it and the years compare. A venue that did not meet in a year (ICCV in even years, ECCV in odd years, NeurIPS in 2026) contributes its share from the model, with a 95% interval. The trend is a logistic regression of topic on venue and year over the whole period; a topic is called rising or declining only when significant after Benjamini–Hochberg correction across all topics. "2024 onwards" repeats the test on 2024–2026 alone. Per venue, the trend is a likelihood-ratio test.</p>
       <h2>Limits</h2>
       <ul>
-        <li>A share counts papers that name a topic, including in passing; it is not a count of papers whose main contribution is that topic.</li>
-        <li>Keyword rules miss papers that describe a topic without its usual words.</li>
+        <li>A share counts papers whose own work involves a topic; it is not a count of papers whose main contribution is that topic.</li>
+        <li>The labels are one model's reading. Their correctness was checked only by the same model judging the papers where the labels and the old keyword rules disagree, which is not an independent check (that judge says "yes" more often than a second labelling does); no human check has been made yet.</li>
         <li id="m-small">ICCV meets in odd years and ECCV in even years, so each has three or four years of data and its single-venue trends rest on few points.</li>
-        <li id="m-length">Abstracts got slightly longer over the years, so a topic has slightly more chances to be named in later years.</li>
+        <li id="m-length">Abstracts got slightly longer over the years, and later papers involve more topics on average, so part of a small rise can come from that.</li>
         <li>Conference years follow submission by six to nine months; arXiv runs ahead of all of this.</li>
       </ul>
       <h2>Code and tables</h2>
-      <p>Scripts, topic rules and result tables are kept with the study. Abstract texts are not redistributed; the scripts fetch them from the original sources.</p>
+      <p>Scripts, topic codebook and labels, result tables and figures: <a href="https://github.com/HuYicheng/ml-cv-topic-trends" target="_blank" rel="noopener">github.com/HuYicheng/ml-cv-topic-trends</a>.
+        Abstract texts are not redistributed; the scripts fetch them from the original sources.</p>
       <p class="note" id="built"></p>
     </div>
   </section>
@@ -421,7 +422,7 @@ tbody tr.totals:hover { background: var(--bg); }
       <td class="num" title="2024 onwards">${t.ror == null ? "–" : "×" + fmt(t.ror, 2)}${mark[t.rcall]}</td>
       <td><span class="call ${t.call}">${arrow[t.call]}</span></td><td>${mode === "count" ? sparkBars(t, new Set(sc.partial)) : spark2(t)}</td></tr>`).join("");
     const lab = scopeLabel(scope);
-    const what = mode === "count" ? `${lab}: number of papers per year whose title or abstract names the topic (`
+    const what = mode === "count" ? `${lab}: number of papers per year whose own work involves the topic (`
       : sc.single ? `${lab}: raw shares of its papers, in % (` : `${lab}: shares in %, standardised to the ${(D.ref_years || [D.ref]).join(" + ")} venue mix of the selection (`;
     $("#scopenote").textContent = [what + yrs.map((y, j) => `${y}: ${n[j].toLocaleString("en")}`).join(", ") + " papers).", lastYearNote(scope, mode)].filter(Boolean).join(" ");
     $("#sparklegend").textContent = mode === "count" ? `bars: papers per year, ${Y[0]}–${Y[Y.length - 1]} (own scale per row)`
@@ -490,7 +491,7 @@ tbody tr.totals:hover { background: var(--bg); }
     html += rows.map(([t, S]) => card(t.i, t.name, `<span class="call ${t.call}">${arrow[t.call]}</span>`, S, same ?? niceMax(peak(S)))).join("");
     $("#smgrid").innerHTML = rows.length ? html : `<p class="note">No topic matches these filters.</p>`;
     $("#chartnote").textContent = (mode === "count"
-      ? [`${scopeLabel(scope)}: number of papers per year whose title or abstract names the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
+      ? [`${scopeLabel(scope)}: number of papers per year whose own work involves the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
       : [`${scopeLabel(scope)}: share of papers per year, in %${sc.single ? "" : `, standardised to the ${(D.ref_years || [D.ref]).join(" + ")} venue mix of the selection`}.`, sc.estimated.length ? "Hollow dot: estimated." : ""])
       .concat(lastYearNote(scope, mode)).filter(Boolean).join(" ");
   }
@@ -642,7 +643,7 @@ tbody tr.totals:hover { background: var(--bg); }
     for (const b of document.querySelectorAll("#modeseg button")) b.setAttribute("aria-pressed", String(b.dataset.mode === state.mode));
     $("#mx-range").textContent = `${y0}–${y1}`;
     if (d.abs_words) $("#m-length").textContent = "Abstracts got longer (median words: " + d.years.map((y) => `${y} ${d.abs_words[y]}`).join(", ") +
-      "). Counting any mention, a longer abstract has more chances to name a topic, so part of a small rise can come from length alone.";
+      "), and later papers involve more topics on average, so part of a small rise can come from papers describing more of their work.";
     const url = (x) => Array.isArray(x) ? d.lp[x[0]] + x[1] + d.ls[x[2]] : x;   // links are stored as [prefix, middle, suffix]
     P = d.papers.map((p) => [p[0], p[1], p[2], url(p[3]), p[4], p[0].toLowerCase(), new Set(p[4])]);
     renderTopics(); renderMatrix(); filters(); renderCombine(); coverage();

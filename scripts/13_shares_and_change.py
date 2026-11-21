@@ -1,4 +1,7 @@
-"""Main table (title + abstract measure): share of each topic per year, comparable across years, and its change.
+"""Main table (final measure: semantic labels from title + abstract since 2026-11-20): share of each topic per year,
+comparable across years, and its change. usage: 13_shares_and_change.py [MATRIX OUT] (defaults topic_matrix_ta.csv,
+shares_and_change_ta.csv; the same table for the keyword matrix or the "main" labels: topic_matrix_ta_keyword.csv
+shares_and_change_ta_keyword.csv, topic_matrix_ta_main.csv shares_and_change_ta_main.csv).
 
 ML / CV study, same method as ~/robotics-trends/scripts/13_shares_and_change.py. Years and venues from scripts/config.py.
 Share per year = topic share standardised to the venue mix of the reference years (config.REF_YEARS = 2024 + 2025, so that
@@ -8,7 +11,7 @@ that venue's share from the model, i.e. its venue level moved by the year change
 95% intervals by 2,000 draws of the coefficients from their estimated covariance. Raw pooled shares are kept alongside.
 Trend: logistic topic ~ C(venue) + year over the whole period (annual odds multiplier, 95% CI); the same over 2024-2026
 ("recent"). Benjamini-Hochberg q over topics for each; 'rising'/'declining' only when q < 0.05.
-Output: results/shares_and_change_ta.csv
+Output: results/shares_and_change_ta.csv (or OUT)
 """
 import importlib.util
 import os
@@ -30,7 +33,8 @@ spec = importlib.util.spec_from_file_location("t", os.path.join(ROOT, "scripts",
 t = importlib.util.module_from_spec(spec); spec.loader.exec_module(t)
 family = {n: f for n, f, _ in t.TOPICS}
 YEARS, REF = config.YEARS, config.REF_YEAR
-m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
+MATRIX, OUT = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ("topic_matrix_ta.csv", "shares_and_change_ta.csv")
+m = pd.read_csv(os.path.join(ROOT, "data", MATRIX))
 m = m[m.year.isin(YEARS)]
 ref = m[m.year.isin(config.REF_YEARS)].venue.value_counts(normalize=True)
 rng = np.random.default_rng(0)
@@ -89,7 +93,7 @@ for p, q, c, o in (("p", "q", "call", "annual_OR"), ("recent_p", "recent_q", "re
     out[q] = multipletests(out[p], method="fdr_bh")[1]
     out[c] = np.where(out[q] < 0.05, np.where(out[o] > 1, "rising", "declining"), "unclear")
 out = out.sort_values(f"share_{REF}", ascending=False)
-out.to_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv"), index=False)
+out.to_csv(os.path.join(ROOT, "results", OUT), index=False)
 print("papers with abstracts per year:", m.groupby("year").size().to_dict())
 show = out[["topic"] + [f"share_{y}" for y in YEARS] + ["change_pp", "annual_OR", "call", "recent_OR", "recent_call"]].copy()
 for c in [f"share_{y}" for y in YEARS]:

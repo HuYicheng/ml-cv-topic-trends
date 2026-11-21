@@ -1,0 +1,107 @@
+topic,first_pass,second_pass,kappa,first_pass_main,second_pass_main,kappa_main
+Diffusion models / score-based,840,840,0.9934,570,569,0.9182
+Flow matching / normalizing flows,169,171,0.976,95,93,0.9785
+GANs,138,140,0.9634,77,81,0.9617
+VAEs / vector-quantized models,168,165,0.9724,62,56,0.8805
+Autoregressive models / tokenizers,193,198,0.945,95,99,0.8957
+Transformers / attention,1242,1217,0.9663,325,330,0.8619
+State-space models / Mamba / linear attention,90,89,0.9718,54,60,0.947
+Mixture of experts,90,91,0.9721,60,57,0.9742
+Graph neural networks,311,308,0.9849,175,171,0.9351
+Convolutional networks,402,403,0.9544,56,61,0.8709
+Recurrent networks / LSTMs,86,84,0.9762,31,33,0.9373
+Neural ODEs / dynamical systems,304,298,0.9277,131,144,0.8854
+Equivariant / geometric deep learning,190,189,0.9595,112,116,0.8933
+Energy-based models,34,35,0.9854,25,24,0.9386
+Spiking / neuromorphic networks,43,42,0.9882,41,41,1.0
+Neural fields / NeRF,215,215,0.9714,161,159,0.9299
+3D Gaussian splatting,126,126,1.0,111,107,0.9628
+LLMs / language models,1112,1115,0.9819,253,240,0.7222
+Vision-language / multimodal LLMs,766,774,0.98,392,398,0.8726
+Foundation models,324,328,0.8916,111,109,0.8711
+Agents / tool use,223,223,0.9724,152,150,0.9461
+Reasoning / chain-of-thought,507,514,0.9448,245,241,0.9068
+Mathematical reasoning / theorem proving,119,123,0.9413,31,33,0.9059
+Retrieval-augmented generation,83,78,0.9185,42,40,0.902
+Alignment / RLHF / preference optimization,226,228,0.9502,151,150,0.9425
+Fine-tuning / PEFT / prompting,1137,1129,0.9389,252,258,0.8787
+In-context learning,94,100,0.9583,59,58,0.9914
+Hallucination / factuality,85,88,0.9591,35,37,0.9442
+Code generation / software,131,130,0.965,68,70,0.9854
+Model merging / editing / unlearning,91,90,0.9609,68,68,0.9704
+Long context,125,126,0.9636,40,46,0.8831
+Scaling laws / pretraining,120,135,0.9005,64,59,0.9263
+Self-supervised / contrastive learning,647,645,0.9514,329,323,0.9426
+Semi- / weakly supervised & noisy labels,417,422,0.9436,210,215,0.959
+Few-shot / zero-shot / open-vocabulary,497,496,0.9305,187,190,0.8996
+Domain adaptation / generalization / shift,852,849,0.9184,360,352,0.9384
+Continual / incremental learning,174,171,0.9852,132,134,0.9771
+Meta-learning,117,120,0.9615,69,71,0.9424
+Federated learning,159,156,0.9838,141,136,0.9743
+Knowledge distillation,299,298,0.967,144,142,0.9289
+Active learning / data selection,313,306,0.9045,146,142,0.9223
+Reinforcement learning,827,826,0.9886,543,543,0.943
+Offline RL / imitation learning,210,208,0.9608,118,115,0.9608
+Multi-agent learning / game theory,203,202,0.9671,157,160,0.9839
+Bandits / online learning,234,230,0.9513,168,175,0.9494
+Multi-task / transfer learning,393,397,0.8885,113,114,0.9062
+Multimodal learning / cross-modal,1380,1400,0.9613,260,258,0.8646
+Clustering / unsupervised learning,338,346,0.9056,155,147,0.9124
+Adversarial robustness / attacks,290,292,0.9787,224,220,0.9769
+Backdoor / data poisoning,76,72,0.9591,57,60,0.957
+Privacy,153,151,0.9866,125,123,0.9673
+Fairness / bias,169,169,0.9698,106,106,0.9904
+Interpretability / explainability,375,377,0.9388,257,258,0.958
+Uncertainty / calibration / conformal,321,321,0.9482,159,158,0.9454
+OOD / anomaly detection,154,157,0.9509,104,105,0.9564
+LLM safety / jailbreak,109,108,0.9953,84,89,0.9591
+Watermarking / deepfakes / forensics,103,104,0.9853,97,100,0.9846
+Quantization / pruning / compression,242,242,0.9787,192,190,0.9679
+Efficient inference / sampling,732,725,0.9062,310,317,0.9321
+Neural architecture search / AutoML,112,111,0.9409,68,70,0.9562
+Learning theory / generalization,1022,1014,0.9342,527,519,0.9063
+Optimization,626,630,0.9227,399,400,0.9435
+Bayesian & probabilistic inference,432,422,0.9285,234,226,0.9374
+Causal inference / discovery,173,173,0.9941,145,142,0.9752
+Optimal transport,162,163,0.9843,90,90,0.9551
+Kernel methods / Gaussian processes,152,152,0.9799,72,71,0.9647
+Statistical estimation / high-dimensional statistics,357,357,0.9211,195,202,0.9097
+Image classification / recognition,667,668,0.9586,71,68,0.9202
+Object detection,345,345,0.9758,180,180,0.9603
+Segmentation,520,523,0.9581,261,267,0.9531
+Tracking / re-identification,166,163,0.9721,112,115,0.942
+Human pose / body / hands,158,158,0.942,86,86,0.9413
+Object 6D pose estimation,36,39,0.9598,23,22,0.9777
+Face analysis,175,176,0.968,118,119,0.9358
+Image restoration / low-level vision,384,381,0.9576,296,292,0.9613
+Video understanding / action recognition,295,298,0.9773,203,207,0.945
+Visual QA / captioning / grounding,267,270,0.9481,87,86,0.9241
+OCR / documents / charts,80,76,0.9482,56,57,0.9555
+Image retrieval / metric learning,116,116,0.9476,67,67,0.9699
+Medical imaging,130,135,0.9655,107,106,0.9477
+Remote sensing / earth observation,72,75,0.9657,53,52,0.9521
+Autonomous driving,225,220,0.97,143,145,0.9506
+Event cameras / computational imaging,149,148,0.9623,118,119,0.9444
+3D reconstruction / SfM / SLAM,389,376,0.9439,241,231,0.9564
+Depth / stereo / optical flow / matching,312,312,0.9401,157,156,0.9642
+Novel view synthesis / neural rendering,308,297,0.9537,151,139,0.9298
+Point clouds / 3D understanding,395,397,0.9497,237,233,0.93
+Image generation / editing,606,604,0.9306,329,333,0.9309
+Video generation / editing,209,206,0.9778,137,135,0.9626
+3D / 4D generation,140,140,0.9637,119,115,0.974
+3D humans / avatars / motion,191,187,0.9459,149,151,0.9457
+World models / video prediction,102,109,0.928,69,66,0.9328
+AI for science: molecules / proteins / materials,180,178,0.9658,134,134,0.9848
+Scientific ML / PDEs / physics,173,168,0.9372,98,97,0.9118
+Time series / forecasting,195,197,0.953,128,131,0.9255
+Speech / audio / music,155,156,0.9509,80,77,0.9679
+NLP tasks,256,263,0.9225,40,40,0.7991
+Robotics / embodied AI,206,210,0.9606,144,146,0.9719
+Healthcare / clinical,81,83,0.9261,43,45,0.9086
+Tabular data,52,54,0.943,30,29,0.983
+Combinatorial optimization / scheduling,157,163,0.9236,105,103,0.9319
+Recommendation / information retrieval,83,81,0.9384,47,48,0.9259
+Graph learning / knowledge graphs,327,330,0.9668,189,185,0.9289
+Datasets / benchmarks,1038,1040,0.9825,584,574,0.9352
+Synthetic data / data augmentation,742,758,0.9225,229,229,0.9282
+Evaluation of LLMs / LLM-as-judge,330,338,0.9377,189,187,0.9075

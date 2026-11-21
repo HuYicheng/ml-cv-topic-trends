@@ -1,0 +1,28 @@
+{
+ "other_model": {
+  "papers": 50,
+  "whole": [],
+  "recent": [
+   {
+    "topic": "Image restoration / low-level vision",
+    "from": "declining",
+    "to": "unclear",
+    "q_from": 0.0479895179502126,
+    "q_to": 0.0500872024596109
+   }
+  ]
+ },
+ "repeat_swap": {
+  "papers": 8536,
+  "whole": [],
+  "recent": [
+   {
+    "topic": "Image restoration / low-level vision",
+    "from": "declining",
+    "to": "unclear",
+    "q_from": 0.0479895179502126,
+    "q_to": 0.0579177133548074
+   }
+  ]
+ }
+}

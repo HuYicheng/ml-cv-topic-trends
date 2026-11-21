@@ -4,109 +4,109 @@ Cell = share in the venue's latest year (2026 for ICLR, ICML, CVPR and ECCV; 202
 
 | topic | All venues | ML | Vision | NeurIPS | ICML | ICLR | CVPR | ICCV | ECCV |
 |---|---|---|---|---|---|---|---|---|---|
-| LLMs / language models | 32.3↑ | 40.0↑ | 16.5↑ | 31.0↑ | 36.8↑ | 41.7↑ | 16.3↑ | 13.9↑ | 16.0↑ |
-| Diffusion models / score-based | 15.1↑ | 12.8↑ | 20.1↑ | 11.4↑ | 11.0↑ | 13.0↑ | 19.5↑ | 23.5↑ | 20.1↑ |
-| Fine-tuning / PEFT / prompting | 15.2↑ | 15.2↑ | 15.2↑ | 14.1↑ | 12.9↑ | 17.2↑ | 15.1↑ | 14.6↑ | 14.3↑ |
-| Transformers / attention | 13.6↑ | 12.3↑ | 17.1↑ | 12.2↑ | 11.3↑ | 13.3↑ | 17.0↑ | 17.6 | 15.3↑ |
-| Vision-language / multimodal LLMs | 18.7↑ | 14.4↑ | 27.9↑ | 11.5↑ | 10.2↑ | 12.4↑ | 28.2↑ | 20.9↑ | 26.4↑ |
-| Multimodal learning / cross-modal | 17.3↑ | 14.2↑ | 25.2↑ | 11.5↑ | 10.2↑ | 12.6↑ | 25.4↑ | 20.2↑ | 23.5↑ |
-| Reasoning / chain-of-thought | 17.4↑ | 20.0↑ | 12.6↑ | 12.9↑ | 14.8↑ | 17.9↑ | 12.4↑ | 5.9↑ | 11.1↑ |
-| Self-supervised / contrastive learning | 7.2↓ | 6.4↓ | 8.8↓ | 7.4 | 6.7 | 6.4↓ | 9.3↓ | 10.0↓ | 8.0 |
-| Reinforcement learning | 13.4↑ | 15.7 | 8.0↑ | 11.7↓ | 16.0 | 17.2 | 8.0↑ | 1.7 | 6.6↑ |
-| Learning theory / generalization | 6.3↓ | 8.9↓ | 0.9 | 10.1↓ | 10.3↓ | 7.6↓ | 1.0 | 0.7 | 1.0 |
-| Image generation / editing | 6.1↑ | 4.7↑ | 9.5↑ | 4.9↑ | 3.5↑ | 4.9↑ | 9.2↑ | 11.7↑ | 9.7↑ |
-| Datasets / benchmarks | 8.1↑ | 9.1↑ | 7.7↑ | 7.5↑ | 4.3↑ | 7.0↑ | 7.3↑ | 8.3↑ | 8.0↑ |
-| Few-shot / zero-shot / open-vocabulary | 5.6↑ | 3.8↑ | 9.0↑ | 4.7↑ | 3.7↑ | 3.5↓ | 9.2↑ | 10.3↑ | 7.6↑ |
-| Interpretability / explainability | 8.0↑ | 8.8↑ | 6.3↑ | 7.3↑ | 8.4↑ | 8.8↑ | 6.6↑ | 4.1 | 5.6↑ |
-| Segmentation | 4.8↓ | 2.6 | 9.6↓ | 3.2 | 1.8↑ | 2.2 | 9.5↓ | 11.2↓ | 9.5↓ |
-| Foundation models | 5.5↑ | 4.8↑ | 7.0↑ | 4.9↑ | 3.9↑ | 4.4↑ | 6.7↑ | 6.4↑ | 7.3↑ |
-| Robotics / embodied AI | 6.6↑ | 5.1↑ | 8.9↑ | 5.1↑ | 4.2↑ | 5.3↑ | 8.5↑ | 6.2↑ | 9.6↑ |
-| Optimization | 3.5↓ | 4.9↓ | 0.6↓ | 5.8↓ | 6.2↓ | 4.1↓ | 0.7↓ | 0.4 | 0.6 |
-| Domain adaptation / generalization / shift | 4.6 | 4.5↑ | 5.2↓ | 4.4↑ | 4.9↑ | 3.9 | 5.3 | 4.6↓ | 4.4 |
-| Point clouds / 3D understanding | 3.7 | 2.2↑ | 7.4↓ | 2.3↑ | 1.4↑ | 1.6↑ | 7.3↓ | 8.8 | 7.4 |
-| Image classification / recognition | 2.9↓ | 2.4↓ | 4.0↓ | 3.2↓ | 2.3↓ | 3.0↓ | 4.1↓ | 4.8↓ | 3.9↓ |
-| Efficient inference / sampling | 5.9↑ | 5.9↑ | 5.9↑ | 4.6↑ | 5.3↑ | 5.6↑ | 5.2↑ | 3.9↑ | 5.9↑ |
-| Alignment / RLHF / preference optimization | 3.8↑ | 4.3↑ | 2.6↑ | 4.1↑ | 4.1↑ | 4.9↑ | 2.5↑ | 1.6↑ | 2.8↑ |
-| Image restoration / low-level vision | 3.2 | 1.8↑ | 6.2↓ | 1.9↑ | 1.2 | 2.0↑ | 6.0↓ | 6.6 | 6.9 |
-| Video generation / editing | 4.2↑ | 2.7↑ | 7.2↑ | 2.1↑ | 1.9↑ | 2.9↑ | 6.6↑ | 6.8↑ | 8.7↑ |
-| Autoregressive models / tokenizers | 4.7↑ | 4.6↑ | 4.6↑ | 3.5↑ | 4.5↑ | 5.1↑ | 4.5↑ | 3.1↑ | 4.8↑ |
-| AI for science: molecules / proteins / materials | 3.1↑ | 4.1↑ | 1.0↑ | 4.3↑ | 4.3↑ | 4.3↑ | 1.0↑ | 0.4 | 0.7↑ |
-| 3D reconstruction / SfM / SLAM | 3.5↑ | 1.9↑ | 7.4↑ | 2.0↑ | 0.7↑ | 1.6↑ | 7.5↑ | 7.4 | 7.6↑ |
-| Video understanding / action recognition | 3.4↑ | 2.4↑ | 6.3 | 2.5↑ | 1.4↑ | 1.9↑ | 6.2 | 5.9 | 6.1 |
-| Visual QA / captioning / grounding | 4.3↑ | 3.6↑ | 6.6↑ | 2.8↑ | 2.5↑ | 3.1↑ | 6.8↑ | 4.8 | 6.5↑ |
-| Clustering / unsupervised learning | 2.4↓ | 2.4↓ | 2.3↓ | 2.9↓ | 2.6↓ | 2.5↓ | 2.5↓ | 3.2↓ | 1.8↓ |
-| Quantization / pruning / compression | 3.1↑ | 3.2 | 2.8 | 2.8 | 3.5↑ | 3.7 | 2.8 | 3.1↑ | 2.9 |
-| Autonomous driving | 2.8↑ | 1.6↑ | 5.6↑ | 2.0↑ | 0.9 | 1.4 | 5.2 | 6.4 | 6.1↑ |
-| Knowledge distillation | 3.1↑ | 2.8↑ | 4.1↑ | 2.4↑ | 2.5↑ | 2.9↑ | 4.0↑ | 4.3 | 4.2 |
-| Privacy | 2.6↑ | 2.8 | 2.2↑ | 3.3 | 2.9 | 2.8 | 2.2↑ | 2.6↑ | 1.9↑ |
-| 3D Gaussian splatting | 2.9↑ | 1.8↑ | 5.5↑ | 1.6↑ | 0.5↑ | 1.5↑ | 5.5↑ | 6.3↑ | 6.5↑ |
-| Healthcare / clinical | 3.4↑ | 3.3↑ | 3.1↑ | 3.3↑ | 3.0 | 2.9↑ | 3.2↑ | 2.1 | 3.0↑ |
-| Graph neural networks | 1.7↓ | 2.3↓ | 0.7↓ | 3.1↓ | 2.6↓ | 2.3↓ | 0.8↓ | 0.5↓ | 0.3↓ |
-| Semi- / weakly supervised & noisy labels | 1.8↓ | 1.4↓ | 2.8↓ | 2.0↓ | 1.6↓ | 1.2↓ | 2.7↓ | 4.0↓ | 3.2↓ |
-| Synthetic data / data augmentation | 1.6↓ | 1.4↓ | 1.8↓ | 2.4 | 1.5↓ | 1.5↓ | 1.9↓ | 2.9 | 1.9↓ |
-| Bayesian & probabilistic inference | 2.6↓ | 3.4↓ | 0.9↓ | 3.4↓ | 4.1↓ | 2.8↓ | 0.9↓ | 0.7 | 0.8 |
-| Speech / audio / music | 2.6↑ | 2.4 | 2.8↑ | 2.5 | 2.2 | 2.7 | 2.9↑ | 2.8 | 2.9↑ |
-| NLP tasks | 1.9↓ | 2.3↓ | 1.1 | 3.0↓ | 2.0↓ | 3.0↓ | 1.0 | 1.4 | 0.9 |
-| Depth / stereo / optical flow / matching | 2.0↓ | 1.1↑ | 4.3↓ | 1.3 | 0.4 | 1.0 | 4.2↓ | 5.9 | 4.7↓ |
-| Novel view synthesis / neural rendering | 1.8↑ | 1.0↑ | 3.8↑ | 1.3↑ | 0.3↑ | 1.0↑ | 3.7↑ | 4.3↑ | 4.6↑ |
-| Graph learning / knowledge graphs | 1.6↓ | 2.0↓ | 0.8 | 2.7 | 2.2 | 1.9↓ | 1.1 | 0.5 | 0.3↓ |
-| Medical imaging | 2.8↑ | 2.1↑ | 4.4↑ | 2.0↑ | 1.4↑ | 1.9↑ | 4.3↑ | 3.3↑ | 4.2↑ |
-| Uncertainty / calibration / conformal | 2.6↑ | 3.0↑ | 1.7↑ | 2.5 | 3.6↑ | 2.5 | 1.7↑ | 1.3 | 1.8↑ |
-| Long context | 2.2↑ | 2.7↑ | 0.8↑ | 2.4↑ | 2.9↑ | 2.9↑ | 0.8↑ | 0.9↑ | 1.0↑ |
-| Multi-task / transfer learning | 1.5↓ | 1.5↓ | 1.6↓ | 1.8↓ | 1.6↓ | 1.6↓ | 1.7↓ | 2.2 | 1.3↓ |
-| Object detection | 1.7↓ | 0.8↓ | 3.7↓ | 1.2↓ | 0.4 | 0.8↓ | 3.5↓ | 4.9↓ | 3.9↓ |
-| 3D humans / avatars / motion | 1.7↑ | 1.0↑ | 3.8↑ | 0.8↑ | 0.3↑ | 0.9↑ | 3.7↑ | 4.8 | 4.0 |
-| Adversarial robustness / attacks | 1.4↓ | 1.4↓ | 1.5↓ | 1.7↓ | 1.4↓ | 1.6↓ | 1.5↓ | 2.3↓ | 1.2↓ |
-| Causal inference / discovery | 1.9 | 2.4 | 0.8↑ | 2.6 | 2.7 | 2.0 | 0.8 | 0.6 | 0.9↑ |
-| Scientific ML / PDEs / physics | 2.1↑ | 2.6↑ | 1.1↑ | 2.7↑ | 2.9↑ | 2.4↑ | 1.0↑ | 0.7↑ | 0.9↑ |
-| Bandits / online learning | 1.3↓ | 1.8↓ | 0.1 | 2.9↓ | 1.9↓ | 1.5 | 0.1 | 0.1 | 0.0 |
-| Hallucination / factuality | 2.8↑ | 2.8↑ | 2.6↑ | 2.1↑ | 2.6↑ | 2.5↑ | 2.5↑ | 1.4↑ | 2.6↑ |
-| Neural fields / NeRF | 1.1↑ | 0.7↑ | 1.9 | 1.0 | 0.4 | 0.8 | 1.9 | 2.9 | 2.3↑ |
-| State-space models / Mamba / linear attention | 1.3↑ | 1.3↑ | 1.2↑ | 1.4↑ | 1.1↑ | 1.3↑ | 1.4↑ | 2.3↑ | 1.0↑ |
-| Agents / tool use | 5.7↑ | 7.0↑ | 2.7↑ | 2.8↑ | 6.5↑ | 5.5↑ | 2.2↑ | 0.5↑ | 3.4↑ |
-| Face analysis | 1.1↓ | 0.5 | 2.5↓ | 0.8 | 0.3 | 0.4 | 2.6↓ | 3.3 | 3.0↓ |
-| Time series / forecasting | 1.8↑ | 2.5↑ | 0.2 | 2.3↑ | 2.8↑ | 2.6↑ | 0.3 | 0.2 | 0.2 |
-| Continual / incremental learning | 1.7 | 1.7 | 1.8 | 1.4 | 2.0↑ | 1.7 | 1.9 | 1.9 | 1.3 |
-| Scaling laws / pretraining | 1.4↑ | 1.8↑ | 0.7↑ | 1.8↑ | 1.9↑ | 1.9↑ | 0.7↑ | 0.7 | 0.5↑ |
-| OOD / anomaly detection | 1.6↑ | 1.5 | 1.9↑ | 1.5 | 1.5 | 1.4 | 2.0↑ | 2.0 | 1.7 |
-| Optimal transport | 1.7↓ | 2.0↓ | 1.0 | 1.9↓ | 2.6 | 1.6 | 1.0 | 1.3↑ | 1.1 |
-| Flow matching / normalizing flows | 3.0↑ | 2.8↑ | 3.1↑ | 1.9↑ | 2.5↑ | 2.7↑ | 2.7↑ | 1.6↑ | 3.2↑ |
-| LLM safety / jailbreak | 2.4↑ | 3.0↑ | 0.9↑ | 2.0↑ | 2.7↑ | 2.9↑ | 0.9↑ | 0.5↑ | 0.9↑ |
-| 3D / 4D generation | 1.4↑ | 0.7↑ | 2.7↑ | 0.7↑ | 0.4↑ | 0.8↑ | 2.7↑ | 3.4↑ | 2.6↑ |
-| Mathematical reasoning / theorem proving | 2.9↑ | 4.1↑ | 0.5↑ | 2.7↑ | 3.0↑ | 4.1↑ | 0.3↑ | 0.2↑ | 0.1 |
-| Fairness / bias | 1.4↓ | 1.6↓ | 0.9 | 1.9 | 1.7↓ | 1.5↓ | 1.1 | 0.9 | 0.5 |
-| VAEs / vector-quantized models | 1.5↓ | 1.1↓ | 2.1↑ | 1.2↓ | 1.1↓ | 1.4↓ | 2.1↑ | 2.3↑ | 2.0 |
-| In-context learning | 1.0↑ | 1.3↑ | 0.4↑ | 1.5↑ | 1.3↑ | 1.5↑ | 0.4↑ | 0.5↑ | 0.4↑ |
-| Federated learning | 1.2 | 1.2↓ | 1.1↑ | 1.6 | 1.6 | 1.1↓ | 1.1↑ | 1.4↑ | 0.7 |
-| Watermarking / deepfakes / forensics | 1.7↑ | 1.6↑ | 2.0↑ | 1.3↑ | 1.6↑ | 1.4↑ | 2.2↑ | 2.2↑ | 1.4↑ |
-| Convolutional networks | 0.9↓ | 0.8↓ | 1.3↓ | 1.0↓ | 0.8↓ | 0.7↓ | 1.3↓ | 2.0↓ | 1.2↓ |
-| Multi-agent learning / game theory | 1.3↓ | 1.7↓ | 0.4↑ | 2.1↓ | 2.1↓ | 1.4↓ | 0.3↑ | 0.3 | 0.3↑ |
-| Recommendation / information retrieval | 1.1 | 1.5 | 0.3 | 1.8 | 1.4↓ | 1.6 | 0.3 | 0.3 | 0.4 |
-| Evaluation of LLMs / LLM-as-judge | 1.6↑ | 2.2↑ | 0.5↑ | 1.5↑ | 1.9↑ | 2.1↑ | 0.4↑ | 0.6↑ | 0.5↑ |
-| Model merging / editing / unlearning | 1.4↑ | 1.6↑ | 1.1↑ | 1.3↑ | 1.5↑ | 1.8↑ | 1.1↑ | 0.9↑ | 0.8↑ |
-| Offline RL / imitation learning | 1.3↓ | 1.6↓ | 0.7↑ | 1.6↓ | 1.4↓ | 2.0↓ | 0.6↑ | 0.6 | 0.8 |
-| Human pose / body / hands | 1.0↓ | 0.5 | 2.2↓ | 0.6 | 0.2 | 0.4 | 2.2↓ | 2.6↓ | 2.6↓ |
-| Mixture of experts | 2.2↑ | 2.2↑ | 1.8↑ | 1.5↑ | 2.4↑ | 1.8↑ | 1.8↑ | 1.1↑ | 1.4↑ |
-| Active learning / data selection | 1.5↑ | 1.6↑ | 1.2↑ | 1.5 | 1.5 | 1.4↑ | 1.3↑ | 0.8 | 0.8 |
-| Tracking / re-identification | 1.3↓ | 0.9↑ | 2.9↓ | 0.7 | 0.5↑ | 0.5 | 2.7↓ | 3.0↓ | 2.9↓ |
-| Code generation / software | 1.5↑ | 2.1↑ | 0.2↑ | 1.4↑ | 2.1↑ | 2.4↑ | 0.3↑ | 0.0 | 0.2 |
-| Equivariant / geometric deep learning | 0.9↓ | 1.0↓ | 0.7↓ | 1.1 | 1.3 | 1.0↓ | 0.5↓ | 0.4↓ | 1.0 |
-| Retrieval-augmented generation | 1.3↑ | 1.5↑ | 0.9↑ | 1.2↑ | 1.3↑ | 1.5↑ | 0.9↑ | 0.5↑ | 0.6↑ |
-| Statistical estimation / high-dimensional statistics | 0.9↓ | 1.2↓ | 0.3↓ | 1.2↓ | 1.4↓ | 1.0↓ | 0.2 | 0.3 | 0.5 |
-| Combinatorial optimization / scheduling | 1.2 | 1.6 | 0.4 | 1.4 | 1.7 | 1.4 | 0.3 | 0.1 | 0.6 |
-| World models / video prediction | 1.5↑ | 1.2↑ | 1.8↑ | 1.1↑ | 1.4↑ | 1.2 | 1.4↑ | 0.9↑ | 2.7↑ |
-| Kernel methods / Gaussian processes | 0.7↓ | 1.0↓ | 0.1↓ | 1.3↓ | 1.2↓ | 0.9↓ | 0.1 | 0.1 | 0.1 |
-| Neural ODEs / dynamical systems | 0.8↓ | 1.1↓ | 0.3 | 1.4↓ | 1.1↓ | 1.1↓ | 0.2 | 0.3 | 0.3 |
-| Remote sensing / earth observation | 1.4↑ | 0.9↑ | 2.6↑ | 0.9↑ | 0.5↑ | 0.5↑ | 2.4↑ | 1.9 | 2.3↑ |
-| Event cameras / computational imaging | 0.7 | 0.2↑ | 1.7 | 0.5↑ | 0.1 | 0.1 | 1.6 | 1.8 | 1.6 |
-| Backdoor / data poisoning | 0.6 | 0.6 | 0.4 | 0.6 | 0.8 | 0.5 | 0.5 | 0.7 | 0.4 |
-| OCR / documents / charts | 0.9↑ | 0.8↑ | 1.4 | 0.5↑ | 0.6↑ | 0.8↑ | 1.6 | 1.1 | 1.3 |
-| Recurrent networks / LSTMs | 0.4↓ | 0.6↓ | 0.2↓ | 1.0↓ | 0.4↓ | 0.7↓ | 0.2↓ | 0.3 | 0.2↓ |
-| Meta-learning | 0.5↓ | 0.6↓ | 0.2↓ | 0.7↓ | 0.5↓ | 0.8↓ | 0.2↓ | 0.4↓ | 0.1↓ |
-| Tabular data | 0.6↑ | 0.9↑ | 0.0 | 0.9↑ | 1.1↑ | 0.7 | 0.0 | 0.0 | 0.1 |
-| GANs | 0.3↓ | 0.3↓ | 0.4↓ | 0.4↓ | 0.2↓ | 0.4↓ | 0.3↓ | 0.6↓ | 0.4↓ |
-| Image retrieval / metric learning | 0.4↓ | 0.2↓ | 0.8↓ | 0.3↓ | 0.2 | 0.3↓ | 0.9↓ | 0.9↓ | 0.5↓ |
-| Spiking / neuromorphic networks | 0.6↑ | 0.6↑ | 0.4 | 0.6 | 0.6↑ | 0.6 | 0.4↑ | 0.2 | 0.2 |
-| Object 6D pose estimation | 0.2↓ | 0.1 | 0.7↓ | 0.1 | 0.0 | 0.1 | 0.5↓ | 1.0 | 0.8 |
-| Neural architecture search / AutoML | 0.3↓ | 0.3↓ | 0.2↓ | 0.4↓ | 0.4↓ | 0.2↓ | 0.3↓ | 0.3↓ | 0.1↓ |
-| Energy-based models | 0.1↓ | 0.2↓ | 0.1 | 0.3 | 0.1↓ | 0.2↓ | 0.1 | 0.0 | 0.1 |
+| Multimodal learning / cross-modal | 28.6↑ | 21.7↑ | 44.4↑ | 18.0↑ | 15.8↑ | 19.3↑ | 45.0↑ | 36.3↑ | 41.7↑ |
+| LLMs / language models | 24.9↑ | 35.2↑ | 4.1↑ | 25.3↑ | 34.5↑ | 36.6↑ | 4.2↑ | 4.3↑ | 3.4↑ |
+| Fine-tuning / PEFT / prompting | 24.2↑ | 25.2↑ | 23.0↑ | 19.4↑ | 21.9↑ | 26.1↑ | 22.8↑ | 18.7↑ | 22.3↑ |
+| Datasets / benchmarks | 20.0↑ | 19.8↑ | 23.2↑ | 16.1↑ | 11.5↑ | 18.0↑ | 22.1↑ | 20.7↑ | 24.5↑ |
+| Transformers / attention | 15.8↑ | 13.7↑ | 20.8↑ | 12.9↑ | 12.5↑ | 14.8↑ | 20.6↑ | 19.9↑ | 19.1↑ |
+| Diffusion models / score-based | 14.4↑ | 11.9↑ | 19.8↑ | 10.8↑ | 10.3↑ | 12.0↑ | 19.0↑ | 22.9↑ | 19.8↑ |
+| Vision-language / multimodal LLMs | 20.1↑ | 15.6↑ | 29.8↑ | 12.1↑ | 11.2↑ | 13.6↑ | 30.0↑ | 21.8↑ | 28.7↑ |
+| Efficient inference / sampling | 12.5↑ | 12.0↑ | 14.3↑ | 9.9↑ | 11.8↑ | 11.8↑ | 14.0↑ | 12.8↑ | 15.5↑ |
+| Synthetic data / data augmentation | 9.8↑ | 8.8↑ | 12.6↑ | 8.8↑ | 7.3↑ | 9.2↑ | 12.8↑ | 13.3↑ | 12.2↑ |
+| Learning theory / generalization | 7.3↓ | 10.4↓ | 0.7 | 12.9↓ | 12.0↓ | 9.6↓ | 1.0 | 0.6 | 0.4↓ |
+| Domain adaptation / generalization / shift | 9.9↑ | 8.8↑ | 12.3 | 9.3↑ | 8.9↑ | 8.3 | 11.9 | 11.6 | 12.1 |
+| Image generation / editing | 8.2↑ | 6.0↑ | 13.1↑ | 5.9↑ | 4.8↑ | 6.7↑ | 13.2↑ | 14.1↑ | 12.8↑ |
+| Reinforcement learning | 13.8↑ | 15.9↓ | 8.9↑ | 11.9↓ | 16.7 | 17.0 | 8.5↑ | 1.6 | 7.4↑ |
+| Reasoning / chain-of-thought | 17.2↑ | 20.0↑ | 11.0↑ | 12.0↑ | 15.0↑ | 18.7↑ | 10.6↑ | 4.7↑ | 10.5↑ |
+| Evaluation of LLMs / LLM-as-judge | 10.5↑ | 12.1↑ | 6.5↑ | 8.2↑ | 8.6↑ | 11.8↑ | 6.1↑ | 4.6↑ | 7.7↑ |
+| Self-supervised / contrastive learning | 5.7↓ | 4.8↓ | 7.5↓ | 5.8↓ | 5.1 | 4.8↓ | 8.0↓ | 9.0↓ | 6.6↓ |
+| Few-shot / zero-shot / open-vocabulary | 5.8↑ | 4.1↑ | 9.3↑ | 4.8↑ | 3.7↑ | 4.2 | 9.4↑ | 10.8↑ | 8.6↑ |
+| Foundation models | 6.9↑ | 6.0↑ | 8.7↑ | 5.7↑ | 4.3↑ | 6.0↑ | 8.4↑ | 7.4↑ | 9.7↑ |
+| Optimization | 5.0↓ | 6.9↓ | 1.0↓ | 8.0↓ | 8.4↓ | 6.1↓ | 1.1↓ | 1.1 | 1.1↓ |
+| Image classification / recognition | 3.8↓ | 3.0↓ | 5.4↓ | 4.0↓ | 3.0↓ | 3.3↓ | 5.5↓ | 7.0↓ | 5.1↓ |
+| Interpretability / explainability | 6.0↑ | 7.4↑ | 3.1↑ | 5.8↑ | 8.1↑ | 7.5↑ | 3.1↑ | 2.4 | 3.6↑ |
+| Segmentation | 4.1↓ | 2.3 | 8.4↓ | 2.7 | 1.7↑ | 1.7↓ | 8.4↓ | 10.7↓ | 8.0↓ |
+| 3D reconstruction / SfM / SLAM | 4.8↑ | 2.5↑ | 10.5↑ | 2.6↑ | 0.8↑ | 2.0↑ | 10.3↑ | 10.7 | 11.5↑ |
+| Point clouds / 3D understanding | 4.4 | 2.6↑ | 9.0 | 2.6↑ | 1.6↑ | 1.8 | 8.7 | 9.2 | 9.7 |
+| Image restoration / low-level vision | 4.0 | 2.2↑ | 7.9↓ | 2.4↑ | 1.7↑ | 2.0↑ | 7.9↓ | 8.6 | 8.4 |
+| Alignment / RLHF / preference optimization | 4.6↑ | 5.3↑ | 2.9↑ | 4.5↑ | 5.1↑ | 5.9↑ | 2.8↑ | 1.6↑ | 3.3↑ |
+| Active learning / data selection | 4.3↑ | 4.6↑ | 3.4↑ | 4.4↑ | 4.5 | 4.6↑ | 3.7↑ | 2.5 | 3.1 |
+| Graph learning / knowledge graphs | 2.6↓ | 3.6↓ | 0.5↓ | 4.7↓ | 4.2↓ | 3.5↓ | 0.6 | 0.3 | 0.4↓ |
+| Visual QA / captioning / grounding | 5.0↑ | 4.2↑ | 7.7↑ | 3.1↑ | 2.9↑ | 3.6↑ | 7.6↑ | 6.1↑ | 8.2↑ |
+| Semi- / weakly supervised & noisy labels | 2.8↓ | 2.3↓ | 4.1↓ | 3.0↓ | 2.4↓ | 2.1↓ | 4.2↓ | 5.3↓ | 4.4↓ |
+| Bayesian & probabilistic inference | 3.8↓ | 4.9↓ | 1.4↓ | 5.0↓ | 6.0↓ | 4.1↓ | 1.5↓ | 1.0 | 1.3↓ |
+| Video understanding / action recognition | 4.1↑ | 2.8↑ | 7.7 | 2.9↑ | 1.6↑ | 2.3↑ | 7.5 | 6.6↓ | 8.1 |
+| Novel view synthesis / neural rendering | 3.3↑ | 1.9↑ | 6.8↑ | 1.9↑ | 0.6↑ | 1.9↑ | 6.5↑ | 7.7↑ | 8.0↑ |
+| Multi-task / transfer learning | 3.4↓ | 3.1↓ | 3.9↓ | 3.1↓ | 3.2↓ | 3.5↓ | 4.1↓ | 4.2↓ | 3.3↓ |
+| Knowledge distillation | 4.2↑ | 3.7↑ | 5.5↑ | 3.0↑ | 3.6↑ | 3.6↑ | 5.3↑ | 4.9 | 6.3↑ |
+| 3D Gaussian splatting | 3.3↑ | 1.9↑ | 6.4↑ | 1.9↑ | 0.5↑ | 1.6↑ | 6.2↑ | 7.8↑ | 7.4↑ |
+| Video generation / editing | 4.6↑ | 3.2↑ | 7.7↑ | 2.3↑ | 2.0↑ | 3.2↑ | 7.1↑ | 6.5↑ | 9.4↑ |
+| Statistical estimation / high-dimensional statistics | 2.9↓ | 4.1↓ | 0.3↓ | 5.1↓ | 5.3↓ | 2.8 | 0.3↓ | 0.1↓ | 0.2 |
+| Agents / tool use | 8.5↑ | 10.3↑ | 4.7↑ | 4.9↑ | 9.5↑ | 8.4↑ | 4.3↑ | 1.6↑ | 5.3↑ |
+| Neural ODEs / dynamical systems | 2.9↓ | 4.0↓ | 0.7 | 4.5 | 4.4↓ | 3.9↓ | 0.7 | 0.5 | 0.6 |
+| Depth / stereo / optical flow / matching | 2.9↓ | 1.4↑ | 6.5↓ | 1.7 | 0.6↑ | 1.2↑ | 6.1↓ | 7.6↓ | 7.3↓ |
+| Uncertainty / calibration / conformal | 4.4↑ | 4.8 | 3.5 | 3.6 | 5.7↑ | 4.0 | 3.3 | 2.0 | 4.0↑ |
+| Autoregressive models / tokenizers | 3.6↑ | 3.2↑ | 4.2↑ | 3.0↑ | 3.2↑ | 3.6↑ | 4.1↑ | 3.6↑ | 4.4↑ |
+| Graph neural networks | 2.1↓ | 2.7↓ | 1.1↓ | 3.5↓ | 3.0 | 2.7↓ | 1.4↓ | 0.8↓ | 0.6↓ |
+| Robotics / embodied AI | 4.6↑ | 3.7↑ | 6.2↑ | 3.5↑ | 3.2↑ | 3.9↑ | 5.8↑ | 3.6↑ | 6.9↑ |
+| Clustering / unsupervised learning | 2.5↓ | 2.6↓ | 2.3↓ | 2.7↓ | 3.0↓ | 2.4↓ | 2.5↓ | 2.7↓ | 2.0↓ |
+| Adversarial robustness / attacks | 2.5↓ | 2.7↓ | 2.2↓ | 2.8↓ | 2.9↓ | 3.0↓ | 2.3↓ | 2.7↓ | 1.8↓ |
+| NLP tasks | 3.3↓ | 4.5↓ | 0.9 | 4.0 | 4.1 | 5.6↓ | 0.9 | 0.7 | 0.7 |
+| AI for science: molecules / proteins / materials | 2.8↑ | 3.7↑ | 0.9↑ | 3.6↑ | 4.0↑ | 3.8↑ | 0.9↑ | 0.3 | 0.5↑ |
+| Scientific ML / PDEs / physics | 3.0↑ | 3.5↑ | 1.6↑ | 3.5↑ | 3.7↑ | 3.2↑ | 1.5↑ | 1.1↑ | 1.6↑ |
+| Time series / forecasting | 2.8↑ | 3.9↑ | 0.6 | 3.9↑ | 3.9↑ | 3.7↑ | 0.6 | 0.6 | 0.3 |
+| Quantization / pruning / compression | 2.3↓ | 2.7↓ | 1.4↓ | 2.1↓ | 3.1 | 3.2↓ | 1.4↓ | 1.8 | 1.6↓ |
+| Object detection | 2.2↓ | 1.2↓ | 4.6↓ | 1.5↓ | 0.8 | 1.1↓ | 4.5↓ | 5.9↓ | 4.5↓ |
+| 3D humans / avatars / motion | 2.2↑ | 1.0↑ | 4.9↑ | 0.9↑ | 0.4↑ | 1.0↑ | 4.8↑ | 5.7↑ | 5.1↑ |
+| Autonomous driving | 2.2↑ | 1.2↑ | 4.8 | 1.4↑ | 0.5↑ | 1.1↑ | 4.6 | 5.7 | 4.9 |
+| Long context | 2.9↑ | 3.2↑ | 2.1↑ | 2.8↑ | 3.2↑ | 3.3↑ | 1.9↑ | 1.6↑ | 2.8↑ |
+| Convolutional networks | 1.6↓ | 1.2↓ | 2.5↓ | 1.8↓ | 1.2↓ | 1.3↓ | 2.5↓ | 3.2↓ | 2.7↓ |
+| Offline RL / imitation learning | 2.6 | 3.0↓ | 1.7↑ | 2.5 | 3.0↓ | 3.7 | 1.7↑ | 1.2↑ | 1.5↑ |
+| Flow matching / normalizing flows | 4.8↑ | 4.0↑ | 5.6↑ | 2.9↑ | 3.9↑ | 3.9↑ | 4.8↑ | 2.5↑ | 5.6↑ |
+| Scaling laws / pretraining | 1.9↑ | 2.4↑ | 1.0↑ | 2.2↑ | 2.4↑ | 2.8↑ | 1.1↑ | 1.4↑ | 0.7↑ |
+| LLM safety / jailbreak | 3.0↑ | 3.9↑ | 1.1↑ | 2.7↑ | 3.6↑ | 3.7↑ | 1.2↑ | 0.9↑ | 1.2↑ |
+| 3D / 4D generation | 2.0↑ | 1.1↑ | 4.0↑ | 1.1↑ | 0.7↑ | 1.0↑ | 4.2↑ | 4.4↑ | 3.8↑ |
+| Bandits / online learning | 1.4↓ | 2.1↓ | 0.1 | 3.5↓ | 2.3↓ | 1.5 | 0.1 | 0.0 | 0.0 |
+| Equivariant / geometric deep learning | 2.0↓ | 2.2↓ | 1.5↓ | 2.1↓ | 2.7 | 2.0↓ | 1.4↓ | 0.9↓ | 1.8 |
+| Code generation / software | 3.4↑ | 4.7↑ | 0.7↑ | 3.1↑ | 4.9↑ | 4.3↑ | 0.7↑ | 0.3↑ | 0.8↑ |
+| State-space models / Mamba / linear attention | 1.7↑ | 1.6↑ | 1.5↑ | 1.9↑ | 1.5↑ | 1.5↑ | 1.7↑ | 2.6↑ | 1.5↑ |
+| Continual / incremental learning | 1.9↑ | 1.9 | 2.1 | 1.7 | 2.1↑ | 1.9 | 2.4 | 2.1 | 1.6 |
+| Mathematical reasoning / theorem proving | 4.3↑ | 6.0↑ | 0.9↑ | 3.6↑ | 4.4↑ | 5.8↑ | 0.7↑ | 0.3↑ | 0.1 |
+| OOD / anomaly detection | 2.0↑ | 1.8 | 2.4↑ | 1.8 | 1.8 | 1.7 | 2.5↑ | 2.3 | 2.4 |
+| Medical imaging | 2.7↑ | 1.9↑ | 4.5↑ | 1.7↑ | 1.1↑ | 1.6↑ | 4.6↑ | 3.3↑ | 4.3↑ |
+| Speech / audio / music | 2.1↑ | 1.9 | 2.3↑ | 1.8 | 1.8 | 2.3 | 2.4↑ | 2.3 | 2.4 |
+| Model merging / editing / unlearning | 2.0↑ | 2.2↑ | 1.5↑ | 1.8↑ | 2.1↑ | 2.5↑ | 1.5↑ | 1.4↑ | 1.6↑ |
+| Multi-agent learning / game theory | 1.8↓ | 2.5↓ | 0.3 | 3.2↓ | 2.9↓ | 1.9↓ | 0.3 | 0.1 | 0.2 |
+| Causal inference / discovery | 1.7↓ | 2.3↓ | 0.5 | 2.5↓ | 2.6 | 1.8 | 0.6 | 0.4 | 0.4 |
+| Privacy | 1.4↓ | 1.7↓ | 0.8 | 2.3 | 1.9↓ | 1.7 | 0.8 | 1.0 | 0.8 |
+| Combinatorial optimization / scheduling | 1.7↓ | 2.5↓ | 0.2↓ | 2.7↓ | 2.9↓ | 2.1 | 0.2↓ | 0.2 | 0.3↓ |
+| Fairness / bias | 1.6↓ | 1.8↓ | 1.1 | 2.1↓ | 1.8↓ | 1.6↓ | 1.1 | 1.3 | 1.2 |
+| Face analysis | 1.3↓ | 0.5 | 2.9↓ | 0.8 | 0.3 | 0.5 | 3.1↓ | 3.8 | 3.2↓ |
+| VAEs / vector-quantized models | 1.7↓ | 1.2↓ | 2.5↑ | 1.3↓ | 1.2↓ | 1.6↓ | 2.4↑ | 2.7↑ | 2.3 |
+| Federated learning | 1.3 | 1.5↓ | 1.1↑ | 1.8 | 2.0↓ | 1.2↓ | 1.1↑ | 1.3↑ | 0.7 |
+| World models / video prediction | 2.1↑ | 1.8↓ | 2.5↑ | 1.4 | 1.9 | 2.1↓ | 2.2↑ | 1.8↑ | 3.2↑ |
+| Watermarking / deepfakes / forensics | 1.7↑ | 1.6↑ | 2.1↑ | 1.6↑ | 1.7↑ | 1.4↑ | 2.2↑ | 2.2↑ | 1.4↑ |
+| In-context learning | 1.2↑ | 1.6↑ | 0.4↑ | 1.6↑ | 1.6↑ | 1.7↑ | 0.5↑ | 0.6↑ | 0.4↑ |
+| Retrieval-augmented generation | 2.6↑ | 3.0↑ | 1.8↑ | 1.9↑ | 2.9↑ | 3.1↑ | 1.8↑ | 1.0↑ | 1.8↑ |
+| Tracking / re-identification | 1.5↓ | 0.8↑ | 3.4↓ | 0.9 | 0.4↑ | 0.4 | 3.3↓ | 3.7↓ | 3.6↓ |
+| Optimal transport | 1.7↓ | 2.0↓ | 1.1 | 1.8↓ | 2.5 | 1.6 | 1.0 | 1.2 | 1.2 |
+| Hallucination / factuality | 2.4↑ | 2.5↑ | 2.0↑ | 1.8↑ | 2.3↑ | 2.4↑ | 2.1↑ | 1.1↑ | 1.8↑ |
+| Mixture of experts | 2.5↑ | 2.4↑ | 2.3↑ | 1.8↑ | 2.5↑ | 2.0↑ | 2.3↑ | 1.3↑ | 1.8↑ |
+| Event cameras / computational imaging | 1.5 | 0.7↑ | 3.6 | 1.0↑ | 0.4 | 0.4 | 3.5 | 3.7 | 3.4 |
+| Neural fields / NeRF | 0.9↓ | 0.7 | 1.5↓ | 0.8 | 0.4 | 0.7 | 1.4↓ | 2.0↓ | 2.0 |
+| Kernel methods / Gaussian processes | 1.0↓ | 1.5↓ | 0.1↓ | 1.7↓ | 1.7↓ | 1.4↓ | 0.1↓ | 0.1 | 0.2 |
+| Recommendation / information retrieval | 1.6↑ | 2.1↑ | 0.5↑ | 1.9↑ | 1.7 | 2.2↑ | 0.4 | 0.4 | 0.8↑ |
+| Healthcare / clinical | 1.8↑ | 2.0↑ | 1.2↑ | 1.8↑ | 2.0↑ | 1.5↑ | 1.1↑ | 0.7 | 1.4↑ |
+| Human pose / body / hands | 1.1↓ | 0.7 | 2.5↓ | 0.5 | 0.2↑ | 0.5 | 2.4↓ | 2.9↓ | 2.7↓ |
+| Remote sensing / earth observation | 1.5↑ | 1.1↑ | 2.9↑ | 0.9↑ | 0.4↑ | 0.4↑ | 2.6↑ | 2.3↑ | 2.8↑ |
+| Image retrieval / metric learning | 0.9↓ | 0.5↓ | 1.7↓ | 0.7 | 0.5 | 0.5↓ | 1.9↓ | 1.5↓ | 1.3↓ |
+| Backdoor / data poisoning | 0.7 | 0.8 | 0.5 | 0.8 | 1.0 | 0.7 | 0.5 | 0.9 | 0.4 |
+| Neural architecture search / AutoML | 0.6↓ | 0.7↓ | 0.3↓ | 1.0↓ | 0.9↓ | 0.8↓ | 0.3↓ | 0.4↓ | 0.4↓ |
+| OCR / documents / charts | 1.2↑ | 1.1↑ | 2.0↑ | 0.5↑ | 0.7↑ | 1.0↑ | 2.0 | 1.5 | 2.3 |
+| Meta-learning | 0.6↓ | 0.8↓ | 0.2↓ | 1.0↓ | 0.9↓ | 0.8↓ | 0.3↓ | 0.4↓ | 0.1↓ |
+| Tabular data | 0.8↑ | 1.0↑ | 0.1↑ | 1.0 | 1.2↑ | 0.8 | 0.1↑ | 0.0 | 0.2↑ |
+| Recurrent networks / LSTMs | 0.4↓ | 0.6↓ | 0.3↓ | 1.0↓ | 0.4↓ | 0.7↓ | 0.3↓ | 0.3↓ | 0.2↓ |
+| Spiking / neuromorphic networks | 0.6↑ | 0.7↑ | 0.3 | 0.6 | 0.6↑ | 0.7 | 0.4↑ | 0.2 | 0.0 |
+| Object 6D pose estimation | 0.3↓ | 0.1 | 0.9↓ | 0.2 | 0.1 | 0.0 | 0.8↓ | 1.0 | 1.1 |
+| GANs | 0.4↓ | 0.3↓ | 0.5↓ | 0.3↓ | 0.2↓ | 0.4↓ | 0.5↓ | 0.6↓ | 0.5↓ |
+| Energy-based models | 0.4↓ | 0.4↓ | 0.2 | 0.6↓ | 0.6 | 0.3↓ | 0.3 | 0.1 | 0.2 |
